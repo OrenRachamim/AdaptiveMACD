@@ -1,9 +1,10 @@
 """Backtest of the daily screen: average price change N days after each new signal.
 
-A signal day is the first day a stock passes the screen (it did not pass the
-previous trading day). The return is measured from that day's close to the
-close 1, 2, 3... trading days later, and compared with the average return of
-all eligible stocks over the same days.
+A signal day is a day on which the daily MACD crosses above its signal line
+and the whole screen passes. The trade is entered at the next day's open and
+the return is measured to the close 1, 2, 3... trading days after entry
+(1 = the close of the entry day). It is compared with the average return of
+all eligible stocks over the same open-to-close window.
 
 The screen is re-computed for every historical day exactly as the daily scan
 would have seen it, including the still-forming monthly bar.
@@ -110,13 +111,15 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
             ok = eligible & daily_screen(close, args.daily_lookback, True, args.min_hist_pct, False) \
                 & monthly_screen(close, args.monthly_lookback, True, args.min_hist_pct, False)
             new = ok & ~ok.shift(1, fill_value=False)
-            fwd = pd.DataFrame({h: close.shift(-h) / close - 1 for h in horizons})
+            entry = df["Open"].shift(-1).where(lambda o: o > 0)
+            fwd = pd.DataFrame({h: close.shift(-h) / entry - 1 for h in horizons})
             # Benchmark: every eligible stock, every day.
             elig_fwd = fwd.where(eligible, np.nan)
             bench_sum = bench_sum.add(elig_fwd.fillna(0), fill_value=0)
             bench_cnt = bench_cnt.add(elig_fwd.notna().astype(float), fill_value=0)
             for day in close.index[new.to_numpy()]:
-                row = {"ticker": ticker, "date": day.date(), "close": round(float(close[day]), 2)}
+                row = {"ticker": ticker, "date": day.date(), "close": round(float(close[day]), 2),
+                       "entry_open": round(float(entry[day]), 2)}
                 row.update({f"ret_{h}d": fwd.at[day, h] for h in horizons})
                 signals.append(row)
         log.info("%d/%d tickers, %d signals", min(start + args.batch_size, len(tickers)), len(tickers), len(signals))
@@ -147,8 +150,10 @@ def summarize(sig: pd.DataFrame, bench: pd.DataFrame, horizons: list[int]) -> pd
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--period", default="10y")
-    p.add_argument("--horizons", type=int, nargs="+", default=[1, 2, 3])
-    p.add_argument("--daily-lookback", type=int, default=5)
+    p.add_argument("--horizons", type=int, nargs="+", default=[1, 2, 3, 5, 10],
+                   help="exit after N trading days, counting the entry day as 1")
+    p.add_argument("--daily-lookback", type=int, default=1,
+                   help="1 = signal on the daily cross day itself (entry next open)")
     p.add_argument("--monthly-lookback", type=int, default=2)
     p.add_argument("--min-hist-pct", type=float, default=5.0)
     p.add_argument("--min-price", type=float, default=1.0)
