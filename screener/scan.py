@@ -72,9 +72,12 @@ def evaluate(df: pd.DataFrame, args: argparse.Namespace) -> dict | None:
         res = bullish_cross(series, lookback=getattr(args, f"{tf}_lookback"))
         if res is None or not res.crossed:
             return None
+        if getattr(args, f"{tf}_below_zero") and not res.macd_at_cross < 0:
+            return None
         if args.require_acceleration and not res.accelerating:
             return None
         row[f"{tf}_bars_since_cross"] = res.bars_since_cross
+        row[f"{tf}_macd_at_cross"] = round(res.macd_at_cross, 4)
         row[f"{tf}_macd"] = round(res.macd, 4)
         row[f"{tf}_signal"] = round(res.signal, 4)
         row[f"{tf}_hist"] = round(res.hist, 4)
@@ -129,6 +132,8 @@ def write_outputs(result: pd.DataFrame, out_dir: Path, args: argparse.Namespace)
         "",
         f"MACD({12},{26},{9}) line crossed above the signal line on the monthly, weekly and daily charts.",
         f"Lookback (bars): monthly={args.monthly_lookback}, weekly={args.weekly_lookback}, daily={args.daily_lookback}. "
+        f"MACD below 0 at the cross: monthly={args.monthly_below_zero}, weekly={args.weekly_below_zero}, "
+        f"daily={args.daily_below_zero}. "
         f"Min price ${args.min_price}, min 50-day avg volume {args.min_avg_volume:,}.",
         "",
         f"**{len(result)} matches**",
@@ -155,6 +160,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
                    help="cross must have happened within the last N monthly bars (1 = this month only)")
     p.add_argument("--closed-bars-only", action="store_true",
                    help="ignore the still-forming week/month bar")
+    for tf in ("daily", "weekly", "monthly"):
+        p.add_argument(f"--{tf}-below-zero", action=argparse.BooleanOptionalAction, default=True,
+                       help=f"require the {tf} MACD line to be below 0 on the cross bar")
     p.add_argument("--require-acceleration", action="store_true",
                    help="also require the histogram to be growing on every timeframe")
     p.add_argument("--min-price", type=float, default=1.0)

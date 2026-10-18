@@ -43,3 +43,13 @@ def test_resample_keeps_and_drops_open_bar():
     # Ends on the last business day of January: bar is complete.
     daily = pd.Series(1.0, index=pd.bdate_range("2024-01-01", "2024-01-31"))
     assert len(resample_close(daily, "monthly", closed_bars_only=True)) == 1
+
+
+def test_macd_at_cross_sign():
+    # Rebound after a long decline: cross happens with MACD still below zero.
+    below = bullish_cross(_series(list(np.linspace(100, 50, 80)) + [70]), lookback=1)
+    assert below.crossed and below.macd_at_cross < 0
+    # Uptrend, small pullback, resumption: cross happens with MACD above zero.
+    values = list(np.linspace(50, 100, 80)) + list(np.linspace(99, 96, 6)) + [110]
+    above = bullish_cross(_series(values), lookback=1)
+    assert above.crossed and above.macd_at_cross > 0

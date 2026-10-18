@@ -64,6 +64,7 @@ class CrossResult:
     signal: float
     hist: float
     accelerating: bool
+    macd_at_cross: float | None
 
 
 def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = None) -> CrossResult | None:
@@ -73,6 +74,7 @@ def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = No
     is > 0 on bar ``i``. ``crossed`` is True when such a cross happened within
     the last ``lookback`` bars and MACD is still above the signal line now.
     ``accelerating`` means the histogram grew versus the previous bar.
+    ``macd_at_cross`` is the MACD value on the most recent cross bar.
 
     Returns None when there is not enough history for a meaningful MACD.
     """
@@ -99,4 +101,5 @@ def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = No
         signal=float(last["signal"]),
         hist=float(last["hist"]),
         accelerating=bool(hist[-1] > hist[-2]),
+        macd_at_cross=None if bars_since is None else float(m["macd"].iloc[-1 - bars_since]),
     )
