@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import io
 import re
+import time
 
 import pandas as pd
 import requests
@@ -23,9 +24,15 @@ NON_COMMON = re.compile(
 )
 
 
-def _read(url: str) -> pd.DataFrame:
-    resp = requests.get(url, timeout=60)
-    resp.raise_for_status()
+def _read(url: str, retries: int = 5) -> pd.DataFrame:
+    # The server intermittently answers with an HTML bot-check page; retry until we get the file.
+    for attempt in range(1, retries + 1):
+        resp = requests.get(url, timeout=60, headers={"User-Agent": "Mozilla/5.0"})
+        if resp.ok and "|Test Issue|" in resp.text.split("\n", 1)[0]:
+            break
+        if attempt == retries:
+            raise RuntimeError(f"could not download symbol list from {url}")
+        time.sleep(5 * attempt)
     df = pd.read_csv(io.StringIO(resp.text), sep="|", dtype=str, keep_default_na=False)
     # Last row is "File Creation Time: ..."
     return df[~df.iloc[:, 0].str.startswith("File Creation Time")]
