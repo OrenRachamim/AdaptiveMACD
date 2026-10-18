@@ -31,14 +31,22 @@ from screener.universe import load_universe
 log = logging.getLogger("backtest")
 
 
-def daily_screen(close: pd.Series, lookback: int, below_zero: bool, min_hist_pct: float,
+def zero_ok(macd_at_cross, zero: str):
+    """Where the MACD line was on the cross bar: 'below' 0, 'above' 0 or 'any'."""
+    if zero == "below":
+        return macd_at_cross < 0
+    if zero == "above":
+        return macd_at_cross > 0
+    return True
+
+
+def daily_screen(close: pd.Series, lookback: int, zero: str, min_hist_pct: float,
                  allow_whipsaw: bool) -> pd.Series:
     m = macd(close)
     hist = m["hist"]
     cross = (hist.shift(1) <= 0) & (hist > 0)
     ok = (hist > 0) & (cross.astype(int).rolling(lookback, min_periods=1).max() > 0)
-    if below_zero:
-        ok &= m["macd"].where(cross).ffill() < 0
+    ok &= zero_ok(m["macd"].where(cross).ffill(), zero)
     ok &= hist >= min_hist_pct / 100 * m["signal"].abs()
     if not allow_whipsaw:
         flips = (hist > 0).astype(int).diff().abs()
@@ -47,7 +55,7 @@ def daily_screen(close: pd.Series, lookback: int, below_zero: bool, min_hist_pct
     return ok.fillna(False)
 
 
-def monthly_screen(close: pd.Series, lookback: int, below_zero: bool, min_hist_pct: float,
+def monthly_screen(close: pd.Series, lookback: int, zero: str, min_hist_pct: float,
                    allow_whipsaw: bool) -> pd.Series:
     """Monthly screen as seen on each day, with the current month's bar built from that day's close."""
     if lookback > 2:
@@ -79,8 +87,7 @@ def monthly_screen(close: pd.Series, lookback: int, below_zero: bool, min_hist_p
     else:
         ok &= cross_now | cross_prev
         macd_at_cross = np.where(cross_now, macd_now, macd1)
-    if below_zero:
-        ok &= macd_at_cross < 0
+    ok &= zero_ok(macd_at_cross, zero)
     ok &= hist_now >= min_hist_pct / 100 * np.abs(signal_now)
     if not allow_whipsaw and lookback == 2:
         ok &= ~((h2 > 0) & (h1 <= 0))  # up, down, up again over the last 3 bars
@@ -108,8 +115,8 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
                 continue
             close = df["Close"]
             eligible = (close >= args.min_price) & (df["Volume"].rolling(50).mean() >= args.min_avg_volume)
-            ok = eligible & daily_screen(close, args.daily_lookback, True, args.min_hist_pct, False) \
-                & monthly_screen(close, args.monthly_lookback, True, args.min_hist_pct, False)
+            ok = eligible & daily_screen(close, args.daily_lookback, args.daily_zero, args.min_hist_pct, False) \
+                & monthly_screen(close, args.monthly_lookback, args.monthly_zero, args.min_hist_pct, False)
             new = ok & ~ok.shift(1, fill_value=False)
             entry = df["Open"].shift(-1).where(lambda o: o > 0)
             fwd = pd.DataFrame({h: close.shift(-h) / entry - 1 for h in horizons})
@@ -155,6 +162,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--daily-lookback", type=int, default=1,
                    help="1 = signal on the daily cross day itself (entry next open)")
     p.add_argument("--monthly-lookback", type=int, default=2)
+    for tf in ("daily", "monthly"):
+        p.add_argument(f"--{tf}-zero", choices=["below", "above", "any"], default="below",
+                       help=f"{tf} MACD line position vs 0 on the cross bar")
     p.add_argument("--min-hist-pct", type=float, default=5.0)
     p.add_argument("--min-price", type=float, default=1.0)
     p.add_argument("--min-avg-volume", type=int, default=50_000)
