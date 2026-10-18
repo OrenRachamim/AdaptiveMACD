@@ -147,12 +147,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--tickers", nargs="+", help="scan only these tickers instead of the whole US market")
     p.add_argument("--include-etfs", action="store_true", help="include ETFs in the universe")
-    p.add_argument("--daily-lookback", type=int, default=1,
-                   help="cross must have happened within the last N daily bars (1 = today)")
-    p.add_argument("--weekly-lookback", type=int, default=1,
-                   help="cross must have happened within the last N weekly bars (1 = this week)")
-    p.add_argument("--monthly-lookback", type=int, default=1,
-                   help="cross must have happened within the last N monthly bars (1 = this month)")
+    p.add_argument("--daily-lookback", type=int, default=5,
+                   help="cross must have happened within the last N daily bars (1 = today only)")
+    p.add_argument("--weekly-lookback", type=int, default=2,
+                   help="cross must have happened within the last N weekly bars (1 = this week only)")
+    p.add_argument("--monthly-lookback", type=int, default=2,
+                   help="cross must have happened within the last N monthly bars (1 = this month only)")
     p.add_argument("--closed-bars-only", action="store_true",
                    help="ignore the still-forming week/month bar")
     p.add_argument("--require-acceleration", action="store_true",
