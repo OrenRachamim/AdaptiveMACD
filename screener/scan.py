@@ -159,8 +159,8 @@ def write_outputs(result: pd.DataFrame, out_dir: Path, args: argparse.Namespace)
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--tickers", nargs="+", help="scan only these tickers instead of the whole US market")
-    p.add_argument("--timeframes", nargs="+", choices=TIMEFRAMES, default=list(TIMEFRAMES),
-                   help="timeframes that must all show the cross (default: monthly weekly daily)")
+    p.add_argument("--timeframes", nargs="+", choices=TIMEFRAMES, default=["monthly", "daily"],
+                   help="timeframes that must all show the cross (default: monthly daily)")
     p.add_argument("--include-etfs", action="store_true", help="include ETFs in the universe")
     p.add_argument("--daily-lookback", type=int, default=5,
                    help="cross must have happened within the last N daily bars (1 = today only)")
