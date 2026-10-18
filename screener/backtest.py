@@ -7,7 +7,7 @@ the return is measured to the close 1, 2, 3... trading days after entry
 all eligible stocks over the same open-to-close window.
 
 The screen is re-computed for every historical day exactly as the daily scan
-would have seen it, including the still-forming monthly bar.
+would have seen it, including the still-forming weekly/monthly bar.
 
 Usage:
     python -m screener.backtest                 # full US universe, 10 years
@@ -17,6 +17,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import logging
 import sys
 from pathlib import Path
@@ -55,12 +56,15 @@ def daily_screen(close: pd.Series, lookback: int, zero: str, min_hist_pct: float
     return ok.fillna(False)
 
 
-def monthly_screen(close: pd.Series, lookback: int, zero: str, min_hist_pct: float,
-                   allow_whipsaw: bool) -> pd.Series:
-    """Monthly screen as seen on each day, with the current month's bar built from that day's close."""
+PERIODS = {"monthly": "M", "weekly": "W-FRI"}
+
+
+def higher_screen(close: pd.Series, timeframe: str, lookback: int, zero: str, min_hist_pct: float,
+                  allow_whipsaw: bool) -> pd.Series:
+    """Weekly/monthly screen as seen on each day, with the current bar built from that day's close."""
     if lookback > 2:
-        raise ValueError("backtest supports monthly lookback 1 or 2")
-    month = close.index.to_period("M")
+        raise ValueError("backtest supports a weekly/monthly lookback of 1 or 2")
+    month = close.index.to_period(PERIODS[timeframe])
     mclose = close.groupby(month).last()
     ef = mclose.ewm(span=FAST, adjust=False).mean()
     es = mclose.ewm(span=SLOW, adjust=False).mean()
@@ -96,6 +100,19 @@ def monthly_screen(close: pd.Series, lookback: int, zero: str, min_hist_pct: flo
     return pd.Series(np.nan_to_num(ok, nan=0).astype(bool), index=close.index)
 
 
+def cached_download(batch: list[str], period: str, cache_dir: Path | None) -> pd.DataFrame:
+    if cache_dir is None:
+        return download(batch, period, adjust_dividends=False)
+    key = hashlib.md5(f"{period}|{','.join(batch)}".encode()).hexdigest()
+    path = cache_dir / f"{key}.pkl"
+    if path.exists():
+        return pd.read_pickle(path)
+    data = download(batch, period, adjust_dividends=False)
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    data.to_pickle(path)
+    return data
+
+
 def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
     universe = load_universe()
     if args.limit:
@@ -108,7 +125,7 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
 
     for start in range(0, len(tickers), args.batch_size):
         batch = tickers[start:start + args.batch_size]
-        data = download(batch, args.period, adjust_dividends=False)
+        data = cached_download(batch, args.period, args.cache_dir)
         for ticker in batch:
             df = ticker_frame(data, ticker) if not data.empty else None
             if df is None or len(df) < 800:
@@ -116,7 +133,8 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
             close = df["Close"]
             eligible = (close >= args.min_price) & (df["Volume"].rolling(50).mean() >= args.min_avg_volume)
             ok = eligible & daily_screen(close, args.daily_lookback, args.daily_zero, args.min_hist_pct, False) \
-                & monthly_screen(close, args.monthly_lookback, args.monthly_zero, args.min_hist_pct, False)
+                & higher_screen(close, args.higher_tf, args.higher_lookback, args.higher_zero, args.min_hist_pct,
+                                False)
             new = ok & ~ok.shift(1, fill_value=False)
             entry = df["Open"].shift(-1).where(lambda o: o > 0)
             fwd = pd.DataFrame({h: close.shift(-h) / entry - 1 for h in horizons})
@@ -161,15 +179,19 @@ def main(argv: list[str] | None = None) -> int:
                    help="exit after N trading days, counting the entry day as 1")
     p.add_argument("--daily-lookback", type=int, default=1,
                    help="1 = signal on the daily cross day itself (entry next open)")
-    p.add_argument("--monthly-lookback", type=int, default=2)
-    for tf in ("daily", "monthly"):
-        p.add_argument(f"--{tf}-zero", choices=["below", "above", "any"], default="below",
-                       help=f"{tf} MACD line position vs 0 on the cross bar")
+    p.add_argument("--higher-tf", choices=list(PERIODS), default="monthly",
+                   help="higher timeframe that must also cross (default: monthly)")
+    p.add_argument("--higher-lookback", "--monthly-lookback", dest="higher_lookback", type=int, default=2)
+    zero = dict(choices=["below", "above", "any"], default="below")
+    p.add_argument("--daily-zero", **zero, help="daily MACD line position vs 0 on the cross bar")
+    p.add_argument("--higher-zero", "--monthly-zero", dest="higher_zero", **zero,
+                   help="weekly/monthly MACD line position vs 0 on the cross bar")
     p.add_argument("--min-hist-pct", type=float, default=5.0)
     p.add_argument("--min-price", type=float, default=1.0)
     p.add_argument("--min-avg-volume", type=int, default=50_000)
     p.add_argument("--batch-size", type=int, default=200)
     p.add_argument("--limit", type=int)
+    p.add_argument("--cache-dir", type=Path, help="cache downloaded prices here to speed up repeated runs")
     p.add_argument("--out-dir", type=Path, default=Path("backtest_results"))
     args = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
