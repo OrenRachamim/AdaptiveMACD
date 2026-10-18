@@ -74,6 +74,22 @@ python -m screener.scan --help                # כל האפשרויות
 
 > GitHub מריץ workflows מתוזמנים רק מה-branch הראשי (default branch) של הריפו.
 
+## שליחה לטלגרם
+
+בסוף כל ריצה יומית התוצאות נשלחות להודעת טלגרם: לכל מניה מופיעים קישור לגרף ב-TradingView, מחיר סגירה,
+מחזור ממוצע ומועדי החצייה בכל טווח. גם ביום בלי תוצאות נשלחת הודעה קצרה.
+
+הגדרה חד-פעמית:
+
+1. בטלגרם, פתח צ'אט עם **@BotFather**, שלח `/newbot` וקבל **token**.
+2. שלח לבוט החדש הודעה כלשהי (למשל `/start`). כדי לשלוח לקבוצה או לערוץ – הוסף אליהם את הבוט.
+3. מצא את ה-**chat id**: פתח בדפדפן `https://api.telegram.org/bot<TOKEN>/getUpdates` וחפש `"chat":{"id":...}`.
+4. בריפו ב-GitHub: **Settings → Secrets and variables → Actions → New repository secret** והוסף:
+   * `TELEGRAM_BOT_TOKEN` – ה-token מ-BotFather
+   * `TELEGRAM_CHAT_ID` – ה-chat id
+
+בלי ה-secrets האלה שלב הטלגרם פשוט מדולג. בדיקה מקומית בלי לשלוח: `python -m screener.notify_telegram --dry-run`.
+
 ## מקורות נתונים
 
 * רשימת המניות: NASDAQ Trader Symbol Directory (`nasdaqlisted.txt`, `otherlisted.txt`)

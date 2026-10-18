@@ -48,3 +48,9 @@ jobs:
           git add results/
           git diff --cached --quiet || git commit -m "Daily MACD scan $(date -u +%F)"
           git push
+
+      - name: Send to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m screener.notify_telegram

@@ -82,6 +82,8 @@ def evaluate(df: pd.DataFrame, args: argparse.Namespace) -> dict | None:
         if args.require_acceleration and not res.accelerating:
             return None
         row[f"{tf}_bars_since_cross"] = res.bars_since_cross
+        # Bar label: the day for daily, week-ending Friday for weekly, month-end for monthly.
+        row[f"{tf}_cross_bar"] = series.index[-1 - res.bars_since_cross].date()
         row[f"{tf}_macd_at_cross"] = round(res.macd_at_cross, 4)
         row[f"{tf}_macd"] = round(res.macd, 4)
         row[f"{tf}_signal"] = round(res.signal, 4)

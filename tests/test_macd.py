@@ -61,3 +61,17 @@ def test_whipsaw_detected():
     res = bullish_cross(_series(values), lookback=5)
     assert res.crossed and res.whipsaw
     assert not bullish_cross(_series(list(np.linspace(100, 50, 80)) + [70]), lookback=5).whipsaw
+
+
+def test_tradingview_url_and_message():
+    from screener.notify_telegram import build_messages, tradingview_url
+
+    assert tradingview_url("BRK-B", "NYSE") == "https://www.tradingview.com/chart/?symbol=NYSE:BRK.B"
+    assert tradingview_url("XYZ", "NYSE American").endswith("symbol=AMEX:XYZ")
+    result = pd.DataFrame([{
+        "ticker": "AVY", "name": "Avery Dennison", "exchange": "NYSE", "close": 175.31,
+        "avg_volume_50d": 880154, "monthly_cross_bar": "2026-10-31", "daily_cross_bar": "2026-10-13",
+    }])
+    (msg,) = build_messages(result, "2026-10-16")
+    assert "NYSE:AVY" in msg and "10/2026" in msg and "13/10" in msg
+    assert "לא נמצאו" in build_messages(pd.DataFrame(), "2026-10-16")[0]
