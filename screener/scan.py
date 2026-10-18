@@ -67,7 +67,7 @@ def evaluate(df: pd.DataFrame, args: argparse.Namespace) -> dict | None:
 
     row = {"close": round(last_close, 2), "avg_volume_50d": int(avg_volume), "date": close.index[-1].date()}
     # Daily first: it is the cheapest and most selective filter.
-    for tf in ("daily", "weekly", "monthly"):
+    for tf in [tf for tf in ("daily", "weekly", "monthly") if tf in args.timeframes]:
         series = resample_close(close, tf, closed_bars_only=args.closed_bars_only and tf != "daily")
         res = bullish_cross(series, lookback=getattr(args, f"{tf}_lookback"))
         if res is None or not res.crossed:
@@ -127,30 +127,32 @@ def write_outputs(result: pd.DataFrame, out_dir: Path, args: argparse.Namespace)
     result.to_csv(out_dir / f"{stamp}.csv", index=False)
     result.to_csv(out_dir / "latest.csv", index=False)
 
+    tfs = [tf for tf in TIMEFRAMES if tf in args.timeframes]
     lines = [
-        f"# MACD triple-timeframe bullish crossover - {stamp}",
+        f"# MACD multi-timeframe bullish crossover - {stamp}",
         "",
-        f"MACD({12},{26},{9}) line crossed above the signal line on the monthly, weekly and daily charts.",
-        f"Lookback (bars): monthly={args.monthly_lookback}, weekly={args.weekly_lookback}, daily={args.daily_lookback}. "
-        f"MACD below 0 at the cross: monthly={args.monthly_below_zero}, weekly={args.weekly_below_zero}, "
-        f"daily={args.daily_below_zero}. "
+        f"MACD({12},{26},{9}) line crossed above the signal line on the {', '.join(tfs)} charts.",
+        "Lookback (bars): " + ", ".join(f"{tf}={getattr(args, f'{tf}_lookback')}" for tf in tfs) + ". "
+        "MACD below 0 at the cross: " + ", ".join(f"{tf}={getattr(args, f'{tf}_below_zero')}" for tf in tfs) + ". "
         f"Min price ${args.min_price}, min 50-day avg volume {args.min_avg_volume:,}.",
         "",
         f"**{len(result)} matches**",
         "",
     ]
     if not result.empty:
-        lines += ["| Ticker | Name | Exchange | Close | Avg Vol 50d | M hist | W hist | D hist |",
-                  "|---|---|---|---:|---:|---:|---:|---:|"]
-        for r in result.itertuples():
-            lines.append(f"| {r.ticker} | {str(r.name)[:40]} | {r.exchange} | {r.close} | {r.avg_volume_50d:,} "
-                         f"| {r.monthly_hist} | {r.weekly_hist} | {r.daily_hist} |")
+        lines += ["| Ticker | Name | Exchange | Close | Avg Vol 50d | " + " | ".join(f"{tf} hist" for tf in tfs) + " |",
+                  "|---|---|---|---:|---:|" + "---:|" * len(tfs)]
+        for r in result.to_dict("records"):
+            lines.append(f"| {r['ticker']} | {str(r['name'])[:40]} | {r['exchange']} | {r['close']} | "
+                         f"{r['avg_volume_50d']:,} | " + " | ".join(str(r[f"{tf}_hist"]) for tf in tfs) + " |")
     (out_dir / "latest.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--tickers", nargs="+", help="scan only these tickers instead of the whole US market")
+    p.add_argument("--timeframes", nargs="+", choices=TIMEFRAMES, default=list(TIMEFRAMES),
+                   help="timeframes that must all show the cross (default: monthly weekly daily)")
     p.add_argument("--include-etfs", action="store_true", help="include ETFs in the universe")
     p.add_argument("--daily-lookback", type=int, default=5,
                    help="cross must have happened within the last N daily bars (1 = today only)")

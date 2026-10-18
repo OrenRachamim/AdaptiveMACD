@@ -33,6 +33,7 @@ python -m screener.scan --help                # כל האפשרויות
 
 | דגל | ברירת מחדל | משמעות |
 |---|---|---|
+| `--timeframes ...` | monthly weekly daily | אילו טווחי זמן נבדקים (למשל `--timeframes monthly daily` מתעלם מהשבועי) |
 | `--daily-lookback N` | 5 | החצייה היומית קרתה ב-N הנרות היומיים האחרונים |
 | `--weekly-lookback N` | 2 | החצייה השבועית קרתה ב-N הנרות השבועיים האחרונים |
 | `--monthly-lookback N` | 2 | החצייה החודשית קרתה ב-N הנרות החודשיים האחרונים |
