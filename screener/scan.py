@@ -27,14 +27,15 @@ log = logging.getLogger("screener")
 TIMEFRAMES = ("monthly", "weekly", "daily")
 
 
-def download(tickers: list[str], period: str, retries: int = 3) -> pd.DataFrame:
+def download(tickers: list[str], period: str, adjust_dividends: bool = False, retries: int = 3) -> pd.DataFrame:
     for attempt in range(1, retries + 1):
         try:
             data = yf.download(
                 tickers,
                 period=period,
                 interval="1d",
-                auto_adjust=True,
+                # Close is always split-adjusted; dividend adjustment is optional.
+                auto_adjust=adjust_dividends,
                 group_by="ticker",
                 threads=True,
                 progress=False,
@@ -74,6 +75,10 @@ def evaluate(df: pd.DataFrame, args: argparse.Namespace) -> dict | None:
             return None
         if getattr(args, f"{tf}_below_zero") and not res.macd_at_cross < 0:
             return None
+        if res.hist < getattr(args, f"{tf}_min_hist_pct") / 100 * abs(res.signal):
+            return None
+        if res.whipsaw and not args.allow_whipsaw:
+            return None
         if args.require_acceleration and not res.accelerating:
             return None
         row[f"{tf}_bars_since_cross"] = res.bars_since_cross
@@ -99,7 +104,7 @@ def run(args: argparse.Namespace) -> pd.DataFrame:
     matches = []
     for start in range(0, len(tickers), args.batch_size):
         batch = tickers[start:start + args.batch_size]
-        data = download(batch, args.period)
+        data = download(batch, args.period, adjust_dividends=args.adjust_dividends)
         for ticker in batch:
             df = ticker_frame(data, ticker) if not data.empty else None
             if df is None:
@@ -134,6 +139,9 @@ def write_outputs(result: pd.DataFrame, out_dir: Path, args: argparse.Namespace)
         f"MACD({12},{26},{9}) line crossed above the signal line on the {', '.join(tfs)} charts.",
         "Lookback (bars): " + ", ".join(f"{tf}={getattr(args, f'{tf}_lookback')}" for tf in tfs) + ". "
         "MACD below 0 at the cross: " + ", ".join(f"{tf}={getattr(args, f'{tf}_below_zero')}" for tf in tfs) + ". "
+        "Min gap above signal (% of |signal|): " + ", ".join(f"{tf}={getattr(args, f'{tf}_min_hist_pct')}" for tf in tfs) + ". "
+        f"Whipsaws {'allowed' if args.allow_whipsaw else 'rejected'}. "
+        f"Prices {'dividend-adjusted' if args.adjust_dividends else 'split-adjusted only'}. "
         f"Min price ${args.min_price}, min 50-day avg volume {args.min_avg_volume:,}.",
         "",
         f"**{len(result)} matches**",
@@ -165,6 +173,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     for tf in ("daily", "weekly", "monthly"):
         p.add_argument(f"--{tf}-below-zero", action=argparse.BooleanOptionalAction, default=True,
                        help=f"require the {tf} MACD line to be below 0 on the cross bar")
+    for tf in ("daily", "weekly", "monthly"):
+        p.add_argument(f"--{tf}-min-hist-pct", type=float, default=5.0,
+                       help=f"{tf} MACD must be above the signal line by at least this %% of |signal| (0 = off)")
+    p.add_argument("--allow-whipsaw", action="store_true",
+                   help="accept crosses where the lines crossed back and forth within the lookback window")
+    p.add_argument("--adjust-dividends", action="store_true",
+                   help="use dividend-adjusted prices (default: split-adjusted only, like most charts)")
     p.add_argument("--require-acceleration", action="store_true",
                    help="also require the histogram to be growing on every timeframe")
     p.add_argument("--min-price", type=float, default=1.0)

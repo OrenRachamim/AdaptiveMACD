@@ -65,6 +65,7 @@ class CrossResult:
     hist: float
     accelerating: bool
     macd_at_cross: float | None
+    whipsaw: bool
 
 
 def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = None) -> CrossResult | None:
@@ -75,6 +76,8 @@ def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = No
     the last ``lookback`` bars and MACD is still above the signal line now.
     ``accelerating`` means the histogram grew versus the previous bar.
     ``macd_at_cross`` is the MACD value on the most recent cross bar.
+    ``whipsaw`` means the lines crossed more than once in the last ``lookback``
+    bars (e.g. up, down and up again).
 
     Returns None when there is not enough history for a meaningful MACD.
     """
@@ -91,6 +94,9 @@ def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = No
             bars_since = len(hist) - 1 - back
             break
 
+    window = hist[-(lookback + 1):] > 0
+    whipsaw = bool((window[1:] != window[:-1]).sum() > 1)
+
     last = m.iloc[-1]
     is_open = last["hist"] > 0
     crossed = bool(is_open and bars_since is not None and bars_since < lookback)
@@ -102,4 +108,5 @@ def bullish_cross(close: pd.Series, lookback: int = 1, min_bars: int | None = No
         hist=float(last["hist"]),
         accelerating=bool(hist[-1] > hist[-2]),
         macd_at_cross=None if bars_since is None else float(m["macd"].iloc[-1 - bars_since]),
+        whipsaw=whipsaw,
     )

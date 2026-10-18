@@ -53,3 +53,11 @@ def test_macd_at_cross_sign():
     values = list(np.linspace(50, 100, 80)) + list(np.linspace(99, 96, 6)) + [110]
     above = bullish_cross(_series(values), lookback=1)
     assert above.crossed and above.macd_at_cross > 0
+
+
+def test_whipsaw_detected():
+    # Rebound crosses up, dips back below, then crosses up again.
+    values = list(np.linspace(100, 50, 80)) + [70, 40, 35, 80]
+    res = bullish_cross(_series(values), lookback=5)
+    assert res.crossed and res.whipsaw
+    assert not bullish_cross(_series(list(np.linspace(100, 50, 80)) + [70]), lookback=5).whipsaw
