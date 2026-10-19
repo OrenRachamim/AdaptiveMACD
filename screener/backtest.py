@@ -32,6 +32,21 @@ from screener.universe import load_universe
 log = logging.getLogger("backtest")
 
 
+def daily_precross_screen(close: pd.Series, bars: int, zero: str) -> tuple[pd.Series, pd.Series]:
+    """MACD still below its signal line but converging fast enough to cross within ``bars`` bars.
+
+    Returns the screen and, for each day, whether the cross really happened within ``bars`` bars after it.
+    """
+    m = macd(close)
+    hist = m["hist"]
+    step = hist.diff()
+    ok = (hist < 0) & (step > 0) & (step.shift(1) > 0) & (-hist / step <= bars)
+    ok &= zero_ok(m["macd"], zero)
+    ok &= np.arange(len(close)) >= SLOW + SIGNAL - 1
+    crossed_later = pd.concat([hist.shift(-k) > 0 for k in range(1, bars + 1)], axis=1).any(axis=1)
+    return ok.fillna(False), crossed_later
+
+
 def zero_ok(macd_at_cross, zero: str):
     """Where the MACD line was on the cross bar: 'below' 0, 'above' 0 or 'any'."""
     if zero == "below":
@@ -132,7 +147,12 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
                 continue
             close = df["Close"]
             eligible = (close >= args.min_price) & (df["Volume"].rolling(50).mean() >= args.min_avg_volume)
-            ok = eligible & daily_screen(close, args.daily_lookback, args.daily_zero, args.min_hist_pct, False) \
+            if args.daily_mode == "precross":
+                daily, crossed_later = daily_precross_screen(close, args.precross_bars, args.daily_zero)
+            else:
+                daily = daily_screen(close, args.daily_lookback, args.daily_zero, args.min_hist_pct, False)
+                crossed_later = pd.Series(np.nan, index=close.index)
+            ok = eligible & daily \
                 & higher_screen(close, args.higher_tf, args.higher_lookback, args.higher_zero, args.min_hist_pct,
                                 False)
             new = ok & ~ok.shift(1, fill_value=False)
@@ -144,7 +164,7 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
             bench_cnt = bench_cnt.add(elig_fwd.notna().astype(float), fill_value=0)
             for day in close.index[new.to_numpy()]:
                 row = {"ticker": ticker, "date": day.date(), "close": round(float(close[day]), 2),
-                       "entry_open": round(float(entry[day]), 2)}
+                       "entry_open": round(float(entry[day]), 2), "crossed_later": crossed_later[day]}
                 row.update({f"ret_{h}d": fwd.at[day, h] for h in horizons})
                 signals.append(row)
         log.info("%d/%d tickers, %d signals", min(start + args.batch_size, len(tickers)), len(tickers), len(signals))
@@ -179,6 +199,10 @@ def main(argv: list[str] | None = None) -> int:
                    help="exit after N trading days, counting the entry day as 1")
     p.add_argument("--daily-lookback", type=int, default=1,
                    help="1 = signal on the daily cross day itself (entry next open)")
+    p.add_argument("--daily-mode", choices=["cross", "precross"], default="cross",
+                   help="cross: signal on the daily cross; precross: signal 1-2 bars before an expected cross")
+    p.add_argument("--precross-bars", type=int, default=2,
+                   help="precross: lines must be on course to cross within this many bars")
     p.add_argument("--higher-tf", choices=list(PERIODS), default="monthly",
                    help="higher timeframe that must also cross (default: monthly)")
     p.add_argument("--higher-lookback", "--monthly-lookback", dest="higher_lookback", type=int, default=2)
