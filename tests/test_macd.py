@@ -75,3 +75,36 @@ def test_tradingview_url_and_message():
     (msg,) = build_messages(result, "2026-10-16")
     assert "NYSE:AVY" in msg and "10/2026" in msg and "13/10" in msg
     assert "לא נמצאו" in build_messages(pd.DataFrame(), "2026-10-16")[0]
+
+
+def test_cross_price_is_exact_on_every_timeframe():
+    from screener.cross_forecast import daily_features, higher_features
+    from screener.macd import macd
+
+    rng = np.random.default_rng(1)
+    close = pd.Series(100 * np.exp(np.cumsum(rng.normal(0, 0.02, 900))),
+                      index=pd.bdate_range("2020-01-01", periods=900))
+    day = close.index[700]
+    # Daily: tomorrow's close at the cross price puts MACD exactly on the signal line.
+    price = daily_features(close).at[day, "cross_price"]
+    nxt = pd.concat([close[:day], pd.Series([price], index=[close.index[701]])])
+    assert abs(macd(nxt)["hist"].iloc[-1]) < 1e-9
+    # Weekly/monthly: the current bar closing at the cross price does the same.
+    for tf in ("weekly", "monthly"):
+        price = higher_features(close, tf).at[day, "cross_price"]
+        bars = resample_close(close[:day], tf)
+        bars.iloc[-1] = price
+        assert abs(macd(bars)["hist"].iloc[-1]) < 1e-9
+
+
+def test_calibration_is_monotone_and_decided_bars_are_certain():
+    from screener.cross_forecast import Calibration, z_score
+
+    rng = np.random.default_rng(2)
+    z = rng.normal(0, 1.5, 20000)
+    crossed = rng.random(20000) < 1 / (1 + np.exp(2 * z))
+    cal = Calibration(z, crossed)
+    assert np.all(np.diff(cal.p) <= 1e-12)
+    assert cal(np.array([-3.0]))[0] > 0.9 and cal(np.array([3.0]))[0] < 0.1
+    zz = z_score([-1.0, 1.0], [2.0, 2.0], [0, 0])
+    assert list(cal(zz)) == [1.0, 0.0]
