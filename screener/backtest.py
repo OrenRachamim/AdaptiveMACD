@@ -47,6 +47,32 @@ def daily_precross_screen(close: pd.Series, bars: int, zero: str) -> tuple[pd.Se
     return ok.fillna(False), crossed_later
 
 
+def cross_price(close: pd.Series) -> pd.Series:
+    """Close needed on the next bar for the MACD line to end above its signal line.
+
+    MACD is linear in the new close, so the threshold is exact:
+    hist' > 0  <=>  c' > (signal - (1-a_f)*EMA_fast + (1-a_s)*EMA_slow) / (a_f - a_s)
+    """
+    a_f, a_s = 2 / (FAST + 1), 2 / (SLOW + 1)
+    ef = close.ewm(span=FAST, adjust=False).mean()
+    es = close.ewm(span=SLOW, adjust=False).mean()
+    sig = (ef - es).ewm(span=SIGNAL, adjust=False).mean()
+    return (sig - (1 - a_f) * ef + (1 - a_s) * es) / (a_f - a_s)
+
+
+def daily_crossprice_screen(close: pd.Series, max_rise_pct: float, zero: str) -> tuple[pd.Series, pd.Series]:
+    """MACD still below its signal line and a close at most ``max_rise_pct`` above today's would cross it.
+
+    Returns the screen and the required rise in % for every day.
+    """
+    m = macd(close)
+    rise = (cross_price(close) / close - 1) * 100
+    ok = (m["hist"] < 0) & (rise <= max_rise_pct)
+    ok &= zero_ok(m["macd"], zero)
+    ok &= np.arange(len(close)) >= SLOW + SIGNAL - 1
+    return ok.fillna(False), rise
+
+
 def zero_ok(macd_at_cross, zero: str):
     """Where the MACD line was on the cross bar: 'below' 0, 'above' 0 or 'any'."""
     if zero == "below":
@@ -147,7 +173,12 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
                 continue
             close = df["Close"]
             eligible = (close >= args.min_price) & (df["Volume"].rolling(50).mean() >= args.min_avg_volume)
-            if args.daily_mode == "precross":
+            rise = pd.Series(np.nan, index=close.index)
+            if args.daily_mode == "crossprice":
+                daily, rise = daily_crossprice_screen(close, args.max_rise_pct, args.daily_zero)
+                hist = macd(close)["hist"]
+                crossed_later = hist.shift(-1) > 0
+            elif args.daily_mode == "precross":
                 daily, crossed_later = daily_precross_screen(close, args.precross_bars, args.daily_zero)
             else:
                 daily = daily_screen(close, args.daily_lookback, args.daily_zero, args.min_hist_pct, False)
@@ -164,7 +195,8 @@ def run(args: argparse.Namespace) -> tuple[pd.DataFrame, pd.DataFrame]:
             bench_cnt = bench_cnt.add(elig_fwd.notna().astype(float), fill_value=0)
             for day in close.index[new.to_numpy()]:
                 row = {"ticker": ticker, "date": day.date(), "close": round(float(close[day]), 2),
-                       "entry_open": round(float(entry[day]), 2), "crossed_later": crossed_later[day]}
+                       "entry_open": round(float(entry[day]), 2), "crossed_later": crossed_later[day],
+                       "required_rise_%": round(float(rise[day]), 3)}
                 row.update({f"ret_{h}d": fwd.at[day, h] for h in horizons})
                 signals.append(row)
         log.info("%d/%d tickers, %d signals", min(start + args.batch_size, len(tickers)), len(tickers), len(signals))
@@ -199,8 +231,11 @@ def main(argv: list[str] | None = None) -> int:
                    help="exit after N trading days, counting the entry day as 1")
     p.add_argument("--daily-lookback", type=int, default=1,
                    help="1 = signal on the daily cross day itself (entry next open)")
-    p.add_argument("--daily-mode", choices=["cross", "precross"], default="cross",
-                   help="cross: signal on the daily cross; precross: signal 1-2 bars before an expected cross")
+    p.add_argument("--daily-mode", choices=["cross", "precross", "crossprice"], default="cross",
+                   help="cross: signal on the daily cross; precross: signal 1-2 bars before an expected cross; "
+                        "crossprice: lines not crossed yet but a small rise tomorrow would cross them")
+    p.add_argument("--max-rise-pct", type=float, default=1.0,
+                   help="crossprice: max rise (%%) from today's close needed for tomorrow's cross")
     p.add_argument("--precross-bars", type=int, default=2,
                    help="precross: lines must be on course to cross within this many bars")
     p.add_argument("--higher-tf", choices=list(PERIODS), default="monthly",
