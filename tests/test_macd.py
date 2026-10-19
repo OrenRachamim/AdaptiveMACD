@@ -115,8 +115,22 @@ def test_forecast_message():
 
     result = pd.DataFrame([{
         "ticker": "AVY", "name": "Avery Dennison", "exchange": "NYSE", "close": 175.31,
-        "cross_price": 174.1, "required_change_pct": -0.69, "cross_prob": 0.78,
+        "mode": "touch", "target_price": 174.1, "required_change_pct": -0.69, "prob": 0.78,
+        "gap_pct_of_signal": 12.5,
     }])
     (msg,) = build_forecast_messages(result, "2026-10-16")
-    assert "NYSE:AVY" in msg and "$174.1" in msg and "-0.69%" in msg and "78%" in msg
+    assert "NYSE:AVY" in msg and "$174.1" in msg and "-0.69%" in msg and "78%" in msg and "נגיעה" in msg
     assert "אין מניות" in build_forecast_messages(pd.DataFrame(), "2026-10-16")[0]
+
+
+def test_touch_price_is_exact():
+    from screener.cross_forecast import daily_touch_features
+    from screener.macd import macd
+
+    rng = np.random.default_rng(3)
+    close = pd.Series(100 * np.exp(np.cumsum(rng.normal(0, 0.02, 600))),
+                      index=pd.bdate_range("2020-01-01", periods=600))
+    f = daily_touch_features(close, 0.05)
+    day = close.index[400]
+    nxt = pd.concat([close[:day], pd.Series([f.at[day, "touch_price"]], index=[close.index[401]])])
+    assert abs(macd(nxt)["hist"].iloc[-1] + 0.05 * abs(f.at[day, "signal"])) < 1e-9

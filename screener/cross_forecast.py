@@ -45,6 +45,34 @@ def daily_features(close: pd.Series) -> pd.DataFrame:
     }, index=close.index)
 
 
+def daily_touch_features(close: pd.Series, tolerance: float = 0.05) -> pd.DataFrame:
+    """Per day: is MACD still clearly below its signal line, and the close needed tomorrow to touch it.
+
+    The lines "touch" when the gap (signal - MACD) is at most ``tolerance`` x |signal|. ``apart`` marks
+    days on which they do not touch yet; ``touched`` whether they touched or crossed on the next bar.
+    The gap scale is today's |signal|, so the touch price stays exact (MACD is linear in the close).
+    """
+    a_g = 2 / (SIGNAL + 1)
+    ef = close.ewm(span=FAST, adjust=False).mean()
+    es = close.ewm(span=SLOW, adjust=False).mean()
+    m = ef - es
+    sig = m.ewm(span=SIGNAL, adjust=False).mean()
+    hist = m - sig
+    eps = tolerance * sig.abs()
+    # hist' = (1 - a_g) * (macd' - sig) >= -eps  <=>  close' >= cross price - eps / ((1 - a_g) * (A_F - A_S))
+    price = _threshold(ef, es, sig) - eps / ((1 - a_g) * (A_F - A_S))
+    return pd.DataFrame({
+        "hist": hist,
+        "macd": m,
+        "signal": sig,
+        "apart": hist < -eps,
+        "touch_price": price,
+        "rise_pct": (price / close - 1) * 100,
+        "touched": hist.shift(-1) >= -eps,
+        "bar_no": np.arange(len(close)),
+    }, index=close.index)
+
+
 def higher_features(close: pd.Series, timeframe: str) -> pd.DataFrame:
     """Per day: state of the current weekly/monthly bar and the bar close needed to cross on it.
 
