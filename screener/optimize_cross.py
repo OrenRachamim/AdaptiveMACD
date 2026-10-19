@@ -22,7 +22,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from screener.cross_forecast import Calibration, daily_features, daily_vol, higher_features, z_score
+from screener.cross_forecast import (Calibration, daily_features, daily_touch_features, daily_vol, higher_features,
+                                     z_score)
 
 log = logging.getLogger("optimize_cross")
 
@@ -32,7 +33,8 @@ GRID = np.round(np.arange(0.05, 0.951, 0.05), 2)
 
 
 def build_dataset(cache_dir: Path, sample: float, min_price: float, min_avg_volume: float,
-                  seed: int = 0) -> pd.DataFrame:
+                  seed: int = 0, tolerance: float = 0.0) -> pd.DataFrame:
+    """Stock-days on which the daily lines have not crossed (tolerance 0) or not touched yet."""
     rng = np.random.default_rng(seed)
     parts = []
     files = sorted(glob.glob(str(cache_dir / "*.pkl")))
@@ -43,19 +45,25 @@ def build_dataset(cache_dir: Path, sample: float, min_price: float, min_avg_volu
             if len(df) < 800:
                 continue
             close = df["Close"]
-            d = daily_features(close)
-            row = pd.DataFrame({"ticker": ticker, "d_rise": d["rise_pct"], "d_crossed": d["crossed"]})
+            if tolerance:
+                d = daily_touch_features(close, tolerance)
+                not_yet = d["apart"]
+                row = pd.DataFrame({"ticker": ticker, "d_rise": d["rise_pct"], "d_crossed": d["touched"]})
+            else:
+                d = daily_features(close)
+                not_yet = d["hist"] < 0
+                row = pd.DataFrame({"ticker": ticker, "d_rise": d["rise_pct"], "d_crossed": d["crossed"]})
             for w in VOL_WINDOWS:
                 row[f"vol{w}"] = daily_vol(close, w)
             for tf in ("weekly", "monthly"):
-                h = higher_features(close, tf)
+                h = higher_features(close, tf, tolerance)
                 row[f"{tf[0]}_prev"] = h["prev_hist"]
                 row[f"{tf[0]}_rise"] = h["rise_pct"]
                 row[f"{tf[0]}_left"] = h["days_left"]
                 row[f"{tf[0]}_crossed"] = h["crossed"]
                 row[f"{tf[0]}_ok"] = h["bar_no"] >= 40
             eligible = (close >= min_price) & (df["Volume"].rolling(50).mean() >= min_avg_volume)
-            keep = (d["hist"] < 0) & (d["bar_no"] >= 100) & eligible
+            keep = not_yet & (d["bar_no"] >= 100) & eligible
             keep.iloc[-30:] = False  # outcome of the still-open bars is unknown
             keep &= rng.random(len(keep)) < sample
             parts.append(row[keep.to_numpy()])
@@ -204,6 +212,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--out-dir", type=Path, default=Path("backtest_results/cross_forecast"))
     p.add_argument("--sample", type=float, default=0.3, help="fraction of stock-days to keep")
     p.add_argument("--train-end", default="2014-12-31")
+    p.add_argument("--tolerance", type=float, default=0.0,
+                   help="0 = predict crosses; > 0 = predict touches (gap <= tolerance x |signal|)")
     p.add_argument("--min-price", type=float, default=1.0)
     p.add_argument("--min-avg-volume", type=int, default=50_000)
     args = p.parse_args(argv)
@@ -214,7 +224,8 @@ def main(argv: list[str] | None = None) -> int:
     if dataset.exists():
         df = pd.read_pickle(dataset)
     else:
-        df = build_dataset(args.cache_dir, args.sample, args.min_price, args.min_avg_volume)
+        df = build_dataset(args.cache_dir, args.sample, args.min_price, args.min_avg_volume,
+                           tolerance=args.tolerance)
         df.to_pickle(dataset)
     log.info("%d rows", len(df))
     report = optimize(df, args.train_end, args.sample, args.out_dir)

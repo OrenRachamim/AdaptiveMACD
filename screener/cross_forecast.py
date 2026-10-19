@@ -73,11 +73,14 @@ def daily_touch_features(close: pd.Series, tolerance: float = 0.05) -> pd.DataFr
     }, index=close.index)
 
 
-def higher_features(close: pd.Series, timeframe: str) -> pd.DataFrame:
+def higher_features(close: pd.Series, timeframe: str, tolerance: float = 0.0) -> pd.DataFrame:
     """Per day: state of the current weekly/monthly bar and the bar close needed to cross on it.
 
     ``prev_hist`` is the histogram of the last completed bar (<= 0 means not crossed yet),
     ``crossed`` whether the current bar really closed with MACD above the signal line.
+    With ``tolerance`` > 0 the event is a touch instead (gap <= tolerance x |signal of the last
+    completed bar|): ``prev_hist`` is then shifted by that margin (<= 0 means still apart) and
+    ``crossed`` means the bar closed touching or above.
     """
     per = close.index.to_period(PERIODS[timeframe])
     bar_close = close.groupby(per).last()
@@ -90,15 +93,17 @@ def higher_features(close: pd.Series, timeframe: str) -> pd.DataFrame:
     def prev(s: pd.Series) -> np.ndarray:
         return s.shift(1).reindex(per).to_numpy()
 
-    price = _threshold(prev(ef), prev(es), prev(sig))
+    eps = tolerance * np.abs(prev(sig))
+    a_g = 2 / (SIGNAL + 1)
+    price = _threshold(prev(ef), prev(es), prev(sig)) - eps / ((1 - a_g) * (A_F - A_S))
     grp = close.groupby(per)
     left = (grp.transform("size") - grp.cumcount() - 1).to_numpy()
     return pd.DataFrame({
-        "prev_hist": prev(hist),
+        "prev_hist": prev(hist) + eps,
         "cross_price": price,
         "rise_pct": (price / close.to_numpy() - 1) * 100,
         "days_left": left,
-        "crossed": hist.reindex(per).to_numpy() > 0,
+        "crossed": (hist.reindex(per).to_numpy() >= -eps) if tolerance else (hist.reindex(per).to_numpy() > 0),
         "bar_no": pd.Series(np.arange(len(bar_close)), index=bar_close.index).reindex(per).to_numpy(),
     }, index=close.index)
 
