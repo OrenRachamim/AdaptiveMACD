@@ -1,4 +1,4 @@
-name: Daily MACD scan
+name: Daily MACD cross forecast
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       args:
-        description: "Extra arguments for screener.scan (e.g. --daily-lookback 3)"
+        description: "Extra arguments for screener.cross_scan (e.g. --min-prob 0.6)"
         required: false
         default: ""
 
@@ -31,14 +31,14 @@ jobs:
       - name: Run scan
         env:
           SCAN_ARGS: ${{ github.event.inputs.args }}
-        run: python -m screener.scan $SCAN_ARGS
+        run: python -m screener.cross_scan $SCAN_ARGS
 
       - name: Job summary
         run: cat results/latest.md >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: macd-scan-${{ github.run_id }}
+          name: macd-cross-forecast-${{ github.run_id }}
           path: results/
 
       - name: Commit results
@@ -46,7 +46,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add results/
-          git diff --cached --quiet || git commit -m "Daily MACD scan $(date -u +%F)"
+          git diff --cached --quiet || git commit -m "Daily MACD cross forecast $(date -u +%F)"
           git push
 
       - name: Send to Telegram

@@ -108,3 +108,15 @@ def test_calibration_is_monotone_and_decided_bars_are_certain():
     assert cal(np.array([-3.0]))[0] > 0.9 and cal(np.array([3.0]))[0] < 0.1
     zz = z_score([-1.0, 1.0], [2.0, 2.0], [0, 0])
     assert list(cal(zz)) == [1.0, 0.0]
+
+
+def test_forecast_message():
+    from screener.notify_telegram import build_forecast_messages
+
+    result = pd.DataFrame([{
+        "ticker": "AVY", "name": "Avery Dennison", "exchange": "NYSE", "close": 175.31,
+        "cross_price": 174.1, "required_change_pct": -0.69, "cross_prob": 0.78,
+    }])
+    (msg,) = build_forecast_messages(result, "2026-10-16")
+    assert "NYSE:AVY" in msg and "$174.1" in msg and "-0.69%" in msg and "78%" in msg
+    assert "אין מניות" in build_forecast_messages(pd.DataFrame(), "2026-10-16")[0]

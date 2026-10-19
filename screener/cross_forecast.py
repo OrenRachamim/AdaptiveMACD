@@ -105,6 +105,13 @@ class Calibration:
         self.z = centers[keep]
         self.p = _pav_decreasing(hit[keep] / cnt[keep], cnt[keep])
 
+    @classmethod
+    def from_table(cls, table: pd.DataFrame) -> "Calibration":
+        obj = cls.__new__(cls)
+        obj.z = table["z"].to_numpy(dtype=float)
+        obj.p = table["probability"].to_numpy(dtype=float)
+        return obj
+
     def __call__(self, z) -> np.ndarray:
         z = np.asarray(z, dtype=float)
         p = np.interp(z, self.z, self.p, left=self.p[0], right=self.p[-1])
