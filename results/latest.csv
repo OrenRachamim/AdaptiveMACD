@@ -1,0 +1,56 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+MRP,"Millrose Properties, Inc. Class A Common Stock",NYSE,2026-10-16,touch,22.5,21.24,-5.61,0.944,5.3,2.22,-1.8351,-0.093,2229418
+NAII,"Natural Alternatives International, Inc. - Common Stock",NASDAQ,2026-10-16,touch,1.15,1.06,-7.71,0.944,6.0,3.98,-0.2198,-0.0124,50522
+GEF,Greif Inc. Class A Common Stock,NYSE,2026-10-16,touch,82.12,79.96,-2.64,0.932,5.9,1.57,-0.8521,-0.0477,336272
+CNS,Cohen & Steers Inc Common Stock,NYSE,2026-10-16,touch,69.63,68.0,-2.34,0.917,5.7,1.53,-2.1997,-0.1182,287816
+CMMB,Chemomab Therapeutics Ltd.  - American Depositary Shares,NASDAQ,2026-10-16,touch,1.26,1.14,-9.49,0.915,5.3,6.36,-0.262,-0.0131,110340
+CRGY,Crescent Energy Company Class A Common Stock,NYSE,2026-10-16,touch,13.77,13.18,-4.31,0.912,18.8,2.95,-0.1012,-0.016,7918780
+ALOY,REalloys Inc. - Common Stock,NASDAQ,2026-10-16,touch,7.23,6.56,-9.32,0.9,5.2,6.97,-0.7343,-0.0364,2207600
+VZ,Verizon Communications Inc. Common Stock,NYSE,2026-10-16,touch,44.79,43.72,-2.4,0.887,5.7,2.01,-1.1389,-0.0619,21617698
+NFGC,New Found Gold Corp Common Shares,NYSE American,2026-10-16,touch,1.61,1.53,-4.95,0.886,7.4,4.17,-0.053,-0.0036,1151596
+NGNE,Neurogene Inc. - Common Stock,NASDAQ,2026-10-16,touch,23.25,22.2,-4.5,0.88,5.7,3.96,-2.8688,-0.154,300448
+TC,Token Cat Limited - American Depositary Shares,NASDAQ,2026-10-16,touch,1.47,1.38,-6.18,0.874,7.1,5.59,-0.1653,-0.011,1025890
+NXH,"Neighborhood Intelligence, Inc.  - Common Stock",NASDAQ,2026-10-16,touch,1.56,1.47,-5.67,0.873,6.9,5.17,-0.5669,-0.0368,3309498
+QXL,Quantum X Labs Inc. - Common Stock,NASDAQ,2026-10-16,touch,4.41,4.14,-6.03,0.869,12.7,5.6,-0.2154,-0.0243,55054
+RGLD,"Royal Gold, Inc. - Common Stock",NASDAQ,2026-10-16,touch,238.05,232.27,-2.43,0.862,7.7,2.35,-3.7259,-0.2655,662768
+CDLR,Cadeler A/S American Depositary Share (each representing four (4) Ordinary Shares),NYSE,2026-10-16,touch,21.73,21.23,-2.31,0.851,6.0,2.38,-0.747,-0.0425,74546
+KMX,CarMax Inc,NYSE,2026-10-16,touch,53.33,52.25,-2.03,0.846,9.9,2.16,-1.9093,-0.1724,2581034
+CLNE,Clean Energy Fuels Corp. - Common Stock,NASDAQ,2026-10-16,touch,1.5,1.45,-3.54,0.839,7.0,3.92,-0.0589,-0.0038,1859788
+APAM,Artisan Partners Asset Management Inc. Class A Common Stock,NYSE,2026-10-16,touch,32.29,31.73,-1.75,0.832,6.0,2.01,-1.7333,-0.0988,969072
+GPCR,Structure Therapeutics Inc. - American Depositary Shares,NASDAQ,2026-10-16,touch,21.08,20.46,-2.94,0.825,6.0,3.49,-5.0888,-0.2891,1178226
+FIBK,"First Interstate BancSystem, Inc. - Common Stock",NASDAQ,2026-10-16,touch,34.82,34.51,-0.88,0.824,6.6,1.05,-0.6404,-0.0398,1081320
+BMRN,BioMarin Pharmaceutical Inc. - Common Stock,NASDAQ,2026-10-16,touch,54.68,53.78,-1.65,0.823,5.0,1.98,-2.3311,-0.1115,2223906
+ARIS,Aris Mining Corporation Common Shares,NYSE,2026-10-16,touch,17.44,16.89,-3.15,0.822,6.4,3.79,-0.4487,-0.0269,1584170
+TATT,TAT Technologies Ltd. - Ordinary Shares,NASDAQ,2026-10-16,touch,32.84,32.1,-2.26,0.813,7.4,2.84,-1.5217,-0.1049,131746
+IHT,InnSuites Hospitality Trust Shares of Beneficial Interest,NYSE American,2026-10-16,touch,1.19,1.16,-2.62,0.805,9.4,3.42,-0.0729,-0.0063,52944
+SMBC,"Southern Missouri Bancorp, Inc. - Common Stock",NASDAQ,2026-10-16,touch,70.18,69.71,-0.68,0.804,6.9,0.89,-0.9256,-0.0601,90664
+NTRS,Northern Trust Corporation - Common Stock,NASDAQ,2026-10-16,touch,165.54,163.93,-0.97,0.803,5.2,1.29,-3.9507,-0.1943,1067584
+DFH,"Dream Finders Homes, Inc. Class A Common Stock",NYSE,2026-10-16,touch,8.79,8.45,-3.91,0.796,7.6,5.38,-1.1275,-0.0797,1100174
+FLL,"Full House Resorts, Inc. - Common Stock",NASDAQ,2026-10-16,touch,1.09,1.06,-2.75,0.792,7.5,3.86,-0.2276,-0.0159,186940
+PDX,PIMCO Dynamic Income Strategy Fund Common Shares of Beneficial Interest,NYSE,2026-10-19,touch,20.26,20.14,-0.6,0.79,5.5,0.85,-0.2285,-0.012,123487
+RYAM,Rayonier Advanced Materials Inc. Common Stock,NYSE,2026-10-16,touch,6.99,6.84,-2.19,0.784,5.0,3.17,-0.3713,-0.0177,845702
+HQL,abrdn Life Sciences Investors Shares of Beneficial Interest,NYSE,2026-10-19,touch,17.03,16.84,-1.11,0.769,5.9,1.72,-0.7328,-0.041,138438
+GSBC,"Great Southern Bancorp, Inc. - Common Stock",NASDAQ,2026-10-16,touch,78.05,77.6,-0.58,0.769,10.0,0.9,-0.4274,-0.039,89492
+GNTX,Gentex Corporation - Common Stock,NASDAQ,2026-10-16,touch,21.01,20.81,-0.95,0.765,6.4,1.5,-0.4847,-0.0293,2344668
+IX,ORIX Corporation American Depositary Shares,NYSE,2026-10-16,touch,36.89,36.53,-0.99,0.765,7.4,1.56,-0.7027,-0.0481,343726
+ALTI,"AlTi Global, Inc. - Class A Common Stock",NASDAQ,2026-10-16,touch,2.58,2.49,-3.54,0.765,9.5,5.6,-0.2587,-0.0224,167806
+ERNA,Ernexa Therapeutics Inc. - Common Stock,NASDAQ,2026-10-16,touch,2.09,2.01,-3.8,0.764,6.7,6.05,-0.5157,-0.0325,55876
+GLE,Global Engine Group Holding Limited - Class A Ordinary Shares,NASDAQ,2026-10-16,touch,4.52,4.31,-4.67,0.762,5.4,7.49,-0.1488,-0.0077,327379
+NEWP,New Pacific Metals Corp. Common Shares,NYSE American,2026-10-16,touch,6.56,6.39,-2.62,0.76,31.5,4.25,0.0161,-0.0074,777898
+JYNT,The Joint Corp. - Common Stock,NASDAQ,2026-10-16,touch,7.03,6.96,-1.06,0.75,9.0,1.81,-0.3541,-0.0293,83948
+TRST,TrustCo Bank Corp NY - Common Stock,NASDAQ,2026-10-16,touch,54.31,53.94,-0.69,0.747,7.0,1.19,-0.6841,-0.0448,134036
+EQX,Equinox Gold Corp. Common Shares,NYSE American,2026-10-16,touch,11.15,10.91,-2.12,0.743,7.7,3.78,-0.2787,-0.02,12736344
+ISTR,Investar Holding Corporation - Common Stock,NASDAQ,2026-10-16,touch,28.82,28.67,-0.54,0.741,6.4,0.96,-0.3476,-0.021,97078
+CAAP,Corporacion America Airports SA Common Shares,NYSE,2026-10-16,touch,25.09,24.77,-1.26,0.735,9.1,2.35,0.0806,-0.0081,270284
+EXK,Endeavour Silver Corporation Ordinary Shares (Canada),NYSE,2026-10-16,touch,8.24,8.06,-2.18,0.725,6.2,4.37,-0.4509,-0.0261,8133876
+GROY,Gold Royalty Corp. Common Shares,NYSE American,2026-10-16,touch,2.98,2.94,-1.4,0.721,10.2,2.88,-0.0763,-0.0071,1858490
+DCOM,"Dime Commercial Bancshares, Inc. Common Stock",NYSE,2026-10-16,touch,38.83,38.64,-0.49,0.721,10.6,1.01,-0.5057,-0.0483,309894
+FIGR,"Figure Technology Solutions, Inc. - Class A Common Stock",NASDAQ,2026-10-16,touch,27.13,26.46,-2.47,0.72,6.7,5.15,-1.8078,-0.113,4807440
+USCB,"USCB Financial Holdings, Inc.  - Class A Common Stock",NASDAQ,2026-10-16,touch,22.35,22.19,-0.7,0.719,8.9,1.48,-0.1079,-0.0088,68052
+AGI,Alamos Gold Inc. Class A Common Shares,NYSE,2026-10-16,touch,32.12,31.67,-1.4,0.717,7.6,2.97,-0.8012,-0.0565,3667384
+OPK,"Opko Health, Inc. - Common Stock",NASDAQ,2026-10-16,touch,1.53,1.49,-2.82,0.715,17.6,6.09,-0.0273,-0.0041,3752470
+ORIC,"Oric Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-10-16,touch,12.35,12.08,-2.19,0.707,8.8,4.96,-0.2191,-0.0177,1341892
+CNL,Collective Mining Ltd. - Common Stock,NASDAQ,2026-10-16,touch,11.21,11.03,-1.59,0.707,5.5,3.62,-0.6974,-0.0364,147696
+TLPH,"Talphera, Inc. - Common Stock",NASDAQ,2026-10-16,touch,1.08,1.07,-1.32,0.705,7.5,3.03,-0.0358,-0.0025,199292
+OMAB,Grupo Aeroportuario del Centro Norte S.A.B. de C.V. - American Depositary Shares each representing 8 Series B shares,NASDAQ,2026-10-16,touch,91.72,91.07,-0.71,0.704,10.0,1.64,-2.6917,-0.2437,121206
+PGC,Peapack-Gladstone Financial Corporation - Common Stock,NASDAQ,2026-10-16,touch,43.38,43.18,-0.45,0.701,6.9,1.07,-0.5261,-0.034,128408
