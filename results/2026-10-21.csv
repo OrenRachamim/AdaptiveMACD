@@ -1,0 +1,38 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+DCOY,Decoy Therapeutics Inc. - Common Stock,NASDAQ,2026-10-19,touch,1.17,0.98,-16.59,0.944,5.2,7.82,-0.4782,-0.0238,2753226
+SLI,Standard Lithium Ltd. Common Shares,NYSE American,2026-10-19,touch,1.47,1.35,-8.1,0.944,5.2,3.65,-0.2,-0.01,1872240
+EARN,Ellington Credit Company Common Shares of Beneficial Interest,NYSE,2026-10-19,touch,3.52,3.37,-4.31,0.944,7.8,2.1,-0.2339,-0.0169,416818
+EVAX,Evaxion A/S - American Depositary Share,NASDAQ,2026-10-19,touch,3.33,3.06,-8.22,0.944,20.2,3.56,-0.0549,-0.0092,267994
+OLMA,"Olema Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-10-19,touch,7.11,6.81,-4.17,0.886,7.5,3.51,-0.8116,-0.0563,1163134
+CGEM,"Cullinan Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-19,touch,13.98,13.24,-5.3,0.883,5.7,4.6,-1.4715,-0.0793,1007690
+IMRX,Immuneering Corporation - Class A Common Stock,NASDAQ,2026-10-19,touch,3.66,3.52,-3.69,0.882,5.9,3.21,-0.2534,-0.0141,702810
+DGNX,Diginex Limited - Ordinary Shares,NASDAQ,2026-10-19,touch,1.3,1.2,-7.36,0.88,6.0,6.49,-0.0413,-0.0023,615702
+WFG,West Fraser Timber Co. Ltd Common stock,NYSE,2026-10-19,touch,65.7,64.18,-2.31,0.875,5.2,2.08,-1.3105,-0.065,212958
+NBTX,Nanobiotix S.A. - ADSs,NASDAQ,2026-10-19,touch,21.08,20.02,-5.02,0.873,6.0,4.57,-3.9408,-0.2239,155060
+BIVI,BioVie Inc. - Common stock,NASDAQ,2026-10-19,touch,1.37,1.2,-12.69,0.87,6.1,11.78,-0.1335,-0.0076,5587112
+ERNA,Ernexa Therapeutics Inc. - Common Stock,NASDAQ,2026-10-19,touch,1.98,1.85,-6.52,0.869,5.3,6.08,-0.5158,-0.0261,56256
+INCY,Incyte Corporation - Common Stock,NASDAQ,2026-10-19,touch,113.25,110.87,-2.1,0.862,5.6,2.04,-3.0334,-0.162,1497402
+POWW,Outdoor Holding Company - Common Stock,NASDAQ,2026-10-19,touch,2.33,2.25,-3.59,0.856,13.7,3.6,0.005,-0.0008,593868
+KT,KT Corporation Common Stock,NYSE,2026-10-19,touch,18.78,18.56,-1.16,0.855,11.3,1.16,-0.2245,-0.0229,1575548
+AXGN,"Axogen, Inc. - Common Stock",NASDAQ,2026-10-19,touch,35.24,34.11,-3.2,0.853,5.6,3.25,-2.6137,-0.139,1236198
+DBVT,DBV Technologies S.A. - American Depositary Shares,NASDAQ,2026-10-19,touch,8.97,8.72,-2.76,0.832,6.3,3.17,-1.0028,-0.0595,327482
+PKX,POSCO HOLDINGS INC. American Depositary Shares (Each representing 1/4th of a share of Common Stock),NYSE,2026-10-19,touch,57.4,55.99,-2.45,0.832,6.8,2.81,-0.6718,-0.0428,205252
+ISBA,Isabella Bank Corporation - Common stock,NASDAQ,2026-10-20,touch,37.23,36.73,-1.35,0.827,8.0,1.59,-0.5548,-0.0413,50889
+ADIL,"Adial Pharmaceuticals, Inc - Common Stock",NASDAQ,2026-10-19,touch,3.62,3.39,-6.43,0.823,8.3,7.71,-0.3969,-0.0305,52854
+LXEO,"Lexeo Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-19,touch,2.76,2.67,-3.28,0.816,7.0,4.06,-0.3925,-0.0256,1355744
+AIRG,"Airgain, Inc. - Common Stock",NASDAQ,2026-10-19,touch,4.0,3.89,-2.65,0.813,5.3,3.32,-0.321,-0.0161,60598
+NXE,Nexgen Energy Ltd. Common Shares,NYSE,2026-10-19,touch,8.5,8.31,-2.28,0.804,5.9,2.99,-0.3729,-0.0208,4918252
+PBAM,"Private Bancorp of America, Inc. - Common Stock",NASDAQ,2026-10-20,touch,85.64,85.08,-0.65,0.803,16.2,0.86,-0.8817,-0.1231,110022
+MSDL,Morgan Stanley Direct Lending Fund Common Stock,NYSE,2026-10-20,touch,12.92,12.8,-0.95,0.796,5.8,1.3,-0.4561,-0.0249,463803
+KZIA,Kazia Therapeutics Limited - American Depositary Shares,NASDAQ,2026-10-19,touch,7.85,7.52,-4.26,0.796,7.6,5.84,-1.0181,-0.0722,293170
+ALTI,"AlTi Global, Inc. - Class A Common Stock",NASDAQ,2026-10-19,touch,2.45,2.36,-3.65,0.771,6.0,5.62,-0.2542,-0.0143,165092
+ALLO,"Allogene Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-19,touch,1.3,1.27,-2.36,0.768,5.8,3.69,-0.1292,-0.0071,5519640
+FULC,"Fulcrum Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-19,touch,3.7,3.67,-0.81,0.753,5.0,1.36,-0.0281,-0.0013,1549054
+VOXR,Vox Royalty Corp. - common stock,NASDAQ,2026-10-19,touch,4.99,4.92,-1.45,0.738,6.7,2.66,-0.1271,-0.008,481252
+NCDL,Nuveen Churchill Direct Lending Corp. Common Stock,NYSE,2026-10-20,touch,10.45,10.37,-0.72,0.735,5.5,1.36,-0.3939,-0.0205,210797
+ROAD,"Construction Partners, Inc. - Common Stock",NASDAQ,2026-10-19,touch,83.17,81.56,-1.94,0.731,5.2,3.72,-4.3672,-0.2161,613320
+VERA,"Vera Therapeutics, Inc. - Class A Common Stock",NASDAQ,2026-10-19,touch,28.92,28.36,-1.92,0.727,10.3,3.79,-1.4819,-0.1385,2188702
+FSSL,FS Specialty Lending Fund Common Shares of Beneficial Interest,NYSE,2026-10-20,touch,11.65,11.59,-0.54,0.722,27.3,1.11,-0.0453,-0.0097,247139
+REZI,"Resideo Technologies, Inc. Common Stock ",NYSE,2026-10-19,touch,16.6,16.31,-1.73,0.717,6.2,3.69,-0.8131,-0.0476,2391728
+MAAS,Maase Inc. - Class A Ordinary Shares,NASDAQ,2026-10-19,touch,12.15,11.82,-2.76,0.713,7.6,6.03,-1.0855,-0.0768,301848
+VENU,Venu Holding Corporation Common Stock,NYSE American,2026-10-19,touch,1.13,1.11,-2.02,0.703,5.5,4.71,-0.1537,-0.008,445942
