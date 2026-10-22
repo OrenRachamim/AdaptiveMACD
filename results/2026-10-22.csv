@@ -1,0 +1,74 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+IMVT,"Immunovant, Inc.  - Common Stock",NASDAQ,2026-10-20,touch,28.59,27.28,-4.58,0.944,6.9,2.31,-2.5776,-0.1656,1425614
+LRMR,"Larimar Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,2.44,2.11,-13.71,0.944,7.2,4.6,-0.4061,-0.0272,1348032
+AVBP,"ArriVent BioPharma, Inc. - Common Stock",NASDAQ,2026-10-20,touch,18.85,15.71,-16.65,0.944,5.4,6.91,-3.2472,-0.1672,1164314
+AVTX,"Avalo Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,12.36,11.5,-6.93,0.944,6.4,3.45,-1.3981,-0.0837,1010976
+IFRX,InflaRx N.V. - Common Stock,NASDAQ,2026-10-20,touch,1.54,1.41,-8.61,0.944,5.9,4.49,-0.1451,-0.0081,780300
+VYGR,"Voyager Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,2.19,1.99,-9.13,0.944,6.2,3.5,-0.2659,-0.0154,611332
+PYXS,"Pyxis Oncology, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.84,1.61,-12.43,0.932,5.3,7.4,-0.3485,-0.0175,1322306
+IMNM,"Immunome, Inc. - Common Stock",NASDAQ,2026-10-20,touch,17.92,16.84,-6.03,0.929,6.9,3.67,-1.9153,-0.1242,1304284
+BGX,Blackstone Long Short Credit Income Fund Common Shares,NYSE,2026-10-21,touch,10.49,10.41,-0.72,0.92,5.9,0.46,-0.0593,-0.0033,78746
+CGEN,Compugen Ltd. - Ordinary Shares,NASDAQ,2026-10-20,touch,2.14,2.03,-5.17,0.919,8.4,3.35,-0.1107,-0.0086,252610
+DFTX,"Definium Therapeutics, Inc.  - Common Shares",NASDAQ,2026-10-20,touch,35.09,33.25,-5.25,0.911,5.2,3.62,-1.465,-0.0727,2253180
+GHRS,GH Research PLC - Ordinary Shares,NASDAQ,2026-10-20,touch,19.17,18.36,-4.21,0.911,7.7,2.9,-2.1509,-0.1536,281080
+EVLV,"Evolv Technologies Holdings, Inc. - Class A Common Stock",NASDAQ,2026-10-20,touch,4.28,4.13,-3.55,0.91,5.8,2.47,-0.2269,-0.0124,2171292
+ARGX,argenx SE - American Depositary Shares,NASDAQ,2026-10-20,touch,869.72,830.11,-4.55,0.91,8.0,3.17,-37.2173,-2.7477,345770
+CBL,"CBL & Associates Properties, Inc. Common Stock",NYSE,2026-10-20,touch,49.39,48.05,-2.72,0.91,5.4,1.88,-1.4783,-0.0759,269302
+GOSS,"Gossamer Bio, Inc. - Common Stock",NASDAQ,2026-10-20,touch,9.58,8.75,-8.69,0.905,6.1,6.28,-0.8286,-0.0475,284314
+NESR,National Energy Services Reunited Corp - Ordinary Shares,NASDAQ,2026-10-20,touch,21.09,19.72,-6.47,0.904,8.8,4.69,-3.1513,-0.2556,2377528
+TRON,Tron Inc. - Common Stock,NASDAQ,2026-10-20,touch,1.22,1.13,-7.15,0.903,6.3,5.23,-0.1013,-0.006,1061910
+CLRB,"Cellectar Biosciences, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.23,1.16,-5.38,0.903,8.0,3.94,-0.2832,-0.021,90886
+USGO,U.S. GoldMining Inc. - Common stock,NASDAQ,2026-10-20,touch,5.55,5.34,-3.65,0.896,5.1,2.81,-0.5898,-0.0284,95624
+BLCO,Bausch + Lomb Corporation Common Shares,NYSE,2026-10-20,touch,16.93,16.56,-2.18,0.89,7.0,1.77,-0.156,-0.0102,447890
+BHVN,Biohaven Ltd. Common Shares ,NYSE,2026-10-20,touch,11.81,11.11,-5.89,0.888,5.8,4.91,-0.6703,-0.0368,2842840
+LXRX,"Lexicon Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.58,1.52,-4.03,0.886,5.3,3.4,-0.1344,-0.0067,2751570
+AMRN,Amarin Corporation plc - American Depositary Shares,NASDAQ,2026-10-20,touch,11.48,11.29,-1.68,0.879,6.3,1.49,-0.5846,-0.0348,70538
+CHMG,Chemung Financial Corp  - Common Stock,NASDAQ,2026-10-20,touch,81.21,80.16,-1.29,0.874,7.1,1.17,-0.5491,-0.0365,63972
+WGS,GeneDx Holdings Corp. - Class A Common Stock,NASDAQ,2026-10-20,touch,68.74,65.45,-4.79,0.873,7.2,4.37,-4.7852,-0.3221,655950
+NXPI,NXP Semiconductors N.V. - Common Stock,NASDAQ,2026-10-20,touch,237.6,231.31,-2.65,0.865,10.9,2.52,-0.6401,-0.0627,3258276
+MLR,"Miller Industries, Inc. Common Stock",NYSE,2026-10-21,touch,52.78,51.93,-1.61,0.86,6.6,1.58,-0.6222,-0.0387,92460
+FEMY,Femasys Inc. - Common Stock,NASDAQ,2026-10-20,touch,1.67,1.57,-6.13,0.857,5.8,6.09,-0.2613,-0.0144,890126
+CHI,Calamos Convertible Opportunities and Income Fund - Closed End Fund,NASDAQ,2026-10-21,touch,11.36,11.19,-1.49,0.857,6.4,1.48,-0.2591,-0.0155,167663
+WHWK,"Whitehawk Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,3.19,3.07,-3.74,0.854,9.0,3.79,-0.2939,-0.0241,335018
+STTK,"Shattuck Labs, Inc. - Common Stock",NASDAQ,2026-10-20,touch,5.84,5.62,-3.72,0.845,10.3,3.97,-0.28,-0.0261,1206682
+HTH,Hilltop Holdings Inc.,NYSE,2026-10-20,touch,36.71,36.36,-0.94,0.844,6.2,1.02,-0.5239,-0.0307,295134
+AMWL,American Well Corporation Class A Common Stock,NYSE,2026-10-20,touch,13.2,12.65,-4.14,0.844,27.3,4.46,-0.1098,-0.0235,98096
+AXSM,"Axsome Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,159.58,156.03,-2.23,0.842,7.2,2.42,-12.1105,-0.8111,729828
+SPRB,"Spruce Biosciences, Inc. - Common Stock",NASDAQ,2026-10-20,touch,41.23,39.76,-3.56,0.835,6.7,4.03,-3.077,-0.1945,86708
+PLD,"Prologis, Inc. Common Stock",NYSE,2026-10-20,touch,127.47,126.15,-1.04,0.834,5.4,1.18,-2.3449,-0.1195,3590442
+IMMX,"Immix Biopharma, Inc. - Common Stock",NASDAQ,2026-10-20,touch,8.91,8.55,-4.07,0.832,9.3,4.67,-0.9172,-0.0777,1585064
+RYAAY,"Ryanair Holdings plc - American Depositary Shares, each representing five Ordinary Shares",NASDAQ,2026-10-20,touch,54.0,53.14,-1.6,0.83,11.3,1.85,-0.6434,-0.0654,1569870
+EVT,Eaton Vance Tax Advantaged Dividend Income Fund Common Shares of Beneficial Interest,NYSE,2026-10-21,touch,27.55,27.35,-0.73,0.825,6.1,0.86,-0.2445,-0.0141,84753
+FWONK,Liberty Media Corporation - Series C Common Stock,NASDAQ,2026-10-20,touch,92.48,91.3,-1.28,0.821,7.3,1.55,-1.3522,-0.0922,2172910
+TVTX,"Travere Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,52.3,51.12,-2.26,0.819,8.3,2.75,-2.9202,-0.2229,1590240
+MF,MindForge Inc. - Class A Ordinary Shares,NASDAQ,2026-10-20,touch,11.41,10.36,-9.21,0.816,9.0,11.42,-0.9021,-0.0743,195614
+IMNN,"Imunon, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.01,0.98,-2.54,0.815,6.7,3.16,-0.1214,-0.0076,104622
+HCM,HUTCHMED (China) Limited - American Depositary Shares,NASDAQ,2026-10-20,touch,14.74,14.35,-2.64,0.813,9.5,3.32,0.1933,-0.0202,74872
+ABEO,Abeona Therapeutics Inc. - Common Stock,NASDAQ,2026-10-20,touch,4.6,4.47,-2.72,0.809,7.4,3.48,-0.3139,-0.0217,1493722
+WPRT,Westport Fuel Systems Inc - Common Shares,NASDAQ,2026-10-20,touch,1.88,1.85,-1.78,0.807,16.4,2.31,-0.0227,-0.0032,61196
+MLYS,"Mineralys Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,21.58,20.98,-2.8,0.804,8.3,3.68,-1.5529,-0.1194,1269448
+ROIV,Roivant Sciences Ltd. - Common Shares,NASDAQ,2026-10-20,touch,34.92,34.09,-2.38,0.794,7.4,3.3,-0.802,-0.0552,7577202
+IMDX,Insight Molecular Diagnostics Inc. - Common Stock,NASDAQ,2026-10-20,touch,3.03,2.9,-4.13,0.788,6.5,5.92,-0.2743,-0.0167,273858
+ASUR,Asure Software Inc - Common Stock,NASDAQ,2026-10-20,touch,7.13,7.0,-1.77,0.785,5.3,2.56,-0.3056,-0.0153,100078
+DMAC,DiaMedica Therapeutics Inc. - Common Stock,NASDAQ,2026-10-20,touch,8.67,8.48,-2.15,0.784,13.5,3.13,0.234,-0.0364,187566
+TRDA,"Entrada Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,4.99,4.83,-3.18,0.777,9.3,4.77,-0.5142,-0.0436,318520
+KLRS,"Kalaris Therapeutics, Inc.  - Common Stock",NASDAQ,2026-10-20,touch,2.07,2.02,-2.6,0.773,7.8,3.96,-0.3647,-0.0265,71130
+MSBI,"Midland States Bancorp, Inc. - Common Stock",NASDAQ,2026-10-20,touch,32.56,32.3,-0.8,0.772,12.9,1.23,-0.2262,-0.0259,158514
+LXFR,Luxfer Holdings PLC Ordinary Shares,NYSE,2026-10-20,touch,17.29,17.27,-0.13,0.765,11.9,0.21,0.0099,-0.0013,371730
+CDLX,"Cardlytics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.82,1.76,-3.16,0.754,6.0,5.28,-0.4635,-0.0264,53262
+PMT,PennyMac Mortgage Investment Trust Common Shares of Beneficial Interest,NYSE,2026-10-20,touch,6.91,6.84,-1.07,0.751,7.8,1.81,-0.5412,-0.0394,2006810
+GNSS,Genasys Inc. - Common Stock,NASDAQ,2026-10-20,touch,1.33,1.31,-1.8,0.75,7.2,3.07,-0.0583,-0.0039,99144
+INDP,"Indaptus Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,2.96,2.72,-8.1,0.748,9.7,13.94,0.0471,-0.0051,1100486
+CLNN,Clene Inc. - Common Stock,NASDAQ,2026-10-20,touch,3.73,3.61,-3.17,0.747,16.0,5.49,-0.2157,-0.0298,116432
+MDB,"MongoDB, Inc. - Class A Common Stock",NASDAQ,2026-10-20,touch,366.18,356.72,-2.58,0.737,7.4,4.79,-7.6649,-0.525,2393294
+UNCY,"Unicycive Therapeutics, Inc. - Common Stock",NASDAQ,2026-10-20,touch,3.8,3.73,-1.92,0.731,10.9,3.69,-0.3622,-0.0355,887528
+KVHI,"KVH Industries, Inc. - Common Stock",NASDAQ,2026-10-20,touch,6.34,6.23,-1.66,0.731,10.2,3.21,-0.33,-0.0305,115956
+BLLN,"BillionToOne, Inc. - Class A common stock",NASDAQ,2026-10-20,touch,103.5,100.14,-3.25,0.727,10.1,6.41,-1.7779,-0.1625,595228
+MS,Morgan Stanley Common Stock,NYSE,2026-10-20,touch,180.4,179.05,-0.75,0.723,6.2,1.52,-6.4434,-0.3779,5034516
+CHRS,"Coherus Oncology, Inc. - Common Stock",NASDAQ,2026-10-20,touch,1.0,0.98,-2.36,0.721,5.9,4.88,-0.0756,-0.0042,1374016
+GRDN,"Guardian Pharmacy Services, Inc. Class A Common Stock",NYSE,2026-10-20,touch,41.87,41.32,-1.32,0.72,30.8,2.76,-0.3691,-0.0868,539868
+UAMY,United States Antimony Corporation Common Stock,NYSE,2026-10-20,touch,3.12,3.03,-2.86,0.718,9.0,6.07,-0.4986,-0.0411,6628248
+ADAG,"Adagene Inc. - ADS, each representing 1.25 ordinary shares",NASDAQ,2026-10-20,touch,2.5,2.44,-2.43,0.717,11.0,5.19,-0.2714,-0.027,297180
+FWONA,Liberty Media Corporation - Series A Common Stock,NASDAQ,2026-10-20,touch,84.66,84.04,-0.74,0.716,9.6,1.58,-1.2468,-0.1096,176250
+CC,Chemours Company (The) Common Stock,NYSE,2026-10-20,touch,12.97,12.77,-1.56,0.714,7.0,3.4,-0.5558,-0.0364,2034530
+TMCI,"Treace Medical Concepts, Inc. - Common Stock",NASDAQ,2026-10-20,touch,4.07,4.0,-1.68,0.706,10.0,3.86,-0.1428,-0.013,257456
