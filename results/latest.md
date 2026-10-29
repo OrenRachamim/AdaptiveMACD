@@ -1,106 +1,124 @@
-# Daily MACD touch forecast - 2026-10-28
+# Daily MACD touch forecast - 2026-10-29
 
 Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch (gap <= 5% of |signal|) or cross it at the next close. Required change = move from the last close to the target price.
 
-**98 stocks**
+**116 stocks**
 
 | Ticker | Name | Close | Target close | Required change | Probability | Gap today |
 |---|---|---:|---:|---:|---:|---:|
-| INDI | indie Semiconductor, Inc. - Class A Comm | 1.74 | 1.57 | -9.72% | 94% | 6.6% |
-| BLDP | Ballard Power Systems, Inc. - Common Sha | 1.55 | 1.42 | -8.64% | 94% | 5.7% |
-| AMBQ | Ambiq Micro, Inc. Common Stock | 54.67 | 49.9 | -8.73% | 94% | 5.4% |
-| FTH | Faeth Therapeutics, Inc.  - Common Stock | 19.11 | 16.93 | -11.39% | 94% | 5.4% |
-| IDR | Idaho Strategic Resources, Inc. Common S | 20.64 | 19.05 | -7.68% | 94% | 6.0% |
-| USGO | U.S. GoldMining Inc. - Common stock | 5.07 | 4.67 | -7.80% | 94% | 6.5% |
-| CVEO | Civeo Corporation (Canada) Common Shares | 30.45 | 28.42 | -6.67% | 94% | 5.8% |
-| GHM | Graham Corporation Common Stock | 71.02 | 67.11 | -5.51% | 94% | 7.5% |
-| NRGV | Energy Vault Holdings, Inc. Common Stock | 2.99 | 2.69 | -10.08% | 94% | 8.3% |
-| GAIN | Gladstone Investment Corporation - Busin | 14.93 | 14.68 | -1.67% | 94% | 6.1% |
-| IPWR | Ideal Power Inc. - Common Stock | 3.0 | 2.75 | -8.31% | 93% | 6.1% |
-| UNIT | Uniti Group Inc. - Common Stock | 5.08 | 4.81 | -5.36% | 93% | 6.9% |
-| TE | T1 Energy Inc. Common Stock | 2.46 | 2.25 | -8.59% | 92% | 7.6% |
-| ABAT | American Battery Technology Company - Co | 1.49 | 1.38 | -7.41% | 92% | 8.5% |
-| PPTA | Perpetua Resources Corp. - Common Shares | 18.37 | 17.16 | -6.57% | 92% | 6.5% |
-| OPY | Oppenheimer Holdings, Inc. Class A Commo | 104.98 | 101.79 | -3.04% | 91% | 7.9% |
-| NVTS | Navitas Semiconductor Corporation - Comm | 9.35 | 8.71 | -6.90% | 91% | 8.7% |
-| FUN | Six Flags Entertainment Corporation Comm | 7.71 | 7.16 | -7.10% | 90% | 8.1% |
-| AG | First Majestic Silver Corp. Ordinary Sha | 15.64 | 14.86 | -4.99% | 90% | 5.1% |
-| VNDA | Vanda Pharmaceuticals Inc. - Common Stoc | 3.99 | 3.87 | -3.07% | 90% | 5.2% |
-| AIRJ | AirJoule Technologies Corporation - Clas | 2.92 | 2.78 | -4.74% | 90% | 5.7% |
-| VLN | Valens Semiconductor Ltd. Ordinary Share | 1.69 | 1.61 | -4.76% | 90% | 10.5% |
-| AMRC | Ameresco, Inc. Class A Common Stock | 19.92 | 18.66 | -6.35% | 89% | 5.1% |
-| GLXY | Galaxy Digital Inc. - Class A common sto | 17.18 | 16.02 | -6.75% | 89% | 9.3% |
-| FRMI | Fermi Inc. - Common Stock | 2.62 | 2.43 | -7.43% | 89% | 5.7% |
-| VZLA | Vizsla Silver Corp. Common Shares | 3.26 | 3.12 | -4.29% | 89% | 6.2% |
-| KGS | Kodiak Gas Services, Inc. Common Stock | 47.45 | 45.64 | -3.81% | 89% | 7.4% |
-| PACB | Pacific Biosciences of California, Inc.  | 2.45 | 2.23 | -8.88% | 89% | 5.1% |
-| CSIQ | Canadian Solar Inc. - Common Shares | 9.67 | 9.21 | -4.73% | 89% | 6.9% |
-| IRDM | Iridium Communications Inc - Common Stoc | 45.65 | 44.88 | -1.70% | 89% | 11.6% |
-| BLZR | Trailblazer Acquisition Corp. - Class A  | 10.25 | 10.24 | -0.10% | 88% | 5.4% |
-| CMCO | Columbus McKinnon Corporation - Common S | 14.93 | 14.4 | -3.55% | 88% | 10.4% |
-| RKLB | Rocket Lab Corporation - Common Stock | 58.31 | 55.78 | -4.34% | 88% | 12.6% |
-| AIRO | AIRO Group Holdings, Inc. - Common Stock | 5.05 | 4.77 | -5.50% | 88% | 6.7% |
-| FRA | Blackrock Floating Rate Income Strategie | 9.99 | 9.91 | -0.78% | 87% | 6.5% |
-| ASG | Liberty All-Star Growth Fund, Inc. | 5.03 | 4.98 | -1.04% | 87% | 5.7% |
-| BELFB | Bel Fuse Inc. - Class B Common Stock | 223.79 | 215.95 | -3.50% | 87% | 12.3% |
-| HAVA | Harvard Ave Acquisition Corporation - Cl | 10.28 | 10.27 | -0.08% | 86% | 9.1% |
-| ON | ON Semiconductor Corporation - Common St | 78.67 | 76.08 | -3.29% | 86% | 29.9% |
-| AMSC | American Superconductor Corporation - Co | 27.63 | 26.67 | -3.48% | 86% | 13.9% |
-| BIAF | bioAffinity Technologies, Inc. - Common  | 2.96 | 2.48 | -16.32% | 86% | 5.4% |
-| DERM | Journey Medical Corporation - Common Sto | 4.96 | 4.78 | -3.67% | 85% | 5.9% |
-| C | Citigroup, Inc. Common Stock | 122.69 | 120.89 | -1.47% | 85% | 5.9% |
-| DRTS | Alpha Tau Medical Ltd. - Ordinary Shares | 13.51 | 13.14 | -2.75% | 85% | 9.6% |
-| NTNX | Nutanix, Inc. - Class A Common Stock | 72.74 | 71.4 | -1.84% | 85% | 6.9% |
-| RZLT | Rezolute, Inc. - Common Stock (NV) | 4.11 | 3.97 | -3.49% | 84% | 14.2% |
-| PNNT | PennantPark Investment Corporation Commo | 2.91 | 2.86 | -1.66% | 84% | 7.9% |
-| SCYX | SCYNEXIS, Inc. - Common Stock | 3.8 | 3.65 | -3.82% | 84% | 5.5% |
-| TBN | Tamboran Resources Corporation Common st | 31.27 | 30.41 | -2.74% | 84% | 9.7% |
-| HCC | Warrior Met Coal, Inc. Common Stock | 87.35 | 85.23 | -2.42% | 84% | 7.1% |
-| CNTN | Canton Strategic Holdings, Inc. - Common | 1.91 | 1.83 | -4.36% | 83% | 8.0% |
-| MNOV | MediciNova, Inc. - Common Stock | 1.41 | 1.32 | -6.70% | 83% | 5.5% |
-| KNX | Knight-Swift Transportation Holdings Inc | 63.02 | 61.88 | -1.81% | 83% | 6.7% |
-| RILY | BRC Group Holdings, Inc. - Common Stock | 3.99 | 3.89 | -2.48% | 83% | 5.3% |
-| CMDB | Costamare Bulkers Holdings Limited Commo | 20.21 | 19.71 | -2.46% | 82% | 6.0% |
-| VCTR | Victory Capital Holdings, Inc. - Common  | 110.63 | 108.86 | -1.60% | 82% | 11.2% |
-| AMCI | AMC Robotics Corporation - Common Stock | 2.07 | 1.94 | -6.19% | 82% | 6.7% |
-| EMBJ | Embraer S.A. Common Stock | 72.73 | 71.66 | -1.47% | 82% | 10.2% |
-| EQIX | Equinix, Inc. - Common Stock | 999.38 | 986.21 | -1.32% | 82% | 13.9% |
-| UROY | Uranium Royalty Corp. - Common Stock | 3.7 | 3.6 | -2.82% | 81% | 13.5% |
-| BTQ | BTQ Technologies Corp. - Common Stock | 2.24 | 2.15 | -4.00% | 80% | 9.7% |
-| CADL | Candel Therapeutics, Inc. - Common Stock | 8.25 | 8.0 | -3.08% | 80% | 7.5% |
-| NMAI | Nuveen Multi-Asset Income Fund Common Sh | 13.53 | 13.39 | -1.05% | 80% | 9.6% |
-| BRUN | Boost Run Inc. - Class A Common Stock | 8.11 | 7.67 | -5.47% | 80% | 8.6% |
-| WGS | GeneDx Holdings Corp. - Class A Common S | 62.74 | 60.56 | -3.48% | 80% | 5.6% |
-| AGI | Alamos Gold Inc. Class A Common Shares | 31.18 | 30.52 | -2.11% | 79% | 6.6% |
-| ASTS | AST SpaceMobile, Inc. - Class A Common S | 41.96 | 40.52 | -3.42% | 78% | 9.5% |
-| POET | POET Technologies Inc. - Common Shares | 5.69 | 5.5 | -3.35% | 78% | 9.2% |
-| KEX | Kirby Corporation Common Stock | 137.06 | 135.82 | -0.91% | 78% | 23.1% |
-| UTG | Reaves Utility Income Fund Common Shares | 34.61 | 34.31 | -0.87% | 78% | 8.9% |
-| BELFA | Bel Fuse Inc. - Class A Common Stock | 176.02 | 172.2 | -2.17% | 78% | 11.7% |
-| GNK | Genco Shipping & Trading Limited Ordinar | 25.64 | 25.3 | -1.33% | 78% | 8.0% |
-| LNZA | LanzaTech Global, Inc. - Common Stock | 4.99 | 4.85 | -2.80% | 77% | 8.5% |
-| OKTA | Okta, Inc. - Class A Common Stock | 226.07 | 218.59 | -3.31% | 77% | 8.4% |
-| VSEC | VSE Corporation - Common Stock | 148.45 | 145.46 | -2.01% | 77% | 5.9% |
-| ATTT | Atlas Trinity Tech Limited - Ordinary Sh | 2.5 | 2.44 | -2.27% | 77% | 8.2% |
-| ATEN | A10 Networks, Inc. Common Stock | 26.9 | 26.4 | -1.84% | 76% | 27.4% |
-| IPGP | IPG Photonics Corporation - Common Stock | 74.34 | 72.93 | -1.90% | 76% | 10.9% |
-| AGX | Argan, Inc. Common Stock | 341.04 | 334.32 | -1.97% | 75% | 7.4% |
-| APPS | Digital Turbine, Inc. - Common Stock | 10.17 | 9.77 | -3.97% | 74% | 5.5% |
-| WRN | Western Copper and Gold Corporation Comm | 1.75 | 1.72 | -1.77% | 74% | 8.3% |
-| CGNX | Cognex Corporation - Common Stock | 58.22 | 57.19 | -1.76% | 74% | 14.1% |
-| JBLU | JetBlue Airways Corporation - Common Sto | 2.82 | 2.75 | -2.39% | 74% | 10.2% |
-| KRYS | Krystal Biotech, Inc. - Common Stock | 320.58 | 317.03 | -1.11% | 74% | 7.6% |
-| FRMM | Forum Markets, Incorporated - Common Sto | 3.49 | 3.41 | -2.46% | 74% | 9.0% |
-| BNC | BNB Standard Corporation - Common Stock | 5.7 | 5.42 | -5.01% | 74% | 8.3% |
-| SHIP | Seanergy Maritime Holdings Corp. - Commo | 15.99 | 15.77 | -1.38% | 74% | 9.4% |
-| GRAL | GRAIL, Inc. - Common Stock | 150.61 | 145.17 | -3.61% | 74% | 9.4% |
-| GYRE | Gyre Therapeutics, Inc. - Common Stock | 6.53 | 6.43 | -1.59% | 74% | 20.3% |
-| CURR | Currenc Group Inc. - Ordinary Shares | 2.48 | 2.4 | -3.39% | 73% | 10.3% |
-| DCTH | Delcath Systems, Inc. - Common Stock | 14.75 | 14.46 | -1.97% | 73% | 5.9% |
-| APLD | Applied Digital Corporation - Common Sto | 19.51 | 19.04 | -2.40% | 72% | 9.6% |
-| FLYX | flyExclusive, Inc. Class A Common Stock | 1.21 | 1.19 | -1.78% | 72% | 20.6% |
-| BTU | Peabody Energy Corporation Common Stock  | 23.32 | 22.99 | -1.40% | 71% | 10.3% |
-| BHP | BHP Group Limited American Depositary Sh | 82.6 | 81.86 | -0.89% | 71% | 15.7% |
-| INMB | INmune Bio Inc. - Common stock | 1.52 | 1.49 | -1.80% | 71% | 8.5% |
-| CLGN | CollPlant Biotechnologies Ltd. - Ordinar | 3.9 | 3.78 | -2.97% | 70% | 8.2% |
-| WATT | Energous Corporation - Common Stock | 8.96 | 8.78 | -2.01% | 70% | 9.8% |
+| CIFR | Cipher Digital Inc. - Common Stock | 8.87 | 7.37 | -16.89% | 94% | 5.5% |
+| KEEL | Keel Infrastructure Corp. - Common Stock | 2.43 | 2.16 | -10.99% | 94% | 6.5% |
+| CLSK | CleanSpark, Inc. - Common Stock | 8.58 | 7.7 | -10.25% | 94% | 6.1% |
+| BTDR | Bitdeer Technologies Group - Ordinary Sh | 7.92 | 7.07 | -10.67% | 94% | 5.8% |
+| NUAI | New Era Energy & Digital, Inc. - Common  | 3.33 | 2.78 | -16.64% | 94% | 6.1% |
+| Q | Qnity Electronics, Inc. Common Stock | 122.79 | 116.17 | -5.39% | 94% | 5.8% |
+| MTZ | MasTec, Inc. Common Stock | 181.0 | 170.06 | -6.05% | 94% | 5.0% |
+| ALMU | Aeluma, Inc. - Common Stock | 7.87 | 6.72 | -14.66% | 94% | 5.7% |
+| NWCL | newcleo plc - Ordinary Shares | 4.7 | 4.07 | -13.32% | 94% | 6.4% |
+| NVA | Nova Minerals Corp Common Stock | 3.45 | 3.06 | -11.32% | 94% | 8.1% |
+| USAU | U.S. Gold Corp. - Common Stock | 11.49 | 10.78 | -6.22% | 94% | 6.8% |
+| ECOR | electroCore, Inc. - Common Stock | 8.42 | 7.4 | -12.08% | 94% | 5.7% |
+| DNA | Ginkgo Bioworks Holdings, Inc. Class A C | 13.32 | 11.55 | -13.27% | 93% | 9.8% |
+| STRO | Sutro Biopharma, Inc. - Common Stock | 9.29 | 8.6 | -7.45% | 93% | 5.8% |
+| BGY | Blackrock Enhanced International Dividen | 5.47 | 5.4 | -1.34% | 92% | 6.6% |
+| HOLO | MicroCloud Hologram Inc. - Ordinary Shar | 1.22 | 1.15 | -5.35% | 92% | 6.2% |
+| MEI | Methode Electronics, Inc. Common Stock | 14.9 | 13.55 | -9.08% | 92% | 6.6% |
+| RUM | RUM Group Inc. - Class A Common Stock | 5.78 | 5.35 | -7.52% | 92% | 5.4% |
+| NXTC | NextCure, Inc. - Common Stock | 6.34 | 5.64 | -11.05% | 91% | 7.6% |
+| MUX | McEwen Inc. Common Stock | 15.65 | 14.84 | -5.16% | 91% | 5.5% |
+| AQST | Aquestive Therapeutics, Inc. - Common St | 4.23 | 4.01 | -5.16% | 91% | 6.2% |
+| AXTI | AXT Inc - Common Stock | 64.38 | 56.99 | -11.47% | 91% | 7.6% |
+| VRAX | Virax Biolabs Group Limited - Ordinary S | 1.2 | 1.11 | -7.37% | 91% | 6.5% |
+| NKTX | Nkarta, Inc. - Common Stock | 1.72 | 1.62 | -5.58% | 91% | 5.4% |
+| DGXX | Digi Power X Inc. - Common Subordinate V | 2.48 | 2.31 | -6.70% | 91% | 7.8% |
+| HYLN | Hyliion Holdings Corp. Class A Common St | 3.37 | 3.17 | -5.85% | 91% | 9.0% |
+| DY | Dycom Industries, Inc. Common Stock | 234.0 | 224.7 | -3.97% | 90% | 5.5% |
+| EGO | Eldorado Gold Corporation Ordinary Share | 34.46 | 32.72 | -5.06% | 90% | 5.5% |
+| DC | Dakota Gold Corp. Common Stock | 5.65 | 5.38 | -4.78% | 90% | 5.1% |
+| MDAI | Spectral AI, Inc. - Class A Common Stock | 1.56 | 1.51 | -3.44% | 90% | 6.6% |
+| BST | BlackRock Science and Technology Trust C | 49.21 | 48.22 | -2.02% | 89% | 12.9% |
+| CII | BlackRock Enhanced Large Cap Core Fund,  | 23.7 | 23.46 | -1.03% | 89% | 7.6% |
+| LPCN | Lipocine Inc. - Common Stock | 1.51 | 1.45 | -4.29% | 89% | 7.5% |
+| ECC | Eagle Point Credit Company Common Share  | 2.62 | 2.56 | -2.22% | 89% | 5.9% |
+| DPRO | Draganfly Inc. - Common Shares | 3.65 | 3.41 | -6.58% | 89% | 6.2% |
+| PURR | Hyperliquid Strategies Inc - Common Stoc | 9.97 | 9.15 | -8.21% | 89% | 6.2% |
+| ENTG | Entegris, Inc. - Common Stock | 159.32 | 151.41 | -4.96% | 89% | 73.0% |
+| IEX | IDEX Corporation Common Stock | 238.54 | 235.35 | -1.34% | 88% | 13.1% |
+| DJCO | Daily Journal Corp. (S.C.) - Common Stoc | 612.62 | 597.73 | -2.43% | 88% | 7.4% |
+| IQMX | IQM Quantum Computers Oyj - American Dep | 9.63 | 9.23 | -4.20% | 88% | 7.0% |
+| CDNS | Cadence Design Systems, Inc. - Common St | 342.46 | 332.8 | -2.82% | 87% | 10.6% |
+| HIMX | Himax Technologies, Inc. - American depo | 12.01 | 11.57 | -3.64% | 87% | 7.6% |
+| ADX | Adams Diversified Equity Fund Inc. | 25.9 | 25.67 | -0.87% | 87% | 6.1% |
+| ALT | Altimmune, Inc. - Common Stock | 2.1 | 2.04 | -3.09% | 87% | 6.9% |
+| CDE | Coeur Mining, Inc. Common Stock | 14.42 | 13.8 | -4.32% | 86% | 6.7% |
+| EBS | Emergent BioSolutions Inc. Common Stock | 7.09 | 6.67 | -5.85% | 86% | 50.1% |
+| SSYS | Stratasys, Ltd. - Common Stock | 7.15 | 6.97 | -2.46% | 86% | 8.4% |
+| CLFD | Clearfield, Inc. - Common Stock | 31.95 | 30.69 | -3.94% | 85% | 33.7% |
+| UROY | Uranium Royalty Corp. - Common Stock | 3.57 | 3.44 | -3.59% | 85% | 5.9% |
+| RZLV | Rezolve AI PLC - Ordinary Shares | 1.53 | 1.46 | -4.87% | 85% | 6.6% |
+| NXT | Nextpower Inc. - Common Stock | 82.08 | 79.64 | -2.97% | 85% | 8.4% |
+| BFLY | Butterfly Network, Inc. Class A Common S | 7.81 | 7.41 | -5.08% | 85% | 13.9% |
+| IBKR | Interactive Brokers Group, Inc. - Class  | 83.54 | 81.67 | -2.23% | 85% | 6.6% |
+| PAII | Pyrophyte Acquisition Corp. II Class A O | 10.34 | 10.33 | -0.07% | 84% | 11.2% |
+| SABR | Sabre Corporation - Common Stock | 1.6 | 1.54 | -3.55% | 84% | 7.3% |
+| DIOD | Diodes Incorporated - Common Stock | 89.3 | 85.77 | -3.96% | 84% | 9.0% |
+| PLG | Platinum Group Metals Ltd. Ordinary Shar | 1.09 | 1.05 | -3.46% | 84% | 5.4% |
+| NNDM | Nano Dimension Ltd. - American Depositar | 1.42 | 1.4 | -1.54% | 83% | 8.3% |
+| FEIM | Frequency Electronics, Inc. - Common Sto | 71.59 | 67.44 | -5.80% | 83% | 8.1% |
+| AEHR | Aehr Test Systems - Common Stock | 64.54 | 61.16 | -5.24% | 81% | 9.7% |
+| TCBX | Third Coast Bancshares, Inc. Common Stoc | 40.27 | 39.88 | -0.97% | 81% | 5.9% |
+| SLDP | Solid Power, Inc. - Class A Common Stock | 2.05 | 2.0 | -2.37% | 81% | 8.0% |
+| CCOI | Cogent Communications Holdings, Inc. - C | 7.64 | 7.32 | -4.18% | 81% | 5.4% |
+| NXG | NXG NextGen Infrastructure Income Fund C | 49.45 | 48.61 | -1.70% | 80% | 13.9% |
+| OGC | OceanaGold Corporation Common Shares | 26.0 | 25.36 | -2.46% | 80% | 5.2% |
+| PDFS | PDF Solutions, Inc. - Common Stock | 45.49 | 43.91 | -3.47% | 80% | 16.0% |
+| WOLF | Wolfspeed, Inc. Common Stock New | 26.64 | 25.35 | -4.83% | 80% | 15.5% |
+| RRGB | Red Robin Gourmet Burgers, Inc. - Common | 8.99 | 8.67 | -3.51% | 80% | 7.4% |
+| MTNB | Matinas Biopharma Holdings, Inc. Common  | 1.91 | 1.79 | -6.16% | 80% | 9.3% |
+| AXSM | Axsome Therapeutics, Inc. - Common Stock | 143.51 | 141.05 | -1.71% | 80% | 5.9% |
+| FMFC | Kandal M Venture Limited - Class A ordin | 3.66 | 3.51 | -4.11% | 80% | 6.2% |
+| IONQ | IonQ, Inc. Common Stock | 32.43 | 31.37 | -3.28% | 79% | 8.1% |
+| KOP | Koppers Holdings Inc. Common Stock | 42.08 | 41.48 | -1.42% | 79% | 10.8% |
+| AAOI | Applied Optoelectronics, Inc. - Common S | 82.22 | 78.64 | -4.35% | 78% | 12.1% |
+| TFPM | Triple Flag Precious Metals Corp. Common | 29.87 | 29.4 | -1.58% | 78% | 5.8% |
+| SAR | Saratoga Investment Corp New | 13.58 | 13.42 | -1.21% | 78% | 7.0% |
+| XRTX | XORTX Therapeutics Inc. - Common Shares | 1.05 | 0.99 | -5.45% | 78% | 7.8% |
+| BAND | Bandwidth Inc. - Class A Common Stock | 48.45 | 46.55 | -3.92% | 78% | 9.5% |
+| FRNM | Freenome, Inc. - Common stock | 13.44 | 13.04 | -2.98% | 78% | 9.2% |
+| EFT | Eaton Vance Floating Rate Income Trust C | 10.6 | 10.55 | -0.44% | 77% | 19.3% |
+| SNDK | Sandisk Corporation - Common Stock When- | 1404.77 | 1359.75 | -3.20% | 77% | 13.3% |
+| CSTE | Caesarstone Ltd. - Ordinary Shares | 2.48 | 2.39 | -3.51% | 77% | 7.0% |
+| NNE | Nano Nuclear Energy Inc. - common stock | 12.39 | 12.05 | -2.77% | 76% | 7.0% |
+| HCAT | Health Catalyst, Inc - Common stock | 1.8 | 1.75 | -3.04% | 76% | 36.9% |
+| GDS | GDS Holdings Limited - American Deposita | 23.86 | 23.32 | -2.25% | 76% | 10.4% |
+| VNET | VNET Group, Inc. - American Depositary S | 3.71 | 3.59 | -3.17% | 76% | 6.5% |
+| ILMN | Illumina, Inc. - Common Stock | 288.79 | 282.89 | -2.04% | 76% | 7.2% |
+| NOAH | Noah Holdings Limited American Depositar | 6.89 | 6.83 | -0.86% | 76% | 7.2% |
+| OBIO | Orchestra BioMed Holdings, Inc. - Ordina | 5.99 | 5.84 | -2.52% | 76% | 44.2% |
+| ALZN | Alzamend Neuro, Inc. - Common Stock | 1.19 | 1.16 | -2.70% | 75% | 8.6% |
+| BMRA | Biomerica, Inc. - Common Stock | 1.75 | 1.7 | -2.82% | 75% | 8.5% |
+| BTX | BlackRock Technology and Private Equity  | 8.9 | 8.82 | -0.90% | 74% | 25.7% |
+| GRDN | Guardian Pharmacy Services, Inc. Class A | 40.33 | 39.7 | -1.56% | 74% | 8.7% |
+| TTRX | Turn Therapeutics Inc. - Common Stock | 11.12 | 10.75 | -3.29% | 74% | 12.8% |
+| VSH | Vishay Intertechnology, Inc. Common Stoc | 29.92 | 29.2 | -2.41% | 74% | 13.7% |
+| ARIS | Aris Mining Corporation Common Shares | 16.44 | 16.12 | -1.97% | 73% | 8.3% |
+| AFCG | Advanced Flower Capital Inc. - Common St | 2.99 | 2.94 | -1.54% | 73% | 5.6% |
+| BOE | Blackrock Enhanced Global Dividend Trust | 11.32 | 11.28 | -0.39% | 73% | 7.3% |
+| AU | AngloGold Ashanti PLC Ordinary Shares | 87.25 | 85.71 | -1.77% | 73% | 6.5% |
+| IXHL | Incannex Healthcare Inc. - Common Stock | 2.71 | 2.67 | -1.60% | 73% | 9.5% |
+| AEM | Agnico Eagle Mines Limited Common Stock | 183.11 | 180.14 | -1.62% | 73% | 8.4% |
+| SRV | NXG Cushing Midstream Energy Fund Common | 39.96 | 39.6 | -0.91% | 73% | 12.3% |
+| TITN | Titan Machinery Inc. - Common Stock | 23.69 | 23.17 | -2.18% | 72% | 9.3% |
+| CYPH | Cypherpunk Technologies Inc. - Common St | 3.24 | 3.06 | -5.48% | 72% | 6.5% |
+| IDYA | IDEAYA Biosciences, Inc. - Common Stock | 33.96 | 33.58 | -1.13% | 72% | 5.6% |
+| CRWV | CoreWeave, Inc. - Class A Common Stock | 63.93 | 62.22 | -2.68% | 72% | 12.6% |
+| PRE | Prenetics Global Limited - Class A Ordin | 18.52 | 18.12 | -2.14% | 72% | 9.6% |
+| BCX | BlackRock Resources Common Shares of Ben | 11.94 | 11.87 | -0.57% | 72% | 5.0% |
+| NOK | Nokia Corporation Sponsored American Dep | 9.22 | 9.05 | -1.88% | 71% | 14.2% |
+| NBIS | Nebius Group N.V. - Class A Ordinary Sha | 182.34 | 176.68 | -3.11% | 71% | 13.9% |
+| BLZE | Backblaze, Inc. - Common Stock | 9.1 | 8.89 | -2.26% | 71% | 9.2% |
+| AHMA | Ambitions Enterprise Management Co. L.L. | 1.12 | 1.09 | -2.91% | 71% | 6.1% |
+| NNBR | NN, Inc. - Common Stock | 3.8 | 3.71 | -2.31% | 71% | 49.5% |
+| TRX | TRX Gold Corporation Common Stock | 1.05 | 1.03 | -2.18% | 70% | 11.6% |
+| AGPU | Axe Compute Inc. - Common Stock | 8.95 | 8.69 | -2.85% | 70% | 12.5% |
+| NTRA | Natera, Inc. - Common Stock | 424.42 | 418.18 | -1.47% | 70% | 7.4% |
