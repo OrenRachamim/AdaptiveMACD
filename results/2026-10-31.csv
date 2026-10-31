@@ -1,0 +1,23 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+KRUS,"Kura Sushi USA, Inc. - Class A Common Stock",NASDAQ,2026-10-30,touch,34.96,32.94,-5.77,0.93,6.0,3.48,-1.9379,-0.1089,226076
+KULR,"KULR Technology Group, Inc. Common Stock",NYSE American,2026-10-30,touch,1.64,1.53,-6.44,0.929,5.3,3.92,-0.2189,-0.011,700726
+PTN,"Palatin Technologies, Inc. - Common Stock",NASDAQ,2026-10-30,touch,5.0,4.42,-11.54,0.928,5.9,7.05,-1.2827,-0.0713,81210
+CCIF,Carlyle Credit Income Fund Shares of Beneficial Interest,NYSE,2026-10-30,touch,1.88,1.8,-4.15,0.917,6.8,2.72,-0.1625,-0.0103,145315
+PWR,"Quanta Services, Inc. Common Stock",NYSE,2026-10-30,touch,620.73,597.17,-3.8,0.905,6.4,2.72,-14.5342,-0.8707,1065050
+KNDI,"Kandi Technologies Group, Inc. - Ordinary Shares",NASDAQ,2026-10-30,touch,3.53,3.21,-8.97,0.892,6.2,7.19,-0.757,-0.0443,219307
+PGEN,"Precigen, Inc. - Common Stock",NASDAQ,2026-10-30,touch,6.94,6.6,-4.89,0.891,13.4,3.94,-0.2746,-0.0325,4785596
+TGT,Target Corporation Common Stock,NYSE,2026-10-30,touch,154.38,151.32,-1.98,0.872,6.3,1.81,-1.1938,-0.0712,3880792
+LNN,Lindsay Corporation Common Stock,NYSE,2026-10-30,touch,107.63,105.58,-1.9,0.869,7.6,1.77,-2.3671,-0.167,171294
+GUT,Gabelli Utility Trust (The) Common Stock,NYSE,2026-10-30,touch,5.31,5.21,-1.93,0.867,7.4,1.81,-0.2159,-0.0148,258024
+HRZN,Horizon Technology Finance Corporation - Common Stock,NASDAQ,2026-10-30,touch,4.07,3.98,-2.17,0.859,6.9,2.14,-0.1658,-0.0106,531442
+SEI,"Solaris Energy Infrastructure, Inc. Class A Common Stock",NYSE,2026-10-30,touch,70.7,67.04,-5.17,0.851,9.4,5.32,-0.2357,-0.0203,2735720
+DTCX,"Datacentrex, Inc. - Common Stock",NASDAQ,2026-10-30,touch,1.15,1.08,-6.14,0.849,5.4,6.41,-0.1967,-0.0101,244860
+DXST,Decent Holding Inc. - Class A Ordinary Shares,NASDAQ,2026-10-30,touch,1.01,0.92,-8.62,0.839,5.0,9.56,-0.3242,-0.0155,1232688
+IMXI,"International Money Express, Inc. - Common Stock",NASDAQ,2026-10-30,touch,9.16,8.78,-4.09,0.839,7.5,4.54,-0.912,-0.0634,551286
+GASS,"StealthGas, Inc. - common stock",NASDAQ,2026-10-30,touch,8.26,8.14,-1.41,0.821,7.5,1.71,-0.2508,-0.0174,117348
+DXCM,"DexCom, Inc. - Common Stock",NASDAQ,2026-10-30,touch,82.29,81.27,-1.24,0.776,15.0,1.87,-1.7324,-0.2262,4191380
+AVIR,"Atea Pharmaceuticals, Inc. - common stock",NASDAQ,2026-10-30,touch,4.11,4.03,-1.85,0.767,5.1,2.9,-0.2681,-0.0131,281916
+MDGL,"Madrigal Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-10-30,touch,430.36,425.07,-1.23,0.762,5.3,1.97,-19.4394,-0.9838,254682
+BIRK,Birkenstock Holding plc Ordinary Shares,NYSE,2026-10-30,touch,33.43,32.81,-1.86,0.757,6.1,3.06,-0.1774,-0.0102,2148052
+PPSI,"Pioneer Power Solutions, Inc. - Common Stock",NASDAQ,2026-10-30,touch,2.54,2.49,-1.97,0.746,5.1,3.43,-0.1515,-0.0073,84882
+APPF,"AppFolio, Inc. - Class A Common Stock",NASDAQ,2026-10-30,touch,213.25,210.54,-1.27,0.714,7.3,2.77,0.7819,-0.0615,355082
