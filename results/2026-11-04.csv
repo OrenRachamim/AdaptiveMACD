@@ -1,0 +1,42 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+TH,Target Hospitality Corp. - Common Stock,NASDAQ,2026-11-03,touch,14.49,13.4,-7.5,0.944,5.6,4.09,-1.2728,-0.0678,2263704
+ZEPP,"Zepp Health Corporation American depositary shares, each representing sixteen Class A ordinary shares",NYSE,2026-11-03,touch,2.22,2.01,-9.44,0.944,5.1,3.46,-0.4932,-0.024,50696
+CRS,Carpenter Technology Corporation Common Stock,NYSE,2026-11-03,touch,296.72,280.13,-5.59,0.932,6.4,3.32,-33.1943,-2.0083,970936
+NPO,Enpro Inc. Common Stock,NYSE,2026-11-03,touch,285.27,273.24,-4.22,0.926,5.1,2.62,-7.8012,-0.3755,177966
+TMS,Teamshares Inc. - Common Stock,NASDAQ,2026-11-03,touch,4.69,4.21,-10.21,0.922,5.4,6.49,-0.6732,-0.0342,135487
+LSCC,Lattice Semiconductor Corporation - Common Stock,NASDAQ,2026-11-03,touch,105.92,99.35,-6.2,0.921,8.5,3.98,-5.6582,-0.4412,1982996
+LUCK,Lucky Strike Entertainment Corporation Class A Common Stock,NYSE,2026-11-03,touch,4.19,3.98,-4.98,0.916,5.8,3.3,-0.3637,-0.0198,84464
+RBC,RBC Bearings Incorporated Common Stock,NYSE,2026-11-03,touch,496.04,481.12,-3.01,0.912,7.5,2.05,-6.2016,-0.4333,313006
+SERV,Serve Robotics Inc. - Common Stock,NASDAQ,2026-11-03,touch,2.61,2.45,-5.96,0.909,5.8,4.17,-0.4678,-0.0255,3079356
+RAL,Ralliant Corporation Common Stock,NYSE,2026-11-03,touch,71.31,68.81,-3.51,0.909,11.4,2.45,-0.1002,-0.0102,1371128
+DJT,Trump Media & Technology Group Corp. - Common Stock,NASDAQ,2026-11-03,touch,5.95,5.69,-4.45,0.899,7.4,3.36,-0.7298,-0.0506,3864658
+VMI,"Valmont Industries, Inc. Common Stock",NYSE,2026-11-03,touch,437.88,430.09,-1.78,0.888,8.3,1.48,-10.921,-0.8327,196152
+XFLT,XAI Floating Rate & Alternative Income Trust Common Shares of Beneficial Interest,NYSE,2026-11-03,touch,16.59,16.4,-1.14,0.867,10.0,1.08,-0.7319,-0.0664,102905
+BKKT,"Bakkt, Inc. Class A Common Stock",NYSE,2026-11-03,touch,4.67,4.4,-5.85,0.864,5.7,5.6,-0.7538,-0.0409,1230226
+HUT,Hut 8 Corp. - Common Stock,NASDAQ,2026-11-03,touch,63.75,59.94,-5.97,0.855,7.1,6.03,-7.1028,-0.4686,5360860
+PINE,"Alpine Income Property Trust, Inc. Common Stock",NYSE,2026-11-03,touch,16.63,16.39,-1.47,0.837,5.4,1.65,-0.4057,-0.0207,169608
+KLAC,KLA Corporation  - Common Stock,NASDAQ,2026-11-03,touch,156.2,151.88,-2.77,0.832,5.5,3.17,-8.337,-0.4373,10318444
+FCFS,"FirstCash Holdings, Inc. - Common Stock",NASDAQ,2026-11-03,touch,194.51,189.17,-2.74,0.83,9.3,3.18,-7.373,-0.6264,487720
+NNE,Nano Nuclear Energy Inc. - common stock,NASDAQ,2026-11-03,touch,11.43,11.0,-3.75,0.827,5.1,4.4,-1.1887,-0.0572,1890538
+SKM,"SK Telecom Co., Ltd. Common Stock",NYSE,2026-11-03,touch,30.52,29.91,-2.0,0.827,5.0,2.35,-1.3166,-0.0629,1318182
+CECO,CECO Environmental Corp. Common Stock,NYSE Texas,2026-11-03,touch,50.21,48.39,-3.61,0.827,6.0,4.25,-5.2425,-0.2952,762878
+ASIX,AdvanSix Inc. Common Stock ,NYSE,2026-11-03,touch,15.58,15.31,-1.74,0.821,5.1,2.1,-0.2969,-0.0144,257140
+HLF,Herbalife Ltd. Common Shares,NYSE,2026-11-03,touch,14.38,14.06,-2.22,0.805,16.9,2.91,0.2142,-0.0437,1596660
+IONQ,"IonQ, Inc. Common Stock",NYSE,2026-11-03,touch,29.99,28.97,-3.42,0.804,5.7,4.5,-2.5775,-0.1382,22462562
+DCI,"Donaldson Company, Inc. Common Stock",NYSE,2026-11-03,touch,85.9,85.15,-0.87,0.803,9.1,1.16,-0.8957,-0.0751,640802
+NXGL,"NexGel, Inc - Common Stock",NASDAQ,2026-11-03,touch,4.48,4.1,-8.56,0.798,8.3,11.66,-0.2511,-0.0193,110585
+OESX,"Orion Energy Systems, Inc. - Common Stock",NASDAQ,2026-11-03,touch,20.79,20.05,-3.58,0.769,8.7,5.56,-1.6265,-0.1299,66884
+TSQ,"Townsquare Media, Inc. Class A Common Stock",NYSE,2026-11-03,touch,3.01,2.95,-2.11,0.761,6.4,3.41,-0.4619,-0.028,95864
+GLW,Corning Incorporated Common Stock,NYSE,2026-11-03,touch,126.14,123.2,-2.33,0.749,6.9,4.0,-7.4698,-0.4813,8745176
+PRTS,"CarParts.com, Inc. - Common Stock",NASDAQ,2026-11-03,touch,8.34,8.11,-2.72,0.733,37.6,5.19,-0.0889,-0.0243,56616
+BNGO,"Bionano Genomics, Inc. - Common Stock",NASDAQ,2026-11-03,touch,1.2,1.17,-2.34,0.73,8.8,4.54,-0.0711,-0.0058,1167830
+RUSHB,"Rush Enterprises, Inc. - Class B Common Stock",NASDAQ,2026-11-03,touch,58.99,58.28,-1.21,0.73,5.4,2.35,0.8283,-0.0474,149287
+SMMT,Summit Therapeutics Inc.  - Common Stock,NASDAQ,2026-11-03,touch,15.8,15.45,-2.19,0.72,5.9,4.55,-0.198,-0.011,6325504
+KN,Knowles Corporation Common Stock,NYSE,2026-11-03,touch,34.0,33.58,-1.23,0.716,9.3,2.64,-0.7928,-0.0673,718226
+EGO,Eldorado Gold Corporation Ordinary Shares,NYSE,2026-11-03,touch,31.74,31.22,-1.65,0.715,5.6,3.57,-1.9559,-0.1035,3378432
+TSSI,"TSS, Inc. - Common Stock",NASDAQ,2026-11-03,touch,7.03,6.88,-2.12,0.711,7.0,4.69,-0.564,-0.0367,865552
+BAX,Baxter International Inc. Common Stock,NYSE,2026-11-03,touch,25.49,25.25,-0.96,0.71,57.0,2.14,0.0393,-0.0521,6644988
+TKC,Turkcell Iletisim Hizmetleri AS Common Stock,NYSE,2026-11-03,touch,4.67,4.63,-0.76,0.707,9.3,1.73,-0.1376,-0.0117,2391904
+YDDL,One and One Green Technologies. INC - Class A Ordinary Shares,NASDAQ,2026-11-03,touch,1.04,1.01,-2.91,0.707,5.1,6.61,-0.1069,-0.0052,770316
+JTAI,Jet.AI Inc. - Common Stock,NASDAQ,2026-11-03,touch,1.0,0.97,-2.7,0.704,12.6,6.27,-0.1472,-0.0164,255448
+OSTX,OS Therapies Incorporated Common Stock,NYSE American,2026-11-03,touch,1.16,1.14,-1.57,0.701,5.0,3.7,-0.1079,-0.0051,666512
