@@ -1,0 +1,50 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+ELOG,Eastern International Ltd. - Ordinary Shares,NASDAQ,2026-11-12,touch,1.03,0.81,-21.42,0.944,18.5,11.44,-0.0147,-0.0023,789544
+AMPY,Amplify Energy Corp. Common Stock,NYSE,2026-11-12,touch,4.02,3.57,-11.25,0.944,5.7,3.58,-0.2233,-0.0121,607164
+SND,"Smart Sand, Inc. - Common Stock",NASDAQ,2026-11-12,touch,4.58,4.24,-7.4,0.944,8.1,3.63,-0.2386,-0.0178,253080
+CIEN,Ciena Corporation Common Stock,NYSE,2026-11-12,touch,293.99,265.57,-9.67,0.929,5.0,5.87,-24.5987,-1.1721,3153748
+JOF,Japan Smaller Capitalization Fund Inc Common Stock,NYSE,2026-11-12,touch,10.8,10.58,-2.0,0.924,5.4,1.26,-0.385,-0.0196,84423
+LMND,"Lemonade, Inc. Common Stock",NYSE,2026-11-12,touch,42.96,40.74,-5.16,0.922,6.4,3.29,-1.4759,-0.089,1202400
+HOS,"Hornbeck Offshore Services, Inc. Common Stock",NYSE,2026-11-12,touch,5.83,5.53,-5.06,0.917,8.0,3.34,-0.5781,-0.0431,2954984
+BKV,BKV Corporation Common Stock,NYSE,2026-11-12,touch,19.27,18.39,-4.57,0.911,5.3,3.15,-1.0632,-0.0538,2217060
+WDC,Western Digital Corporation - Common Stock,NASDAQ,2026-11-12,touch,311.21,290.58,-6.63,0.905,6.0,4.76,-28.8198,-1.6221,8532512
+DAN,Dana Incorporated Common Stock ,NYSE,2026-11-12,touch,23.26,22.35,-3.91,0.903,5.4,2.86,-1.459,-0.0742,1601902
+INTC,Intel Corporation - Common Stock,NASDAQ,2026-11-12,touch,61.2,56.55,-7.6,0.9,7.2,5.71,-11.6192,-0.7831,122503776
+MXL,"MaxLinear, Inc - Common Stock",NASDAQ,2026-11-12,touch,58.96,53.24,-9.69,0.898,5.8,7.38,-6.8486,-0.3753,3317022
+MOB,Mobilicom Limited - Ordinary Shares,NASDAQ,2026-11-12,touch,2.32,2.18,-5.97,0.895,5.5,4.67,-0.4518,-0.0237,118618
+SRV,NXG Cushing Midstream Energy Fund Common Shares of Beneficial Interest,NYSE,2026-11-12,touch,36.45,35.34,-3.05,0.894,6.4,2.39,-1.7995,-0.109,62102
+SKYE,"Skye Bioscience, Inc. - Common Stock",NASDAQ,2026-11-12,touch,1.08,0.98,-9.44,0.884,9.6,8.12,-0.2185,-0.0192,86018
+VG,"Venture Global, Inc. Class A common stock",NYSE,2026-11-12,touch,13.26,12.72,-4.07,0.882,16.0,3.54,-0.2801,-0.0387,15281666
+HDSN,"Hudson Technologies, Inc. - Common Stock",NASDAQ,2026-11-12,touch,4.43,4.29,-3.26,0.88,6.3,2.87,-0.2299,-0.0136,499390
+MU,"Micron Technology, Inc. - Common Stock",NASDAQ,2026-11-12,touch,798.44,758.62,-4.99,0.877,8.0,4.46,-57.5424,-4.2721,28155632
+TDW,Tidewater Inc. Common Stock,NYSE,2026-11-12,touch,77.86,75.17,-3.45,0.875,8.2,3.11,-2.5739,-0.1942,631822
+WCC,"WESCO International, Inc. Common Stock",NYSE,2026-11-12,touch,327.22,315.24,-3.66,0.867,5.5,3.44,-9.0979,-0.4711,640252
+PBT,Permian Basin Royalty Trust Common Stock,NYSE,2026-11-12,touch,30.32,29.63,-2.26,0.864,5.7,2.16,-0.9655,-0.0519,152374
+MLYS,"Mineralys Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-12,touch,15.5,14.73,-4.96,0.861,5.4,4.82,-2.103,-0.1079,1694756
+ATTT,Atlas Trinity Tech Limited - Ordinary Shares,NASDAQ,2026-11-12,touch,2.19,2.11,-3.69,0.855,5.2,3.72,-0.1215,-0.006,199270
+CMPS,COMPASS Pathways Plc - American Depository Shares,NASDAQ,2026-11-12,touch,9.12,8.63,-5.34,0.853,5.5,5.45,-0.8847,-0.0463,3219952
+ATEX,Anterix Inc. - Common Stock,NASDAQ,2026-11-12,touch,82.69,79.28,-4.13,0.841,14.6,4.52,-1.1552,-0.1467,292730
+IMOS,ChipMOS TECHNOLOGIES INC. - American Depositary Shares,NASDAQ,2026-11-12,touch,50.73,48.37,-4.66,0.839,7.5,5.16,-4.4299,-0.3103,87678
+AM,Antero Midstream Corporation Common Stock,NYSE,2026-11-12,touch,20.4,20.09,-1.51,0.837,12.8,1.7,-0.3036,-0.0345,2804940
+VST,Vistra Corp. Common Stock,NYSE,2026-11-12,touch,134.51,129.96,-3.38,0.828,7.7,3.96,-4.6495,-0.331,6685970
+GSIT,"GSI Technology, Inc. - Common Stock",NASDAQ,2026-11-12,touch,3.22,3.11,-3.47,0.82,6.1,4.23,-0.4358,-0.0249,514912
+SFM,"Sprouts Farmers Market, Inc. - Common Stock",NASDAQ,2026-11-12,touch,51.38,49.66,-3.35,0.809,7.8,4.3,-4.5364,-0.3269,3150910
+UMAC,"Unusual Machines, Inc. Common Stock",NYSE American,2026-11-12,touch,11.83,11.29,-4.57,0.803,5.0,6.04,-2.1868,-0.1046,2801924
+IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,NYSE,2026-11-12,touch,114.58,112.61,-1.72,0.802,14.4,2.29,-0.5833,-0.0733,1574624
+GNRC,Generac Holdlings Inc. Common Stock,NYSE,2026-11-12,touch,192.88,186.96,-3.07,0.795,5.6,4.24,-3.9807,-0.2107,1323208
+LNG,"Cheniere Energy, Inc. Common Stock",NYSE,2026-11-12,touch,309.48,304.32,-1.67,0.794,11.0,2.32,4.2798,-0.5314,2171956
+CORT,Corcept Therapeutics Incorporated - Common Stock,NASDAQ,2026-11-12,touch,73.71,71.78,-2.62,0.789,7.6,3.72,-10.1328,-0.7142,1354218
+GPOR,Gulfport Energy Corporation Common Shares,NYSE,2026-11-12,touch,163.3,161.0,-1.41,0.78,10.8,2.08,-0.8192,-0.0796,317856
+TSLA,"Tesla, Inc.  - Common Stock",NASDAQ,2026-11-12,touch,397.45,389.61,-1.97,0.774,12.8,3.0,3.0694,-0.4509,38066056
+NTB,Bank of N.T. Butterfield & Son Limited (The) Voting Ordinary Shares,NYSE,2026-11-12,touch,56.25,55.86,-0.7,0.76,8.4,1.13,-0.8106,-0.0625,169044
+PARR,"Par Pacific Holdings, Inc.  Common Stock",NYSE,2026-11-12,touch,72.03,70.45,-2.19,0.755,10.7,3.64,-3.3762,-0.3274,907296
+AFYA,Afya Limited - Class A Common Shares,NASDAQ,2026-11-12,touch,10.33,10.05,-2.74,0.754,5.9,4.58,-0.8672,-0.048,463710
+CMRE,Costamare Inc. Common Stock $0.0001 par value,NYSE,2026-11-12,touch,13.24,13.09,-1.14,0.747,10.3,1.99,-0.4741,-0.0443,410244
+NWPX,"NWPX Infrastructure, Inc. - Common Stock",NASDAQ,2026-11-12,touch,91.29,90.16,-1.24,0.74,7.7,2.25,-3.1261,-0.223,131568
+SNOW,Snowflake Inc. Common Stock,NYSE,2026-11-12,touch,298.7,292.91,-1.94,0.73,8.8,3.77,-10.6916,-0.8641,4838146
+CRD-A,Crawford & Company Common Stock,NYSE,2026-11-12,touch,12.0,11.86,-1.15,0.727,8.4,2.28,-0.1961,-0.0152,61062
+RENT,"Rent the Runway, Inc. - Class A Common Stock",NASDAQ,2026-11-12,touch,2.43,2.35,-3.46,0.726,5.4,6.88,0.0459,-0.0026,918878
+YSG,"Yatsen Holding Limited American Depositary Shares, each representing twenty (20) Class A Ordinary Shares",NYSE,2026-11-12,touch,1.95,1.9,-2.52,0.726,8.0,5.03,-0.1799,-0.0133,69718
+OPRA,Opera Limited - American Depositary Shares,NASDAQ,2026-11-12,touch,15.63,15.42,-1.36,0.724,8.3,2.75,-0.6476,-0.0496,411016
+RDDT,"Reddit, Inc. Class A Common Stock",NYSE,2026-11-12,touch,99.55,97.01,-2.55,0.723,8.0,5.2,-14.0475,-1.0367,5867862
+CLFD,"Clearfield, Inc. - Common Stock",NASDAQ,2026-11-12,touch,31.27,30.81,-1.48,0.703,38.4,3.46,-0.0526,-0.0146,139878
