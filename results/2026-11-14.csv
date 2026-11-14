@@ -1,0 +1,41 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+ADM,Archer-Daniels-Midland Company Common Stock,NYSE,2026-11-13,touch,72.9,69.62,-4.49,0.944,5.1,1.83,-2.7571,-0.1344,3493804
+CRESY,"Cresud S.A.C.I.F. y A. - American Depositary Shares, each representing ten shares of Common Stock",NASDAQ,2026-11-13,touch,9.74,9.17,-5.86,0.944,7.8,3.03,-0.6117,-0.0442,270480
+IGIC,International General Insurance Holdings Ltd. - Ordinary Shares,NASDAQ,2026-11-13,touch,24.36,23.74,-2.53,0.944,5.1,1.24,-0.2904,-0.0141,80804
+LB,LandBridge Corporation Class A Common Stock,NYSE,2026-11-13,touch,73.15,69.47,-5.03,0.914,7.5,3.39,-3.4954,-0.2439,334290
+CHRD,Chord Energy Corporation - Common Stock,NASDAQ,2026-11-13,touch,149.93,144.49,-3.63,0.911,18.1,2.49,-0.7013,-0.1077,752614
+STVN,Stevanato Group S.p.A. Ordinary Shares,NYSE,2026-11-13,touch,15.8,14.78,-6.48,0.911,10.9,4.47,-1.537,-0.151,692160
+DEC,Diversified Energy Company Common Stock,NYSE,2026-11-13,touch,13.84,13.44,-2.87,0.91,5.2,2.0,-0.2029,-0.01,801164
+HP,"Helmerich & Payne, Inc. Common Stock",NYSE,2026-11-13,touch,38.06,36.7,-3.57,0.896,7.7,2.76,-0.7726,-0.0552,1144964
+FMFC,Kandal M Venture Limited - Class A ordinary Shares,NASDAQ,2026-11-13,touch,1.79,1.63,-8.87,0.893,5.5,7.03,-1.0621,-0.0551,86738
+OII,"Oceaneering International, Inc. Common Stock",NYSE,2026-11-13,touch,35.63,34.11,-4.26,0.892,5.9,3.42,-2.5223,-0.1412,984538
+QUAD,"Quad Graphics, Inc Class A Common Stock",NYSE,2026-11-13,touch,7.62,7.33,-3.78,0.888,6.3,3.15,-0.5111,-0.0302,346562
+CLH,"Clean Harbors, Inc. Common Stock",NYSE,2026-11-13,touch,293.81,289.8,-1.37,0.887,8.4,1.14,-6.9799,-0.54,492764
+PLUT,Plutus Financial Group Limited - Ordinary Shares,NASDAQ,2026-11-13,touch,1.15,1.06,-7.67,0.886,6.8,6.49,-0.276,-0.0175,66124
+INSW,"International Seaways, Inc. Common Stock ",NYSE,2026-11-13,touch,105.23,102.41,-2.68,0.849,11.4,2.79,-2.5383,-0.2591,815870
+PICS,PicS N.V. - Class A Common Shares,NASDAQ,2026-11-13,touch,7.42,6.89,-7.15,0.849,8.3,7.46,-1.1195,-0.0855,703090
+DTM,"DT Midstream, Inc. Common Stock ",NYSE,2026-11-13,touch,119.73,117.77,-1.64,0.846,5.5,1.74,-1.7211,-0.0898,983626
+OTLY,Oatly Group AB - American Depositary Shares,NASDAQ,2026-11-13,touch,7.66,7.33,-4.26,0.843,5.9,4.6,-1.0068,-0.0561,106866
+XP,XP Inc. - Class A Common Stock,NASDAQ,2026-11-13,touch,15.49,14.36,-7.32,0.84,7.7,8.07,-2.5677,-0.1831,14645212
+LBRT,Liberty Energy Inc. Class A common stock,NYSE,2026-11-13,touch,13.06,12.55,-3.89,0.84,7.7,4.3,-1.4672,-0.1045,4428988
+ODFL,"Old Dominion Freight Line, Inc. - Common Stock",NASDAQ,2026-11-13,touch,174.54,171.42,-1.79,0.828,9.0,2.09,-3.2806,-0.2695,1933678
+BBAR,Banco BBVA Argentina S.A. ADS,NYSE,2026-11-13,touch,10.61,10.37,-2.23,0.826,6.3,2.63,-0.6938,-0.041,522888
+TRGP,"Targa Resources, Inc. Common Stock",NYSE,2026-11-13,touch,297.33,292.25,-1.71,0.817,113.2,2.11,-0.46,-0.2442,1216402
+WLDN,"Willdan Group, Inc. - Common Stock",NASDAQ,2026-11-13,touch,70.42,69.25,-1.65,0.804,7.3,2.17,-1.6842,-0.1147,209932
+GSIT,"GSI Technology, Inc. - Common Stock",NASDAQ,2026-11-13,touch,3.09,3.0,-3.07,0.795,5.2,4.25,-0.438,-0.0217,518546
+ABEV,Ambev S.A. American Depositary Shares (Each representing 1 Common Share),NYSE,2026-11-13,touch,2.76,2.71,-1.88,0.79,5.5,2.67,-0.0865,-0.0045,23957540
+KYN,"Kayne Anderson Energy Infrastructure Fund, Inc.",NYSE,2026-11-13,touch,13.93,13.8,-0.92,0.787,12.4,1.31,-0.1398,-0.0154,332397
+PAGS,PagSeguro Digital Ltd. Class A Common Shares,NYSE,2026-11-13,touch,7.98,7.71,-3.41,0.784,8.2,4.94,-0.6004,-0.0455,4321292
+ILAG,Intelligent Living Application Group Inc. - Ordinary Shares,NASDAQ,2026-11-13,touch,1.75,1.67,-4.51,0.77,6.8,6.97,-0.2737,-0.0173,93088
+PMN,ProMIS Neurosciences Inc. - Common Shares,NASDAQ,2026-11-13,touch,3.29,3.07,-6.83,0.759,6.9,11.13,-1.7531,-0.1126,190372
+AXTI,AXT Inc - Common Stock,NASDAQ,2026-11-13,touch,41.84,39.84,-4.78,0.753,5.6,8.03,-6.2703,-0.3325,10128788
+ECG,"Everus Construction Group, Inc. Common Stock",NYSE,2026-11-13,touch,85.25,82.63,-3.08,0.751,6.2,5.21,-7.7648,-0.4517,651538
+TWLO,Twilio Inc. Class A Common Stock,NYSE,2026-11-13,touch,211.21,206.12,-2.41,0.747,6.7,4.18,-14.1886,-0.8926,3332926
+OXLC,Oxford Lane Capital Corp. - Closed End Fund,NASDAQ,2026-11-13,touch,5.04,4.94,-2.0,0.743,7.8,3.56,-0.8553,-0.0616,1608946
+NWPX,"NWPX Infrastructure, Inc. - Common Stock",NASDAQ,2026-11-13,touch,90.02,88.91,-1.24,0.74,5.2,2.24,-3.0958,-0.1542,130368
+SNDK,Sandisk Corporation - Common Stock When-Issued,NASDAQ,2026-11-13,touch,885.01,857.43,-3.12,0.736,6.7,5.79,-163.3797,-10.3,10211664
+AGRO,Adecoagro S.A. Common Shares,NYSE,2026-11-13,touch,9.11,8.98,-1.44,0.736,9.8,2.69,-0.379,-0.0337,684140
+FNRN,First Northern Community Bancorp - Common stock,NASDAQ,2026-11-13,touch,17.3,17.13,-0.97,0.73,19.7,1.87,0.0145,-0.0036,108702
+MTCH,"Match Group, Inc. - Common Stock",NASDAQ,2026-11-13,touch,41.63,41.19,-1.07,0.716,15.7,2.29,-0.4493,-0.0611,3642568
+SVC,Service Properties Trust - Common Shares of Beneficial Interest,NASDAQ,2026-11-13,touch,5.7,5.6,-1.83,0.715,10.6,3.95,-0.2579,-0.0248,2021658
+DK,"Delek US Holdings, Inc. Common Stock",NYSE,2026-11-13,touch,68.5,67.36,-1.66,0.708,12.2,3.75,-2.1475,-0.2331,2084358

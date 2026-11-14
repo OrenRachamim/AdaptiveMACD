@@ -1,57 +1,48 @@
-# Daily MACD touch forecast - 2026-11-13
+# Daily MACD touch forecast - 2026-11-14
 
 Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch (gap <= 5% of |signal|) or cross it at the next close. Required change = move from the last close to the target price.
 
-**49 stocks**
+**40 stocks**
 
 | Ticker | Name | Close | Target close | Required change | Probability | Gap today |
 |---|---|---:|---:|---:|---:|---:|
-| ELOG | Eastern International Ltd. - Ordinary Sh | 1.03 | 0.81 | -21.42% | 94% | 18.5% |
-| AMPY | Amplify Energy Corp. Common Stock | 4.02 | 3.57 | -11.25% | 94% | 5.7% |
-| SND | Smart Sand, Inc. - Common Stock | 4.58 | 4.24 | -7.40% | 94% | 8.1% |
-| CIEN | Ciena Corporation Common Stock | 293.99 | 265.57 | -9.67% | 93% | 5.0% |
-| JOF | Japan Smaller Capitalization Fund Inc Co | 10.8 | 10.58 | -2.00% | 92% | 5.4% |
-| LMND | Lemonade, Inc. Common Stock | 42.96 | 40.74 | -5.16% | 92% | 6.4% |
-| HOS | Hornbeck Offshore Services, Inc. Common  | 5.83 | 5.53 | -5.06% | 92% | 8.0% |
-| BKV | BKV Corporation Common Stock | 19.27 | 18.39 | -4.57% | 91% | 5.3% |
-| WDC | Western Digital Corporation - Common Sto | 311.21 | 290.58 | -6.63% | 90% | 6.0% |
-| DAN | Dana Incorporated Common Stock  | 23.26 | 22.35 | -3.91% | 90% | 5.4% |
-| INTC | Intel Corporation - Common Stock | 61.2 | 56.55 | -7.60% | 90% | 7.2% |
-| MXL | MaxLinear, Inc - Common Stock | 58.96 | 53.24 | -9.69% | 90% | 5.8% |
-| MOB | Mobilicom Limited - Ordinary Shares | 2.32 | 2.18 | -5.97% | 90% | 5.5% |
-| SRV | NXG Cushing Midstream Energy Fund Common | 36.45 | 35.34 | -3.05% | 89% | 6.4% |
-| SKYE | Skye Bioscience, Inc. - Common Stock | 1.08 | 0.98 | -9.44% | 88% | 9.6% |
-| VG | Venture Global, Inc. Class A common stoc | 13.26 | 12.72 | -4.07% | 88% | 16.0% |
-| HDSN | Hudson Technologies, Inc. - Common Stock | 4.43 | 4.29 | -3.26% | 88% | 6.3% |
-| MU | Micron Technology, Inc. - Common Stock | 798.44 | 758.62 | -4.99% | 88% | 8.0% |
-| TDW | Tidewater Inc. Common Stock | 77.86 | 75.17 | -3.45% | 88% | 8.2% |
-| WCC | WESCO International, Inc. Common Stock | 327.22 | 315.24 | -3.66% | 87% | 5.5% |
-| PBT | Permian Basin Royalty Trust Common Stock | 30.32 | 29.63 | -2.26% | 86% | 5.7% |
-| MLYS | Mineralys Therapeutics, Inc. - Common St | 15.5 | 14.73 | -4.96% | 86% | 5.4% |
-| ATTT | Atlas Trinity Tech Limited - Ordinary Sh | 2.19 | 2.11 | -3.69% | 86% | 5.2% |
-| CMPS | COMPASS Pathways Plc - American Deposito | 9.12 | 8.63 | -5.34% | 85% | 5.5% |
-| ATEX | Anterix Inc. - Common Stock | 82.69 | 79.28 | -4.13% | 84% | 14.6% |
-| IMOS | ChipMOS TECHNOLOGIES INC. - American Dep | 50.73 | 48.37 | -4.66% | 84% | 7.5% |
-| AM | Antero Midstream Corporation Common Stoc | 20.4 | 20.09 | -1.51% | 84% | 12.8% |
-| VST | Vistra Corp. Common Stock | 134.51 | 129.96 | -3.38% | 83% | 7.7% |
-| GSIT | GSI Technology, Inc. - Common Stock | 3.22 | 3.11 | -3.47% | 82% | 6.1% |
-| SFM | Sprouts Farmers Market, Inc. - Common St | 51.38 | 49.66 | -3.35% | 81% | 7.8% |
-| UMAC | Unusual Machines, Inc. Common Stock | 11.83 | 11.29 | -4.57% | 80% | 5.0% |
-| IRM | Iron Mountain Incorporated (Delaware)Com | 114.58 | 112.61 | -1.72% | 80% | 14.4% |
-| GNRC | Generac Holdlings Inc. Common Stock | 192.88 | 186.96 | -3.07% | 80% | 5.6% |
-| LNG | Cheniere Energy, Inc. Common Stock | 309.48 | 304.32 | -1.67% | 79% | 11.0% |
-| CORT | Corcept Therapeutics Incorporated - Comm | 73.71 | 71.78 | -2.62% | 79% | 7.6% |
-| GPOR | Gulfport Energy Corporation Common Share | 163.3 | 161.0 | -1.41% | 78% | 10.8% |
-| TSLA | Tesla, Inc.  - Common Stock | 397.45 | 389.61 | -1.97% | 77% | 12.8% |
-| NTB | Bank of N.T. Butterfield & Son Limited ( | 56.25 | 55.86 | -0.70% | 76% | 8.4% |
-| PARR | Par Pacific Holdings, Inc.  Common Stock | 72.03 | 70.45 | -2.19% | 76% | 10.7% |
-| AFYA | Afya Limited - Class A Common Shares | 10.33 | 10.05 | -2.74% | 75% | 5.9% |
-| CMRE | Costamare Inc. Common Stock $0.0001 par  | 13.24 | 13.09 | -1.14% | 75% | 10.3% |
-| NWPX | NWPX Infrastructure, Inc. - Common Stock | 91.29 | 90.16 | -1.24% | 74% | 7.7% |
-| SNOW | Snowflake Inc. Common Stock | 298.7 | 292.91 | -1.94% | 73% | 8.8% |
-| CRD-A | Crawford & Company Common Stock | 12.0 | 11.86 | -1.15% | 73% | 8.4% |
-| RENT | Rent the Runway, Inc. - Class A Common S | 2.43 | 2.35 | -3.46% | 73% | 5.4% |
-| YSG | Yatsen Holding Limited American Deposita | 1.95 | 1.9 | -2.52% | 73% | 8.0% |
-| OPRA | Opera Limited - American Depositary Shar | 15.63 | 15.42 | -1.36% | 72% | 8.3% |
-| RDDT | Reddit, Inc. Class A Common Stock | 99.55 | 97.01 | -2.55% | 72% | 8.0% |
-| CLFD | Clearfield, Inc. - Common Stock | 31.27 | 30.81 | -1.48% | 70% | 38.4% |
+| ADM | Archer-Daniels-Midland Company Common St | 72.9 | 69.62 | -4.49% | 94% | 5.1% |
+| CRESY | Cresud S.A.C.I.F. y A. - American Deposi | 9.74 | 9.17 | -5.86% | 94% | 7.8% |
+| IGIC | International General Insurance Holdings | 24.36 | 23.74 | -2.53% | 94% | 5.1% |
+| LB | LandBridge Corporation Class A Common St | 73.15 | 69.47 | -5.03% | 91% | 7.5% |
+| CHRD | Chord Energy Corporation - Common Stock | 149.93 | 144.49 | -3.63% | 91% | 18.1% |
+| STVN | Stevanato Group S.p.A. Ordinary Shares | 15.8 | 14.78 | -6.48% | 91% | 10.9% |
+| DEC | Diversified Energy Company Common Stock | 13.84 | 13.44 | -2.87% | 91% | 5.2% |
+| HP | Helmerich & Payne, Inc. Common Stock | 38.06 | 36.7 | -3.57% | 90% | 7.7% |
+| FMFC | Kandal M Venture Limited - Class A ordin | 1.79 | 1.63 | -8.87% | 89% | 5.5% |
+| OII | Oceaneering International, Inc. Common S | 35.63 | 34.11 | -4.26% | 89% | 5.9% |
+| QUAD | Quad Graphics, Inc Class A Common Stock | 7.62 | 7.33 | -3.78% | 89% | 6.3% |
+| CLH | Clean Harbors, Inc. Common Stock | 293.81 | 289.8 | -1.37% | 89% | 8.4% |
+| PLUT | Plutus Financial Group Limited - Ordinar | 1.15 | 1.06 | -7.67% | 89% | 6.8% |
+| INSW | International Seaways, Inc. Common Stock | 105.23 | 102.41 | -2.68% | 85% | 11.4% |
+| PICS | PicS N.V. - Class A Common Shares | 7.42 | 6.89 | -7.15% | 85% | 8.3% |
+| DTM | DT Midstream, Inc. Common Stock  | 119.73 | 117.77 | -1.64% | 85% | 5.5% |
+| OTLY | Oatly Group AB - American Depositary Sha | 7.66 | 7.33 | -4.26% | 84% | 5.9% |
+| XP | XP Inc. - Class A Common Stock | 15.49 | 14.36 | -7.32% | 84% | 7.7% |
+| LBRT | Liberty Energy Inc. Class A common stock | 13.06 | 12.55 | -3.89% | 84% | 7.7% |
+| ODFL | Old Dominion Freight Line, Inc. - Common | 174.54 | 171.42 | -1.79% | 83% | 9.0% |
+| BBAR | Banco BBVA Argentina S.A. ADS | 10.61 | 10.37 | -2.23% | 83% | 6.3% |
+| TRGP | Targa Resources, Inc. Common Stock | 297.33 | 292.25 | -1.71% | 82% | 113.2% |
+| WLDN | Willdan Group, Inc. - Common Stock | 70.42 | 69.25 | -1.65% | 80% | 7.3% |
+| GSIT | GSI Technology, Inc. - Common Stock | 3.09 | 3.0 | -3.07% | 80% | 5.2% |
+| ABEV | Ambev S.A. American Depositary Shares (E | 2.76 | 2.71 | -1.88% | 79% | 5.5% |
+| KYN | Kayne Anderson Energy Infrastructure Fun | 13.93 | 13.8 | -0.92% | 79% | 12.4% |
+| PAGS | PagSeguro Digital Ltd. Class A Common Sh | 7.98 | 7.71 | -3.41% | 78% | 8.2% |
+| ILAG | Intelligent Living Application Group Inc | 1.75 | 1.67 | -4.51% | 77% | 6.8% |
+| PMN | ProMIS Neurosciences Inc. - Common Share | 3.29 | 3.07 | -6.83% | 76% | 6.9% |
+| AXTI | AXT Inc - Common Stock | 41.84 | 39.84 | -4.78% | 75% | 5.6% |
+| ECG | Everus Construction Group, Inc. Common S | 85.25 | 82.63 | -3.08% | 75% | 6.2% |
+| TWLO | Twilio Inc. Class A Common Stock | 211.21 | 206.12 | -2.41% | 75% | 6.7% |
+| OXLC | Oxford Lane Capital Corp. - Closed End F | 5.04 | 4.94 | -2.00% | 74% | 7.8% |
+| NWPX | NWPX Infrastructure, Inc. - Common Stock | 90.02 | 88.91 | -1.24% | 74% | 5.2% |
+| SNDK | Sandisk Corporation - Common Stock When- | 885.01 | 857.43 | -3.12% | 74% | 6.7% |
+| AGRO | Adecoagro S.A. Common Shares | 9.11 | 8.98 | -1.44% | 74% | 9.8% |
+| FNRN | First Northern Community Bancorp - Commo | 17.3 | 17.13 | -0.97% | 73% | 19.7% |
+| MTCH | Match Group, Inc. - Common Stock | 41.63 | 41.19 | -1.07% | 72% | 15.7% |
+| SVC | Service Properties Trust - Common Shares | 5.7 | 5.6 | -1.83% | 72% | 10.6% |
+| DK | Delek US Holdings, Inc. Common Stock | 68.5 | 67.36 | -1.66% | 71% | 12.2% |
