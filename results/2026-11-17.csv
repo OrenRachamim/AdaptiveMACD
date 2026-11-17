@@ -1,0 +1,20 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+LNSR,"LENSAR, Inc. - Common Stock",NASDAQ,2026-11-16,touch,5.29,4.83,-8.63,0.944,5.2,3.44,-0.3967,-0.0195,60486
+ETS,Elite Express Holding Inc. - Class A Common Stock,NASDAQ,2026-11-16,touch,1.97,1.57,-20.12,0.931,5.5,12.06,-0.0395,-0.0021,290626
+BRSP,"BrightSpire Capital, Inc. Class A Common Stock",NYSE,2026-11-16,touch,3.27,3.17,-2.96,0.904,5.7,2.15,-0.1778,-0.0095,1976450
+TPL,Texas Pacific Land Corporation Common Stock,NYSE,2026-11-16,touch,292.16,280.77,-3.9,0.902,7.1,2.87,-17.0406,-1.1235,396370
+ADTN,"ADTRAN Holdings, Inc. - Common Stock",NASDAQ,2026-11-16,touch,4.69,4.41,-5.95,0.901,6.3,4.42,-0.6364,-0.0375,1877962
+GYRE,"Gyre Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-16,touch,4.39,4.05,-7.71,0.898,5.7,5.87,-0.6058,-0.0325,198770
+HUBS,"HubSpot, Inc. Common Stock",NYSE,2026-11-16,touch,231.98,220.98,-4.74,0.889,18.1,3.89,-5.2129,-0.7996,1559058
+AYTU,"Aytu BioPharma, Inc.  - Common Stock",NASDAQ,2026-11-16,touch,1.82,1.78,-2.46,0.867,5.5,2.32,-0.0656,-0.0034,62134
+STWD,"STARWOOD PROPERTY TRUST, INC. Starwood Property Trust Inc.",NYSE,2026-11-16,touch,11.75,11.53,-1.87,0.858,5.3,1.85,-0.429,-0.0214,6215826
+TDUP,ThredUp Inc. - Class A Common Stock,NASDAQ,2026-11-16,touch,1.6,1.5,-6.53,0.858,7.7,6.44,-0.224,-0.0161,1926082
+PICS,PicS N.V. - Class A Common Shares,NASDAQ,2026-11-16,touch,6.84,6.38,-6.69,0.837,5.2,7.49,-1.1025,-0.0548,707944
+NFG,National Fuel Gas Company Common Stock,NYSE,2026-11-16,touch,76.8,75.98,-1.07,0.825,8.9,1.28,-0.9901,-0.0805,1055426
+BTU,Peabody Energy Corporation Common Stock ,NYSE,2026-11-16,touch,16.92,16.39,-3.12,0.821,6.8,3.77,-2.0151,-0.1277,2612912
+PBH,Prestige Consumer Healthcare Inc. Common Stock,NYSE,2026-11-16,touch,48.0,46.83,-2.45,0.811,20.0,3.11,-0.6369,-0.106,615546
+EZGO,EZGO Technologies Ltd. - Ordinary Shares,NASDAQ,2026-11-16,touch,1.62,1.56,-3.51,0.729,7.1,6.85,-0.2637,-0.0175,58721
+INSW,"International Seaways, Inc. Common Stock ",NYSE,2026-11-16,touch,102.12,100.69,-1.4,0.724,5.7,2.82,-2.4445,-0.1322,812726
+PROK,ProKidney Corp. - Class A Ordinary Shares,NASDAQ,2026-11-16,touch,1.04,1.01,-2.46,0.723,5.0,5.01,-0.1284,-0.0061,1525462
+UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,NYSE,2026-11-16,touch,49.03,48.67,-0.74,0.719,5.3,1.56,0.7086,-0.0393,200478
+ATS,ATS Corporation Common Shares,NYSE,2026-11-16,touch,17.96,17.78,-1.0,0.718,14.3,2.12,-0.3195,-0.0399,252530
