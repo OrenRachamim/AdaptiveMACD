@@ -1,4 +1,4 @@
-# Daily MACD touch forecast - 2026-11-17
+# Daily MACD touch forecast - 2026-11-18
 
 Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch (gap <= 5% of |signal|) or cross it at the next close. Required change = move from the last close to the target price.
 
@@ -6,22 +6,22 @@ Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch
 
 | Ticker | Name | Close | Target close | Required change | Probability | Gap today |
 |---|---|---:|---:|---:|---:|---:|
-| LNSR | LENSAR, Inc. - Common Stock | 5.29 | 4.83 | -8.63% | 94% | 5.2% |
-| ETS | Elite Express Holding Inc. - Class A Com | 1.97 | 1.57 | -20.12% | 93% | 5.5% |
-| BRSP | BrightSpire Capital, Inc. Class A Common | 3.27 | 3.17 | -2.96% | 90% | 5.7% |
-| TPL | Texas Pacific Land Corporation Common St | 292.16 | 280.77 | -3.90% | 90% | 7.1% |
-| ADTN | ADTRAN Holdings, Inc. - Common Stock | 4.69 | 4.41 | -5.95% | 90% | 6.3% |
-| GYRE | Gyre Therapeutics, Inc. - Common Stock | 4.39 | 4.05 | -7.71% | 90% | 5.7% |
-| HUBS | HubSpot, Inc. Common Stock | 231.98 | 220.98 | -4.74% | 89% | 18.1% |
-| AYTU | Aytu BioPharma, Inc.  - Common Stock | 1.82 | 1.78 | -2.46% | 87% | 5.5% |
-| STWD | STARWOOD PROPERTY TRUST, INC. Starwood P | 11.75 | 11.53 | -1.87% | 86% | 5.3% |
-| TDUP | ThredUp Inc. - Class A Common Stock | 1.6 | 1.5 | -6.53% | 86% | 7.7% |
-| PICS | PicS N.V. - Class A Common Shares | 6.84 | 6.38 | -6.69% | 84% | 5.2% |
-| NFG | National Fuel Gas Company Common Stock | 76.8 | 75.98 | -1.07% | 82% | 8.9% |
-| BTU | Peabody Energy Corporation Common Stock  | 16.92 | 16.39 | -3.12% | 82% | 6.8% |
-| PBH | Prestige Consumer Healthcare Inc. Common | 48.0 | 46.83 | -2.45% | 81% | 20.0% |
-| EZGO | EZGO Technologies Ltd. - Ordinary Shares | 1.62 | 1.56 | -3.51% | 73% | 7.1% |
-| INSW | International Seaways, Inc. Common Stock | 102.12 | 100.69 | -1.40% | 72% | 5.7% |
-| PROK | ProKidney Corp. - Class A Ordinary Share | 1.04 | 1.01 | -2.46% | 72% | 5.0% |
-| UVE | UNIVERSAL INSURANCE HOLDINGS INC Common  | 49.03 | 48.67 | -0.74% | 72% | 5.3% |
-| ATS | ATS Corporation Common Shares | 17.96 | 17.78 | -1.00% | 72% | 14.3% |
+| MPT | Medical Properties Trust, Inc. common st | 1.59 | 1.44 | -9.65% | 94% | 5.1% |
+| ABR | Arbor Realty Trust Common Stock | 1.14 | 1.03 | -9.76% | 94% | 5.9% |
+| NEU | NewMarket Corp Common Stock | 697.76 | 676.23 | -3.09% | 94% | 5.9% |
+| PXED | Phoenix Education Partners, Inc. Common  | 20.56 | 19.71 | -4.14% | 94% | 8.9% |
+| AES | The AES Corporation Common Stock | 14.97 | 14.93 | -0.26% | 86% | 6.4% |
+| TDUP | ThredUp Inc. - Class A Common Stock | 1.49 | 1.4 | -5.88% | 84% | 5.1% |
+| AESI | Atlas Energy Solutions Inc. Common Stock | 4.9 | 4.67 | -4.63% | 83% | 6.3% |
+| PTHS | Pelthos Therapeutics Inc. Common Stock | 6.84 | 6.42 | -6.07% | 80% | 6.3% |
+| LBRT | Liberty Energy Inc. Class A common stock | 12.05 | 11.67 | -3.12% | 79% | 5.1% |
+| WAFU | Wah Fu Education & Technology Group Ltd. | 1.43 | 1.4 | -1.97% | 78% | 6.8% |
+| DRUG | Bright Minds Biosciences Inc. - common s | 20.51 | 19.37 | -5.57% | 78% | 7.1% |
+| MRVL | Marvell Technology, Inc. - Common Stock | 148.74 | 143.33 | -3.63% | 78% | 6.6% |
+| SUPV | Grupo Supervielle S.A. American Deposita | 5.48 | 5.39 | -1.73% | 74% | 5.0% |
+| SNAP | Snap Inc. Class A Common Stock | 5.5 | 5.38 | -2.21% | 74% | 15.7% |
+| TALO | Talos Energy, Inc. Common Stock | 15.86 | 15.64 | -1.37% | 73% | 7.4% |
+| ARVN | Arvinas, Inc. - Common Stock | 6.82 | 6.71 | -1.68% | 73% | 5.3% |
+| SMWB | Similarweb Ltd. Ordinary Shares | 8.84 | 8.69 | -1.74% | 72% | 73.5% |
+| ZYN | PTL LTD - Class A Ordinary Shares | 9.75 | 9.51 | -2.50% | 72% | 6.4% |
+| AGRO | Adecoagro S.A. Common Shares | 8.82 | 8.72 | -1.17% | 70% | 6.5% |

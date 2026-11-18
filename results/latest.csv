@@ -1,20 +1,20 @@
 ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
-LNSR,"LENSAR, Inc. - Common Stock",NASDAQ,2026-11-16,touch,5.29,4.83,-8.63,0.944,5.2,3.44,-0.3967,-0.0195,60486
-ETS,Elite Express Holding Inc. - Class A Common Stock,NASDAQ,2026-11-16,touch,1.97,1.57,-20.12,0.931,5.5,12.06,-0.0395,-0.0021,290626
-BRSP,"BrightSpire Capital, Inc. Class A Common Stock",NYSE,2026-11-16,touch,3.27,3.17,-2.96,0.904,5.7,2.15,-0.1778,-0.0095,1976450
-TPL,Texas Pacific Land Corporation Common Stock,NYSE,2026-11-16,touch,292.16,280.77,-3.9,0.902,7.1,2.87,-17.0406,-1.1235,396370
-ADTN,"ADTRAN Holdings, Inc. - Common Stock",NASDAQ,2026-11-16,touch,4.69,4.41,-5.95,0.901,6.3,4.42,-0.6364,-0.0375,1877962
-GYRE,"Gyre Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-16,touch,4.39,4.05,-7.71,0.898,5.7,5.87,-0.6058,-0.0325,198770
-HUBS,"HubSpot, Inc. Common Stock",NYSE,2026-11-16,touch,231.98,220.98,-4.74,0.889,18.1,3.89,-5.2129,-0.7996,1559058
-AYTU,"Aytu BioPharma, Inc.  - Common Stock",NASDAQ,2026-11-16,touch,1.82,1.78,-2.46,0.867,5.5,2.32,-0.0656,-0.0034,62134
-STWD,"STARWOOD PROPERTY TRUST, INC. Starwood Property Trust Inc.",NYSE,2026-11-16,touch,11.75,11.53,-1.87,0.858,5.3,1.85,-0.429,-0.0214,6215826
-TDUP,ThredUp Inc. - Class A Common Stock,NASDAQ,2026-11-16,touch,1.6,1.5,-6.53,0.858,7.7,6.44,-0.224,-0.0161,1926082
-PICS,PicS N.V. - Class A Common Shares,NASDAQ,2026-11-16,touch,6.84,6.38,-6.69,0.837,5.2,7.49,-1.1025,-0.0548,707944
-NFG,National Fuel Gas Company Common Stock,NYSE,2026-11-16,touch,76.8,75.98,-1.07,0.825,8.9,1.28,-0.9901,-0.0805,1055426
-BTU,Peabody Energy Corporation Common Stock ,NYSE,2026-11-16,touch,16.92,16.39,-3.12,0.821,6.8,3.77,-2.0151,-0.1277,2612912
-PBH,Prestige Consumer Healthcare Inc. Common Stock,NYSE,2026-11-16,touch,48.0,46.83,-2.45,0.811,20.0,3.11,-0.6369,-0.106,615546
-EZGO,EZGO Technologies Ltd. - Ordinary Shares,NASDAQ,2026-11-16,touch,1.62,1.56,-3.51,0.729,7.1,6.85,-0.2637,-0.0175,58721
-INSW,"International Seaways, Inc. Common Stock ",NYSE,2026-11-16,touch,102.12,100.69,-1.4,0.724,5.7,2.82,-2.4445,-0.1322,812726
-PROK,ProKidney Corp. - Class A Ordinary Shares,NASDAQ,2026-11-16,touch,1.04,1.01,-2.46,0.723,5.0,5.01,-0.1284,-0.0061,1525462
-UVE,UNIVERSAL INSURANCE HOLDINGS INC Common Stock,NYSE,2026-11-16,touch,49.03,48.67,-0.74,0.719,5.3,1.56,0.7086,-0.0393,200478
-ATS,ATS Corporation Common Shares,NYSE,2026-11-16,touch,17.96,17.78,-1.0,0.718,14.3,2.12,-0.3195,-0.0399,252530
+MPT,"Medical Properties Trust, Inc. common stock",NYSE,2026-11-17,touch,1.59,1.44,-9.65,0.944,5.1,3.47,-0.3966,-0.0194,17293752
+ABR,Arbor Realty Trust Common Stock,NYSE,2026-11-17,touch,1.14,1.03,-9.76,0.944,5.9,5.04,-0.5584,-0.031,8307550
+NEU,NewMarket Corp Common Stock,NYSE,2026-11-17,touch,697.76,676.23,-3.09,0.944,5.9,1.59,-49.0544,-2.7378,130640
+PXED,"Phoenix Education Partners, Inc. Common Stock",NYSE,2026-11-17,touch,20.56,19.71,-4.14,0.938,8.9,2.38,-1.4808,-0.1214,113658
+AES,The AES Corporation Common Stock,NYSE,2026-11-17,touch,14.97,14.93,-0.26,0.863,6.4,0.25,0.0027,-0.0002,9009970
+TDUP,ThredUp Inc. - Class A Common Stock,NASDAQ,2026-11-17,touch,1.49,1.4,-5.88,0.84,5.1,6.49,-0.2214,-0.0108,1936244
+AESI,Atlas Energy Solutions Inc. Common Stock,NYSE,2026-11-17,touch,4.9,4.67,-4.63,0.827,6.3,5.44,-1.5292,-0.09,4337132
+PTHS,Pelthos Therapeutics Inc. Common Stock,NYSE American,2026-11-17,touch,6.84,6.42,-6.07,0.805,6.3,7.96,-3.2277,-0.1923,52308
+LBRT,Liberty Energy Inc. Class A common stock,NYSE,2026-11-17,touch,12.05,11.67,-3.12,0.794,5.1,4.33,-1.4749,-0.0722,4429134
+WAFU,Wah Fu Education & Technology Group Ltd. - Ordinary Shares,NASDAQ,2026-11-17,touch,1.43,1.4,-1.97,0.78,6.8,2.92,-0.0139,-0.0009,833148
+DRUG,Bright Minds Biosciences Inc. - common stock,NASDAQ,2026-11-17,touch,20.51,19.37,-5.57,0.778,7.1,8.29,-8.6508,-0.5702,193882
+MRVL,"Marvell Technology, Inc. - Common Stock",NASDAQ,2026-11-17,touch,148.74,143.33,-3.63,0.777,6.6,5.45,-24.2998,-1.5017,24152492
+SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,NYSE,2026-11-17,touch,5.48,5.39,-1.73,0.742,5.0,3.09,-0.453,-0.0218,586692
+SNAP,Snap Inc. Class A Common Stock,NYSE,2026-11-17,touch,5.5,5.38,-2.21,0.739,15.7,4.03,-0.1788,-0.0243,39965304
+TALO,"Talos Energy, Inc. Common Stock",NYSE,2026-11-17,touch,15.86,15.64,-1.37,0.732,7.4,2.61,-0.4129,-0.0286,3064504
+ARVN,"Arvinas, Inc. - Common Stock",NASDAQ,2026-11-17,touch,6.82,6.71,-1.68,0.728,5.3,3.31,-0.2287,-0.0116,907124
+SMWB,Similarweb Ltd. Ordinary Shares,NYSE,2026-11-17,touch,8.84,8.69,-1.74,0.721,73.5,3.6,-0.0963,-0.0408,482590
+ZYN,PTL LTD - Class A Ordinary Shares,NASDAQ,2026-11-17,touch,9.75,9.51,-2.5,0.719,6.4,5.23,0.2975,-0.0204,100688
+AGRO,Adecoagro S.A. Common Shares,NYSE,2026-11-17,touch,8.82,8.72,-1.17,0.703,6.5,2.74,-0.3837,-0.0235,689714
