@@ -1,27 +1,43 @@
-# Daily MACD touch forecast - 2026-11-18
+# Daily MACD touch forecast - 2026-11-19
 
 Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch (gap <= 5% of |signal|) or cross it at the next close. Required change = move from the last close to the target price.
 
-**19 stocks**
+**35 stocks**
 
 | Ticker | Name | Close | Target close | Required change | Probability | Gap today |
 |---|---|---:|---:|---:|---:|---:|
-| MPT | Medical Properties Trust, Inc. common st | 1.59 | 1.44 | -9.65% | 94% | 5.1% |
-| ABR | Arbor Realty Trust Common Stock | 1.14 | 1.03 | -9.76% | 94% | 5.9% |
-| NEU | NewMarket Corp Common Stock | 697.76 | 676.23 | -3.09% | 94% | 5.9% |
-| PXED | Phoenix Education Partners, Inc. Common  | 20.56 | 19.71 | -4.14% | 94% | 8.9% |
-| AES | The AES Corporation Common Stock | 14.97 | 14.93 | -0.26% | 86% | 6.4% |
-| TDUP | ThredUp Inc. - Class A Common Stock | 1.49 | 1.4 | -5.88% | 84% | 5.1% |
-| AESI | Atlas Energy Solutions Inc. Common Stock | 4.9 | 4.67 | -4.63% | 83% | 6.3% |
-| PTHS | Pelthos Therapeutics Inc. Common Stock | 6.84 | 6.42 | -6.07% | 80% | 6.3% |
-| LBRT | Liberty Energy Inc. Class A common stock | 12.05 | 11.67 | -3.12% | 79% | 5.1% |
-| WAFU | Wah Fu Education & Technology Group Ltd. | 1.43 | 1.4 | -1.97% | 78% | 6.8% |
-| DRUG | Bright Minds Biosciences Inc. - common s | 20.51 | 19.37 | -5.57% | 78% | 7.1% |
-| MRVL | Marvell Technology, Inc. - Common Stock | 148.74 | 143.33 | -3.63% | 78% | 6.6% |
-| SUPV | Grupo Supervielle S.A. American Deposita | 5.48 | 5.39 | -1.73% | 74% | 5.0% |
-| SNAP | Snap Inc. Class A Common Stock | 5.5 | 5.38 | -2.21% | 74% | 15.7% |
-| TALO | Talos Energy, Inc. Common Stock | 15.86 | 15.64 | -1.37% | 73% | 7.4% |
-| ARVN | Arvinas, Inc. - Common Stock | 6.82 | 6.71 | -1.68% | 73% | 5.3% |
-| SMWB | Similarweb Ltd. Ordinary Shares | 8.84 | 8.69 | -1.74% | 72% | 73.5% |
-| ZYN | PTL LTD - Class A Ordinary Shares | 9.75 | 9.51 | -2.50% | 72% | 6.4% |
-| AGRO | Adecoagro S.A. Common Shares | 8.82 | 8.72 | -1.17% | 70% | 6.5% |
+| SKYA | SkyAI, Inc. - Common Stock | 4.13 | 2.99 | -27.72% | 94% | 8.7% |
+| NOMA | NOMADAR Corp. - Class A Common Stock | 1.22 | 1.01 | -17.10% | 94% | 6.1% |
+| OPEN | Opendoor Technologies Inc  - Common Stoc | 1.27 | 1.16 | -8.56% | 92% | 7.0% |
+| MFA | MFA Financial, Inc. | 5.79 | 5.62 | -3.01% | 92% | 5.2% |
+| BJRI | BJ's Restaurants, Inc. - Common Stock | 59.32 | 56.81 | -4.24% | 92% | 7.4% |
+| ACRV | Acrivon Therapeutics, Inc. - Common Stoc | 1.56 | 1.47 | -5.89% | 91% | 6.6% |
+| BIRD | Smartbird, Inc. - Class A Common Stock | 1.16 | 1.04 | -10.77% | 89% | 5.5% |
+| MH | McGraw Hill, Inc. Common Stock | 11.82 | 11.35 | -4.02% | 89% | 8.1% |
+| OKTA | Okta, Inc. - Class A Common Stock | 195.61 | 182.16 | -6.87% | 89% | 8.9% |
+| FSLY | Fastly, Inc. - Class A Common Stock | 17.9 | 16.44 | -8.17% | 88% | 8.5% |
+| BORR | Borr Drilling Limited Common Shares | 3.24 | 3.09 | -4.62% | 88% | 5.0% |
+| PANW | Palo Alto Networks, Inc. - Common Stock | 339.92 | 322.93 | -5.00% | 88% | 8.8% |
+| PAM | Pampa Energia S.A. | 62.42 | 61.04 | -2.21% | 87% | 6.3% |
+| PGEN | Precigen, Inc. - Common Stock | 4.27 | 4.03 | -5.53% | 86% | 5.4% |
+| RCMT | RCM Technologies, Inc. - Common Stock | 32.25 | 31.47 | -2.43% | 86% | 5.9% |
+| ARAY | Accuray Incorporated - Common Stock | 2.5 | 2.31 | -7.72% | 85% | 6.6% |
+| SEAT | Vivid Seats Inc. - Class A common stock | 1.28 | 1.19 | -6.74% | 85% | 6.7% |
+| ARAI | Arrive AI Inc. - Common Stock | 1.85 | 1.69 | -8.50% | 85% | 6.3% |
+| ITIC | Investors Title Company - Common Stock | 256.56 | 253.05 | -1.37% | 82% | 5.7% |
+| GOLD | Gold.com, Inc. Common Stock | 37.16 | 36.17 | -2.65% | 82% | 7.5% |
+| QXL | Quantum X Labs Inc. - Common Stock | 3.21 | 3.07 | -4.50% | 82% | 6.8% |
+| PRGO | Perrigo Company plc Ordinary Shares | 16.94 | 16.57 | -2.20% | 82% | 7.3% |
+| GNTX | Gentex Corporation - Common Stock | 19.33 | 19.06 | -1.37% | 82% | 7.4% |
+| BOW | Bowhead Specialty Holdings Inc. Common S | 34.31 | 34.24 | -0.19% | 80% | 8.3% |
+| NWPX | NWPX Infrastructure, Inc. - Common Stock | 88.45 | 87.02 | -1.62% | 79% | 5.6% |
+| SHC | Sotera Health Company - Common Stock | 16.28 | 16.08 | -1.25% | 77% | 6.7% |
+| ILPT | Industrial Logistics Properties Trust -  | 5.93 | 5.85 | -1.37% | 77% | 6.0% |
+| VINP | Vinci Compass Investments Ltd. - Class A | 8.53 | 8.33 | -2.30% | 77% | 5.3% |
+| LITE | Lumentum Holdings Inc. - Common Stock | 551.07 | 528.92 | -4.02% | 76% | 5.8% |
+| BH | Biglari Holdings Inc. Class B Common Sto | 367.53 | 360.79 | -1.83% | 73% | 6.2% |
+| CRWD | CrowdStrike Holdings, Inc. - Class A Com | 237.03 | 231.63 | -2.28% | 72% | 15.8% |
+| CNXN | PC Connection, Inc. - Common Stock | 82.9 | 82.16 | -0.89% | 72% | 9.8% |
+| GOLF | Acushnet Holdings Corp. Common Stock | 84.94 | 84.23 | -0.84% | 72% | 30.6% |
+| VEEE | Twin Vee PowerCats Co. - Common Stock | 7.36 | 6.89 | -6.42% | 71% | 6.8% |
+| ALNT | Allient Inc. - Common Stock | 77.73 | 76.24 | -1.92% | 71% | 5.8% |

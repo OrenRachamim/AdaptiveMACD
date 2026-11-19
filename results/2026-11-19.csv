@@ -1,0 +1,36 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+SKYA,"SkyAI, Inc. - Common Stock",NASDAQ,2026-11-18,touch,4.13,2.99,-27.72,0.944,8.7,14.04,0.1299,-0.0123,2021444
+NOMA,NOMADAR Corp. - Class A Common Stock,NASDAQ,2026-11-18,touch,1.22,1.01,-17.1,0.944,6.1,7.52,-0.1611,-0.0093,749610
+OPEN,Opendoor Technologies Inc  - Common Stock,NASDAQ,2026-11-18,touch,1.27,1.16,-8.56,0.923,7.0,5.41,-0.2796,-0.0184,35723590
+MFA,"MFA Financial, Inc.",NYSE,2026-11-18,touch,5.79,5.62,-3.01,0.923,5.2,1.9,-0.3865,-0.0193,2669518
+BJRI,"BJ's Restaurants, Inc. - Common Stock",NASDAQ,2026-11-18,touch,59.32,56.81,-4.24,0.922,7.4,2.69,-0.8781,-0.0606,494818
+ACRV,"Acrivon Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-18,touch,1.56,1.47,-5.89,0.908,6.6,4.15,-0.0923,-0.0057,273660
+BIRD,"Smartbird, Inc. - Class A Common Stock",NASDAQ,2026-11-18,touch,1.16,1.04,-10.77,0.894,5.5,8.47,-0.3316,-0.0174,451908
+MH,"McGraw Hill, Inc. Common Stock",NYSE,2026-11-18,touch,11.82,11.35,-4.02,0.89,8.1,3.28,-0.548,-0.0411,632678
+OKTA,"Okta, Inc. - Class A Common Stock",NASDAQ,2026-11-18,touch,195.61,182.16,-6.87,0.887,8.9,5.74,-5.5162,-0.4502,4235434
+FSLY,"Fastly, Inc. - Class A Common Stock",NASDAQ,2026-11-18,touch,17.9,16.44,-8.17,0.885,8.5,6.98,-2.1502,-0.1692,6979306
+BORR,Borr Drilling Limited Common Shares,NYSE,2026-11-18,touch,3.24,3.09,-4.62,0.884,5.0,3.98,-0.2733,-0.0131,8686254
+PANW,"Palo Alto Networks, Inc. - Common Stock",NASDAQ,2026-11-18,touch,339.92,322.93,-5.0,0.884,8.8,4.31,-13.9721,-1.1276,6247164
+PAM,Pampa Energia S.A.,NYSE,2026-11-18,touch,62.42,61.04,-2.21,0.868,6.3,2.06,-4.2718,-0.2532,211376
+PGEN,"Precigen, Inc. - Common Stock",NASDAQ,2026-11-18,touch,4.27,4.03,-5.53,0.858,5.4,5.47,-0.6872,-0.0354,6172986
+RCMT,"RCM Technologies, Inc. - Common Stock",NASDAQ,2026-11-18,touch,32.25,31.47,-2.43,0.855,5.9,2.44,-1.6953,-0.0937,72266
+ARAY,Accuray Incorporated - Common Stock,NASDAQ,2026-11-18,touch,2.5,2.31,-7.72,0.852,6.6,7.93,-1.3625,-0.0842,251180
+SEAT,Vivid Seats Inc. - Class A common stock,NASDAQ,2026-11-18,touch,1.28,1.19,-6.74,0.851,6.7,6.95,-0.5391,-0.0339,108258
+ARAI,Arrive AI Inc. - Common Stock,NASDAQ,2026-11-18,touch,1.85,1.69,-8.5,0.846,6.3,9.0,-1.507,-0.0896,243987
+ITIC,Investors Title Company - Common Stock,NASDAQ,2026-11-18,touch,256.56,253.05,-1.37,0.823,5.7,1.64,-7.8446,-0.42,50174
+GOLD,"Gold.com, Inc. Common Stock",NYSE,2026-11-18,touch,37.16,36.17,-2.65,0.821,7.5,3.2,-1.2162,-0.0853,642320
+QXL,Quantum X Labs Inc. - Common Stock,NASDAQ,2026-11-18,touch,3.21,3.07,-4.5,0.821,6.8,5.45,-0.2802,-0.0178,51734
+PRGO,Perrigo Company plc Ordinary Shares,NYSE,2026-11-18,touch,16.94,16.57,-2.2,0.819,7.3,2.68,0.2983,-0.0236,2539996
+GNTX,Gentex Corporation - Common Stock,NASDAQ,2026-11-18,touch,19.33,19.06,-1.37,0.817,7.4,1.69,-0.582,-0.0402,2735508
+BOW,Bowhead Specialty Holdings Inc. Common Stock,NYSE,2026-11-18,touch,34.31,34.24,-0.19,0.804,8.3,0.25,0.0677,-0.0061,247254
+NWPX,"NWPX Infrastructure, Inc. - Common Stock",NASDAQ,2026-11-18,touch,88.45,87.02,-1.62,0.789,5.6,2.3,-3.3055,-0.1744,128208
+SHC,Sotera Health Company - Common Stock,NASDAQ,2026-11-18,touch,16.28,16.08,-1.25,0.772,6.7,1.92,-0.515,-0.0324,2311630
+ILPT,Industrial Logistics Properties Trust - Common Shares of Beneficial Interest,NASDAQ,2026-11-18,touch,5.93,5.85,-1.37,0.77,6.0,2.12,-0.3242,-0.0185,417876
+VINP,Vinci Compass Investments Ltd. - Class A Common Shares,NASDAQ,2026-11-18,touch,8.53,8.33,-2.3,0.768,5.3,3.59,-0.4095,-0.0205,111062
+LITE,Lumentum Holdings Inc. - Common Stock,NASDAQ,2026-11-18,touch,551.07,528.92,-4.02,0.765,5.8,6.36,-87.8245,-4.8267,5444548
+BH,Biglari Holdings Inc. Class B Common Stock,NYSE,2026-11-18,touch,367.53,360.79,-1.83,0.728,6.2,3.62,-5.5457,-0.3232,90670
+CRWD,"CrowdStrike Holdings, Inc. - Class A Common Stock",NASDAQ,2026-11-18,touch,237.03,231.63,-2.28,0.719,15.8,4.78,-5.7693,-0.7882,9675996
+CNXN,"PC Connection, Inc. - Common Stock",NASDAQ,2026-11-18,touch,82.9,82.16,-0.89,0.719,9.8,1.88,-1.6982,-0.1521,165694
+GOLF,Acushnet Holdings Corp. Common Stock,NYSE,2026-11-18,touch,84.94,84.23,-0.84,0.717,30.6,1.78,0.1308,-0.0576,328984
+VEEE,Twin Vee PowerCats Co. - Common Stock,NASDAQ,2026-11-18,touch,7.36,6.89,-6.42,0.71,6.8,14.27,-0.806,-0.0512,654546
+ALNT,Allient Inc. - Common Stock,NASDAQ,2026-11-18,touch,77.73,76.24,-1.92,0.71,5.8,4.3,-5.4577,-0.301,241596
