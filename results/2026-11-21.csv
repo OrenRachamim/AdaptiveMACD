@@ -1,0 +1,16 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+IXHL,Incannex Healthcare Inc. - Common Stock,NASDAQ,2026-11-20,touch,1.86,1.73,-6.93,0.944,6.6,3.76,-0.2872,-0.0177,96404
+ARAI,Arrive AI Inc. - Common Stock,NASDAQ,2026-11-20,touch,1.21,1.01,-16.68,0.939,5.4,9.49,-1.5354,-0.0784,258973
+IMXI,"International Money Express, Inc. - Common Stock",NASDAQ,2026-11-20,touch,5.53,5.22,-5.69,0.893,6.3,4.54,-1.3039,-0.0778,948848
+CIM,Chimera Investment Corporation Common Stock,NYSE,2026-11-20,touch,6.36,6.17,-2.93,0.892,6.1,2.34,-0.7079,-0.0407,1724622
+EFC,Ellington Financial Inc. Common Stock ,NYSE,2026-11-20,touch,11.01,10.87,-1.32,0.843,7.0,1.42,-0.2575,-0.0169,1924604
+ABEO,Abeona Therapeutics Inc. - Common Stock,NASDAQ,2026-11-20,touch,2.42,2.3,-4.93,0.818,6.7,6.06,-0.6163,-0.039,1814424
+XPEL,"XPEL, Inc. - Common Stock",NASDAQ,2026-11-20,touch,38.12,37.42,-1.83,0.816,8.3,2.26,-1.8394,-0.1403,253868
+THM,"International Tower Hill Mines, Ltd. Ordinary Shares (Canada)",NYSE American,2026-11-20,touch,1.15,1.09,-5.56,0.815,5.3,6.92,-0.2573,-0.0129,1122860
+PASW,"Ping An Biomedical Co., Ltd. - Class A Ordinary Shares",NASDAQ,2026-11-20,touch,1.13,1.02,-9.56,0.801,7.3,12.81,-0.9437,-0.0646,57415
+DRK,DarkHorse Technologies Inc. - Common Shares,NASDAQ,2026-11-20,touch,1.32,1.26,-4.24,0.793,5.2,5.92,-0.2328,-0.0114,198412
+MXCT,"MaxCyte, Inc. - Common Stock",NASDAQ,2026-11-20,touch,1.37,1.32,-3.61,0.761,54.2,5.82,-0.0163,-0.0057,1205880
+MAGN,Magnera Corporation Common Stock,NYSE,2026-11-20,touch,12.89,12.69,-1.58,0.76,7.6,2.56,0.209,-0.0172,391638
+ATEC,"Alphatec Holdings, Inc. - Common Stock",NASDAQ,2026-11-20,touch,6.68,6.47,-3.13,0.722,5.9,6.46,-0.8643,-0.0483,3756688
+PAVS,Paranovus Entertainment Technology Ltd. - Class A Ordinary Shares,NASDAQ,2026-11-20,touch,2.35,2.28,-2.93,0.709,5.7,6.57,-0.3088,-0.0166,392686
+SOTK,Sono-Tek Corporation - Common Stock,NASDAQ,2026-11-20,touch,3.96,3.88,-1.94,0.7,5.3,4.61,-0.3728,-0.0189,120020
