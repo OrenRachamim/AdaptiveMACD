@@ -1,0 +1,141 @@
+ticker,name,exchange,date,mode,close,target_price,required_change_pct,prob,gap_pct_of_signal,daily_vol_pct,macd,hist,avg_volume_50d
+NRIX,"Nurix Therapeutics, Inc. - Common stock",NASDAQ,2026-11-24,touch,14.69,12.84,-12.59,0.944,6.2,5.82,-2.6554,-0.1547,2893772
+RVMD,"Revolution Medicines, Inc. - Common Stock",NASDAQ,2026-11-24,touch,181.17,167.74,-7.41,0.944,7.6,3.37,-6.6998,-0.4758,2523940
+VRTX,Vertex Pharmaceuticals Incorporated - Common Stock,NASDAQ,2026-11-24,touch,563.92,543.95,-3.54,0.944,9.6,1.85,3.9145,-0.4142,1364452
+ANF,Abercrombie & Fitch Company Common Stock,NYSE,2026-11-24,touch,168.1,153.5,-8.69,0.944,70.0,3.95,-1.04,-0.4282,1226098
+PAYS,"Paysign, Inc. - Common Stock",NASDAQ,2026-11-24,touch,10.85,9.8,-9.71,0.944,6.5,4.49,-1.0903,-0.0664,1119434
+PTGX,"Protagonist Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,135.52,127.33,-6.04,0.944,8.1,2.42,-3.4055,-0.2538,710734
+FLNG,FLEX LNG Ltd. Ordinary Shares,NYSE,2026-11-24,touch,24.0,23.08,-3.82,0.944,5.3,1.55,-1.4229,-0.0722,494780
+CMP,Compass Minerals Intl Inc Common Stock,NYSE,2026-11-24,touch,23.28,21.95,-5.71,0.944,22.7,2.85,-0.4815,-0.089,414136
+BBN,BlackRock Taxable Municipal Bond Trust Common Shares of Beneficial Interest,NYSE,2026-11-24,touch,14.6,14.3,-2.07,0.944,5.1,0.82,-0.1024,-0.005,363178
+KRUS,"Kura Sushi USA, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,25.75,22.86,-11.23,0.944,6.2,5.35,-3.4179,-0.1987,305384
+ALTG,Alta Equipment Group Inc. Class A Common Stock,NYSE,2026-11-24,touch,6.14,5.34,-12.96,0.944,14.6,6.75,-0.3678,-0.0468,301942
+AUUD,Auddia Inc. - Common Stock,NASDAQ,2026-11-24,touch,2.37,1.67,-29.49,0.944,5.9,10.96,-2.7627,-0.155,260685
+WFG,West Fraser Timber Co. Ltd Common stock,NYSE,2026-11-24,touch,68.64,65.29,-4.89,0.944,9.4,2.03,-0.6827,-0.0587,189096
+CDLR,Cadeler plc Ordinary Shares,NYSE,2026-11-24,touch,5.76,3.51,-39.04,0.944,5.3,9.78,-4.4583,-0.2256,164736
+MPAA,"Motorcar Parts of America, Inc. - Common Stock",NASDAQ,2026-11-24,touch,7.75,7.15,-7.69,0.944,6.2,4.03,-0.7889,-0.0463,127006
+AGM,Federal Agricultural Mortgage Corporation Common Stock,NYSE,2026-11-24,touch,170.64,164.54,-3.57,0.944,6.8,1.91,-10.1694,-0.6497,120462
+EPSN,Epsilon Energy Ltd. - Common Shares,NASDAQ,2026-11-24,touch,5.47,5.09,-6.97,0.944,9.1,3.01,-0.2425,-0.0203,100128
+SNWV,"SANUWAVE Health, Inc. - Common Stock",NASDAQ,2026-11-24,touch,1.61,1.25,-22.39,0.944,6.8,9.57,-0.9001,-0.0572,87430
+ELMD,"Electromed, Inc. Common Stock",NYSE American,2026-11-24,touch,24.76,23.59,-4.73,0.944,7.9,2.21,-1.1001,-0.0804,69744
+INCY,Incyte Corporation - Common Stock,NASDAQ,2026-11-24,touch,123.61,119.51,-3.32,0.933,10.5,1.96,0.3268,-0.0383,1733716
+DFTX,"Definium Therapeutics, Inc.  - Common Shares",NASDAQ,2026-11-24,touch,32.23,30.03,-6.83,0.932,8.3,4.07,-1.5531,-0.1185,1999980
+AIRJ,AirJoule Technologies Corporation - Class A Common Stock,NASDAQ,2026-11-24,touch,1.61,1.49,-7.47,0.931,5.4,4.47,-0.4202,-0.0215,923342
+HLIO,"Helios Technologies, Inc. Common Stock",NYSE,2026-11-24,touch,44.67,41.93,-6.14,0.925,5.9,3.82,-6.0609,-0.3401,501022
+WVE,"Wave Life Sciences, Inc. - Common Stock",NASDAQ,2026-11-24,touch,3.1,2.89,-6.77,0.924,11.0,4.26,-0.216,-0.0214,3112080
+PRQR,ProQR Therapeutics N.V. - Ordinary Shares,NASDAQ,2026-11-24,touch,1.19,1.11,-6.99,0.924,6.9,4.39,-0.1006,-0.0065,796420
+VISN,"Vistance Networks, Inc.  - Common Stock",NASDAQ,2026-11-24,touch,3.94,3.66,-7.04,0.921,5.7,4.51,-0.6312,-0.0342,7270296
+SPRB,"Spruce Biosciences, Inc. - Common Stock",NASDAQ,2026-11-24,touch,45.16,41.99,-7.01,0.92,9.7,4.53,-1.0914,-0.0968,81450
+IDYA,"IDEAYA Biosciences, Inc. - Common Stock",NASDAQ,2026-11-24,touch,29.48,28.08,-4.74,0.919,10.6,3.07,-1.9311,-0.1849,1034016
+ERAS,"Erasca, Inc. - Common Stock",NASDAQ,2026-11-24,touch,15.83,14.7,-7.14,0.916,18.1,4.75,-0.0921,-0.0141,5695518
+OPLN,"OPENLANE, Inc. Common Stock",NYSE,2026-11-24,touch,35.74,34.8,-2.63,0.915,10.1,1.76,-0.5278,-0.0483,1140632
+VLGEA,"Village Super Market, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,42.16,41.13,-2.44,0.914,5.9,1.65,-0.6369,-0.0353,62864
+CCD,Calamos Dynamic Convertible & Income Fund - Closed End Fund,NASDAQ,2026-11-24,touch,19.22,18.72,-2.59,0.913,5.5,1.76,-0.8897,-0.0464,89414
+F,Ford Motor Company Common Stock,NYSE,2026-11-24,touch,11.95,11.61,-2.82,0.912,10.2,1.93,-0.2269,-0.021,44831392
+MBC,"MasterBrand, Inc. Common Stock",NYSE,2026-11-24,touch,6.57,6.2,-5.6,0.906,6.9,4.01,-0.216,-0.0139,3100596
+MCHB,Mechanics Bancorp - Class A Common Stock,NASDAQ,2026-11-24,touch,14.47,14.23,-1.66,0.899,9.8,1.25,-0.1812,-0.0161,555840
+AGNC,AGNC Investment Corp. - Common Stock,NASDAQ,2026-11-24,touch,8.16,7.97,-2.32,0.897,8.9,1.78,-0.283,-0.0232,34564268
+RILY,"BRC Group Holdings, Inc. - Common Stock",NASDAQ,2026-11-24,touch,2.86,2.72,-4.87,0.896,5.4,3.77,-0.4709,-0.024,820834
+LOPE,"Grand Canyon Education, Inc. - Common Stock",NASDAQ,2026-11-24,touch,113.54,109.11,-3.91,0.896,7.1,3.01,-10.7331,-0.7138,373560
+CPNG,"Coupang, Inc. Class A Common Stock",NYSE,2026-11-24,touch,16.01,15.41,-3.72,0.892,84.3,2.98,0.0072,-0.0386,15807246
+SSII,SS Innovations International Inc. - Common Stock,NASDAQ,2026-11-24,touch,1.23,1.14,-7.64,0.891,6.2,6.18,-0.3502,-0.0205,99128
+VERA,"Vera Therapeutics, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,28.99,27.63,-4.69,0.89,12.7,3.83,-0.9066,-0.1023,1728044
+SEER,"Seer, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,1.44,1.39,-3.74,0.89,7.4,3.05,-0.1437,-0.0099,235100
+NLY,Annaly Capital Management Inc. Common Stock,NYSE,2026-11-24,touch,17.54,17.18,-2.08,0.889,8.3,1.71,-0.4829,-0.037,13009396
+GLOB,Globant S.A. Common Shares,NYSE,2026-11-24,touch,50.05,47.76,-4.57,0.888,20.2,3.79,0.8837,-0.2237,1082872
+GBAB,Guggenheim Taxable Municipal Bond & Investment Grade Debt Trust Common Shares of Beneficial Interest,NYSE,2026-11-24,touch,12.75,12.62,-1.02,0.888,21.6,0.85,-0.0566,-0.0101,188002
+BNTC,Benitec Biopharma Inc. - Common Stock,NASDAQ,2026-11-24,touch,8.86,8.42,-5.01,0.885,9.9,4.25,-0.2499,-0.0225,195112
+DKS,Dick's Sporting Goods Inc Common Stock,NYSE,2026-11-24,touch,153.17,147.05,-3.99,0.884,94.8,3.44,0.0212,-0.3836,2481162
+GTBP,"GT Biopharma, Inc. - Common Stock",NASDAQ,2026-11-24,touch,3.13,2.76,-11.81,0.884,5.2,10.2,-0.7753,-0.0386,62918
+NOA,North American Construction Group Ltd. Common Shares (no par),NYSE,2026-11-24,touch,8.65,8.36,-3.39,0.876,7.9,3.04,-0.8906,-0.0651,141862
+KIO,KKR Income Opportunities Fund Common Shares,NYSE,2026-11-24,touch,9.75,9.66,-0.96,0.872,5.5,0.88,-0.1102,-0.0057,311026
+SANA,"Sana Biotechnology, Inc. - Common Stock",NASDAQ,2026-11-24,touch,1.98,1.88,-5.24,0.862,10.9,5.06,-0.2247,-0.0222,3394596
+HSIC,"Henry Schein, Inc. - Common Stock",NASDAQ,2026-11-24,touch,87.51,85.83,-1.92,0.862,61.8,1.86,-0.0609,-0.0233,1498690
+CHY,Calamos Convertible and High Income Fund - Closed End Fund,NASDAQ,2026-11-24,touch,10.25,10.08,-1.68,0.861,6.6,1.63,-0.3612,-0.0224,221452
+NVDA,NVIDIA Corporation - Common Stock,NASDAQ,2026-11-24,touch,155.38,147.27,-5.22,0.857,7.4,5.18,-17.2658,-1.1895,197374256
+DYN,"Dyne Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,17.75,17.02,-4.13,0.856,39.2,4.13,-0.1329,-0.0375,2804754
+RRR,"Red Rock Resorts, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,48.12,47.14,-2.03,0.855,5.8,2.04,-0.864,-0.047,974900
+SOBO,South Bow Corporation Common Shares,NYSE,2026-11-24,touch,32.87,32.33,-1.63,0.853,9.0,1.66,-0.5932,-0.0488,685308
+PEN,"Penumbra, Inc. Common Stock",NYSE,2026-11-24,touch,322.18,320.7,-0.46,0.847,14.5,0.48,-0.0982,-0.0125,377588
+SABS,"SAB Biotherapeutics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,3.13,3.01,-3.92,0.846,9.9,4.15,-0.0164,-0.0015,749618
+AEF,"abrdn Emerging Markets ex-China Fund, Inc. Common Stock",NYSE American,2026-11-24,touch,7.3,7.12,-2.47,0.844,5.7,2.65,-0.3897,-0.0209,111752
+RPRX,Royalty Pharma plc - Class A Ordinary Shares,NASDAQ,2026-11-24,touch,71.31,70.32,-1.39,0.841,5.4,1.52,1.9063,-0.1078,3274534
+IRON,"Disc Medicine, Inc. - Common Stock",NASDAQ,2026-11-24,touch,88.34,83.62,-5.35,0.836,15.1,6.01,1.77,-0.3142,1080566
+LGCY,Legacy Education Inc. Common Stock,NYSE American,2026-11-24,touch,7.93,7.75,-2.23,0.834,6.7,2.54,-0.5449,-0.0343,67690
+TRNO,Terreno Realty Corporation Common Stock,NYSE,2026-11-24,touch,67.37,66.66,-1.05,0.832,26.0,1.21,0.1166,-0.0409,796844
+ZD,"Ziff Davis, Inc. - Common Stock",NASDAQ,2026-11-24,touch,50.54,49.62,-1.83,0.832,7.2,2.1,-1.5798,-0.1063,558882
+SE,"Sea Limited American Depositary Shares, each representing one Class A Ordinary Share",NYSE,2026-11-24,touch,64.97,63.52,-2.23,0.828,5.3,2.6,-5.6723,-0.2838,6532558
+TDS,"Telephone and Data Systems, Inc. Common Shares",NYSE,2026-11-24,touch,31.57,30.86,-2.26,0.823,8.8,2.71,-1.0419,-0.0845,1773242
+FVCB,"FVCBankcorp, Inc. - Common Stock",NASDAQ,2026-11-24,touch,15.77,15.61,-1.04,0.823,6.2,1.25,-0.43,-0.0252,77454
+KRSP,Rice Acquisition Corporation 3 Class A Ordinary Shares,NYSE,2026-11-24,touch,10.47,10.4,-0.66,0.822,9.7,0.8,-0.0318,-0.0028,74212
+KMX,CarMax Inc,NYSE,2026-11-24,touch,52.63,51.4,-2.33,0.82,12.8,2.83,-0.9721,-0.1101,3029534
+BIOA,"BioAge Labs, Inc. - Common Stock",NASDAQ,2026-11-24,touch,4.98,4.79,-3.87,0.813,9.9,4.87,-0.433,-0.0391,864056
+EQ,"Equillium, Inc. - Common Stock",NASDAQ,2026-11-24,touch,1.23,1.17,-4.54,0.811,9.8,5.78,-0.0905,-0.0081,603298
+BBNX,"Beta Bionics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,15.59,14.89,-4.5,0.808,12.5,5.81,-1.001,-0.1111,1270262
+NMCO,Nuveen Municipal Credit Opportunities Fund Common Shares,NYSE,2026-11-24,touch,8.73,8.63,-1.12,0.808,9.5,1.45,-0.0968,-0.0084,719870
+REGN,"Regeneron Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-11-24,touch,987.09,967.23,-2.01,0.806,5.4,2.62,34.327,-1.9773,875466
+QUIT,"Achieve Life Sciences, Inc.  - Common Shares",NASDAQ,2026-11-24,touch,6.17,6.0,-2.8,0.804,10.4,3.7,-0.2826,-0.0266,1326796
+JUNS,"Jupiter Neurosciences, Inc. - Common Stock",NASDAQ,2026-11-24,touch,1.49,1.4,-5.71,0.802,7.3,7.58,-0.3643,-0.0248,57292
+LAR,Lithium Argentina AG Common Shares,NYSE,2026-11-24,touch,3.27,3.18,-2.73,0.801,7.4,3.65,-0.426,-0.0294,1811226
+PLTR,Palantir Technologies Inc. - Class A Common Stock,NASDAQ,2026-11-24,touch,161.18,156.96,-2.62,0.8,9.7,3.53,-8.4856,-0.7496,23993094
+KE,"Kimball Electronics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,18.1,17.56,-2.97,0.8,6.0,4.0,-2.0117,-0.1145,228810
+CSTL,"Castle Biosciences, Inc. - Common stock",NASDAQ,2026-11-24,touch,34.65,33.87,-2.25,0.799,15.4,3.03,-0.1481,-0.0198,422072
+RMD,ResMed Inc. Common Stock,NYSE,2026-11-24,touch,243.44,239.88,-1.46,0.798,5.5,1.99,0.9052,-0.0523,1288292
+TDW,Tidewater Inc. Common Stock,NYSE,2026-11-24,touch,72.49,70.79,-2.34,0.797,5.7,3.2,-2.8195,-0.1533,613302
+RIGL,"Rigel Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-11-24,touch,44.73,43.62,-2.49,0.797,15.4,3.4,-1.4694,-0.1965,248224
+HOV,"Hovnanian Enterprises, Inc. Class A Common Stock",NYSE,2026-11-24,touch,94.12,91.73,-2.54,0.796,8.8,3.49,-3.7277,-0.3,120186
+TRIP,"TripAdvisor, Inc. - Common Stock",NASDAQ,2026-11-24,touch,7.09,6.86,-3.21,0.794,6.6,4.46,-0.5235,-0.0324,5001730
+TROO,"TROOPS, Inc.  - Ordinary Shares",NASDAQ,2026-11-24,touch,1.64,1.54,-5.96,0.792,7.8,8.36,-0.1006,-0.0073,387414
+CRSR,"Corsair Gaming, Inc. - Common Stock",NASDAQ,2026-11-24,touch,11.78,11.45,-2.77,0.79,6.7,3.93,-0.4316,-0.0273,1212950
+CARR,Carrier Global Corporation Common Stock ,NYSE,2026-11-24,touch,52.72,52.05,-1.26,0.789,10.6,1.8,-1.0505,-0.1006,6673804
+IVT,InvenTrust Properties Corp. Common Stock,NYSE,2026-11-24,touch,31.92,31.68,-0.74,0.783,7.4,1.08,0.2216,-0.0176,655326
+WATT,Energous Corporation - Common Stock,NASDAQ,2026-11-24,touch,6.82,6.53,-4.24,0.783,5.0,6.18,-0.8467,-0.0407,151136
+LOCO,"El Pollo Loco Holdings, Inc. - Common Stock",NASDAQ,2026-11-24,touch,15.61,15.34,-1.75,0.781,13.2,2.58,0.023,-0.0035,282612
+BBSI,"Barrett Business Services, Inc. - Common Stock",NASDAQ,2026-11-24,touch,30.97,30.55,-1.37,0.779,6.1,2.03,-0.4095,-0.0235,200784
+AORT,"Artivion, Inc. Common Stock",NYSE,2026-11-24,touch,19.67,19.17,-2.53,0.777,11.1,3.79,-1.13,-0.1128,685458
+SLE,"Super League Enterprise, Inc. - Common Stock",NASDAQ,2026-11-24,touch,4.02,3.82,-4.97,0.776,9.6,7.47,-0.2881,-0.0252,106354
+AGIO,"Agios Pharmaceuticals, Inc. - Common Stock",NASDAQ,2026-11-24,touch,31.06,30.22,-2.7,0.775,14.9,4.08,-1.0756,-0.1394,1125204
+O,Realty Income Corporation Common Stock,NYSE,2026-11-24,touch,59.55,59.13,-0.71,0.77,8.9,1.1,0.4646,-0.0451,8065830
+XRPN,Evernorth Holdings Inc. - Class A Ordinary Shares,NASDAQ,2026-11-24,touch,6.8,6.13,-9.88,0.77,5.9,15.31,-2.1282,-0.119,1139772
+NREF,"NexPoint Real Estate Finance, Inc. Common Stock",NYSE,2026-11-24,touch,11.68,11.5,-1.53,0.77,9.3,2.37,-1.0453,-0.0886,80088
+NTLA,"Intellia Therapeutics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,10.52,10.24,-2.66,0.769,11.7,4.13,-0.5283,-0.0554,5789996
+ATHE,Alterity Therapeutics Limited - American Depositary Shares,NASDAQ,2026-11-24,touch,1.65,1.59,-3.36,0.767,7.2,5.25,-0.3078,-0.0208,108802
+TGS,Transportadora de Gas del Sur SA TGS Common Stock,NYSE,2026-11-24,touch,19.45,19.14,-1.58,0.766,6.0,2.49,-1.5614,-0.0886,242288
+PFL,PIMCO Income Strategy Fund Shares of Beneficial Interest,NYSE,2026-11-24,touch,6.7,6.65,-0.73,0.765,10.8,1.15,-0.0687,-0.0067,309862
+ONCO,"Onconetix, Inc.  - Common Stock",NASDAQ,2026-11-24,touch,3.01,2.76,-8.37,0.764,6.4,13.3,-0.7637,-0.0459,513224
+ZYME,Zymeworks Inc. - Common Stock,NASDAQ,2026-11-24,touch,29.33,28.72,-2.09,0.763,254.0,3.33,-0.0534,-0.0881,1196794
+NUV,"Nuveen Municipal Value Fund, Inc. Common Stock",NYSE,2026-11-24,touch,8.29,8.24,-0.62,0.76,16.0,1.0,-0.0435,-0.006,1501164
+UMH,"UMH Properties, Inc. Common Stock",NYSE,2026-11-24,touch,14.37,14.24,-0.89,0.757,10.9,1.47,-0.3081,-0.0304,704864
+RGA,"Reinsurance Group of America, Incorporated Common Stock",NYSE,2026-11-24,touch,274.47,272.54,-0.7,0.755,6.2,1.17,2.8921,-0.1898,459198
+SPNT,SiriusPoint Ltd. Common Shares,NYSE,2026-11-24,touch,26.91,26.71,-0.73,0.751,6.4,1.23,0.2996,-0.0205,1045072
+WBI,WaterBridge Infrastructure LLC Class A Shares Representing Limited Liability Company Interests,NYSE,2026-11-24,touch,25.5,25.05,-1.77,0.751,7.0,3.01,-1.0421,-0.068,667338
+SABA,Saba Capital Income & Opportunities Fund II Shares of Beneficial Interest,NYSE,2026-11-24,touch,7.36,7.33,-0.39,0.747,6.8,0.67,-0.1135,-0.0072,84404
+BANR,Banner Corporation - Common Stock,NASDAQ,2026-11-24,touch,69.97,69.49,-0.69,0.744,145.5,1.22,-0.0976,-0.0579,260286
+BVS,Bioventus Inc. - Class A Common Stock,NASDAQ,2026-11-24,touch,10.2,9.99,-2.03,0.743,8.0,3.6,-0.8642,-0.0639,540482
+AZO,"AutoZone, Inc. Common Stock",NYSE,2026-11-24,touch,3355.69,3323.38,-0.96,0.742,5.5,1.72,59.3759,-3.4304,240054
+AUR,"Aurora Innovation, Inc.  - Class A Common Stock",NASDAQ,2026-11-24,touch,3.74,3.65,-2.44,0.741,5.9,4.4,-0.364,-0.0203,27896854
+DSM,"BNY Mellon Strategic Municipal Bond Fund, Inc. Common Stock",NYSE,2026-11-24,touch,5.63,5.59,-0.63,0.737,27.7,1.17,0.0211,-0.0081,216554
+LGIH,"LGI Homes, Inc. - Common Stock",NASDAQ,2026-11-24,touch,41.87,40.99,-2.1,0.736,11.8,3.91,-1.3925,-0.1472,355926
+GWRS,"Global Water Resources, Inc. - common stock",NASDAQ,2026-11-24,touch,6.59,6.52,-1.02,0.736,9.7,1.9,-0.3957,-0.035,69200
+NNDM,Nano Dimension Ltd. - American Depositary Shares,NASDAQ,2026-11-24,touch,1.18,1.16,-1.37,0.735,10.5,2.56,-0.0801,-0.0076,1520200
+LKFT,Lakefront Biotherapeutics - American Depositary Shares,NASDAQ,2026-11-24,touch,34.97,34.62,-1.01,0.734,6.3,1.9,0.8717,-0.0586,294182
+IX,ORIX Corporation American Depositary Shares,NYSE,2026-11-24,touch,33.04,32.77,-0.83,0.733,8.2,1.58,-1.1248,-0.085,328716
+BKR,Baker Hughes Company - Common Stock,NASDAQ,2026-11-24,touch,45.89,45.28,-1.34,0.731,6.1,2.57,-2.4119,-0.1385,8553882
+BEAM,Beam Therapeutics Inc. - Common Stock,NASDAQ,2026-11-24,touch,24.26,23.72,-2.24,0.729,22.4,4.39,-0.9144,-0.1676,2123732
+BTZ,BlackRock Credit Allocation Income Trust,NYSE,2026-11-24,touch,9.45,9.41,-0.39,0.726,19.6,0.78,-0.0469,-0.0077,488490
+LYEL,"Lyell Immunopharma, Inc. - Common Stock",NASDAQ,2026-11-24,touch,15.89,15.32,-3.59,0.725,6.5,7.19,1.026,-0.071,206440
+TNDM,"Tandem Diabetes Care, Inc. - Common Stock",NASDAQ,2026-11-24,touch,18.88,18.47,-2.19,0.724,37.2,4.44,0.0667,-0.0396,2532128
+TCMD,"Tactile Systems Technology, Inc. - Common Stock",NASDAQ,2026-11-24,touch,27.2,26.87,-1.21,0.724,5.6,2.44,0.7685,-0.0459,242212
+DHI,"D.R. Horton, Inc. Common Stock",NYSE,2026-11-24,touch,152.17,150.35,-1.19,0.723,22.2,2.44,0.9406,-0.2679,3212772
+LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,NYSE,2026-11-24,touch,8.23,8.14,-1.08,0.722,8.1,2.22,-0.3533,-0.0265,473186
+LADR,Ladder Capital Corp Class A Common Stock,NYSE,2026-11-24,touch,8.65,8.58,-0.77,0.721,17.0,1.6,-0.1974,-0.0287,2043474
+HELP,Helus Pharma Inc.  - Common Stock,NASDAQ,2026-11-24,touch,7.67,7.45,-2.9,0.721,12.8,5.99,-1.0261,-0.1166,1954366
+VERX,"Vertex, Inc. - Class A Common Stock",NASDAQ,2026-11-24,touch,18.52,18.24,-1.53,0.719,5.2,3.19,0.9689,-0.0527,1481838
+FRSH,Freshworks Inc. - Class A Common Stock,NASDAQ,2026-11-24,touch,12.76,12.59,-1.35,0.718,11.0,2.86,-0.3436,-0.0341,6212714
+EPC,Edgewell Personal Care Company Common Stock,NYSE,2026-11-24,touch,28.96,28.63,-1.14,0.718,12.0,2.41,0.1074,-0.0147,556416
+INBX,"Inhibrx Biosciences, Inc. - Common Stock",NASDAQ,2026-11-24,touch,77.8,75.82,-2.54,0.716,12.1,5.46,-4.7707,-0.5158,276876
+ANGO,"AngioDynamics, Inc. - Common Stock",NASDAQ,2026-11-24,touch,11.17,10.99,-1.6,0.714,6.2,3.49,-0.4482,-0.0263,742906
+TENB,"Tenable Holdings, Inc. - Common Stock",NASDAQ,2026-11-24,touch,45.23,44.19,-2.29,0.712,8.8,5.04,0.5034,-0.0489,3604006
+CTO,"CTO Realty Growth, Inc. Common Stock",NYSE,2026-11-24,touch,20.08,19.97,-0.57,0.705,13.4,1.31,-0.0991,-0.0117,365052
+BROS,Dutch Bros Inc. Class A Common Stock,NYSE,2026-11-24,touch,34.66,34.08,-1.68,0.703,8.1,3.93,-1.8416,-0.1377,4897128
+VENU,Venu Holding Corporation Common Stock,NYSE American,2026-11-24,touch,1.12,1.09,-2.27,0.703,9.7,5.3,-0.0773,-0.0068,444748
