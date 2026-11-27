@@ -1,4 +1,4 @@
-# Daily MACD touch forecast - 2026-11-26
+# Daily MACD touch forecast - 2026-11-27
 
 Stocks whose daily MACD is below its signal line and is likely (>= 70%) to touch (gap <= 5% of |signal|) or cross it at the next close. Required change = move from the last close to the target price.
 
